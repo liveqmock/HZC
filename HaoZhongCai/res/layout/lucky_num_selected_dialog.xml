@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_menu_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/item_first_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_item_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/radio_item_first"
+            android:text="查询20期"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/radio_item_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-1dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/light_gray" />
+
+    <RelativeLayout
+        android:id="@+id/item_second_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_item_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/radio_item_second"
+            android:text="查询50期  （需3积分）"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/radio_item_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-1dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/light_gray" />
+
+    <RelativeLayout
+        android:id="@+id/item_third_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_item_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/radio_item_third"
+            android:text="查询100期（需5积分）"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/radio_item_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-1dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/light_gray" />
+
+    <RelativeLayout
+        android:id="@+id/item_forth_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_item_forth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/radio_item_forth"
+            android:text="查询200期（10积分）"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/radio_item_forth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-1dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/light_gray" />
+
+    <RelativeLayout
+        android:id="@+id/item_fifth_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_item_fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/radio_item_fifth"
+            android:text="查询300期（需15积分）"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/radio_item_fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-1dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/light_gray" />
+
+    <RelativeLayout
+        android:id="@+id/item_sixth_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_item_sixth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/radio_item_sixth"
+            android:text="查询500期（需20积分）"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/radio_item_sixth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-1dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

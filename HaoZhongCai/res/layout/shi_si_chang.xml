@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/bet_special_top" />
+
+    <LinearLayout
+        android:id="@+id/date_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/term_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2012053期" />
+
+        <TextView
+            android:id="@+id/cut_off_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="投注截止：04-20 22:40"
+            android:textColor="@color/dark_purple" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shi_si_chang_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/top"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none" >
+    </ListView>
+
+    <include
+        android:id="@+id/bottom"
+        layout="@layout/sport_bet_bottom" />
+
+    <ProgressBar
+        android:id="@+id/progress_large"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_round"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/show_fail_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        layout="@layout/show_fail_page"
+        android:visibility="gone" >
+    </include>
+
+</RelativeLayout>

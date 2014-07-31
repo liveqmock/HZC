@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_bar_contaier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bg" >
+
+            <LinearLayout
+                android:id="@+id/user_new_center_title_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <com.haozan.caipiao.view.MarqueeTextView
+                    android:id="@+id/user_new_center_title"
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="个人中心" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/title_btinit_right_rala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/vertical_line" />
+
+                <ImageButton
+                    android:id="@+id/top_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_title"
+                    android:paddingLeft="@dimen/icon_margin"
+                    android:paddingRight="@dimen/icon_margin"
+                    android:src="@drawable/list_icon"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/basic_text_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/warning_inf_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange_text"
+            android:orientation="horizontal"
+            android:padding="@dimen/icon_margin"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/warning_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/dialog_title_icon" />
+
+            <TextView
+                android:id="@+id/warning_inf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_toRightOf="@+id/warning_icon"
+                android:text="@string/new_user_center_perfect_inf"
+                android:textColor="@color/yellow_text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_bar_contaier" >
+
+       <com.haozan.caipiao.widget.RefreshLayout
+            android:id="@+id/user_new_center_pull_refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="0dip"
+            android:orientation="vertical" >
+
+          <com.haozan.caipiao.widget.AutoLoadListView
+                android:id="@+id/bet_history_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:clickable="false"
+                android:divider="@drawable/horzinal_line"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:headerDividersEnabled="false" />
+       </com.haozan.caipiao.widget.RefreshLayout>
+
+       <com.haozan.caipiao.widget.EmptyLayout
+            android:id="@+id/show_fail_page"
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dip"
+            android:gravity="center"
+            android:visibility="gone" />
+
+       <com.haozan.caipiao.widget.TopMenuLayout
+            android:id="@+id/top_menu_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/progress_bar" >
+    </include>
+
+</RelativeLayout>

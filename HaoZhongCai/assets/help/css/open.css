@@ -1,0 +1,11 @@
+h2,h6{height:32px;margin:0;font:bold 14px 宋体;overflow:hidden;height:17px;text-decoration:none;}
+h6{background:url('../image/title_bg.png') repeat-x;color:#c71102;padding:1px 0px 1px 25px;}
+/*tags*/
+.tags_tools{padding-left:10px;text-align:center; border:none;border-bottom:1px solid #ccc;height:30px; position:relative; margin-top:10px;overflow:visible;}
+.tags_tools li{width:89px;height:30px;line-height:30px;font-size:14px;float:left; background:url(file:///android_asset/help/help_icon.png) -96px -185px no-repeat;margin-right:-1px; cursor:pointer;}
+.tags_tools li a{color:#2b2b2b;display:block}
+.tags_tools li a:visited{color:#2b2b2b;}
+.tags_tools .active{background-position:-0px -185px;font-weight:bold; height:31px; margin-bottom:-1px ;color:#2b2b2b;}
+.tags_tools .active a{color:#2b2b2b; border-bottom:1px solid #fff;position:relative; bottom:0px }
+.tags_tools .active a:visited{color:#2b2b2b;}
+.gs_tools .active a:visited{color:#2b2b2b;}

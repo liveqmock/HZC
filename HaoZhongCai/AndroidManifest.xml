@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haozan.caipiao"
+    android:versionCode="3363"
+    android:versionName="3.3.63" >
+
+    <uses-sdk android:minSdkVersion="4" />
+
+    <application
+        android:name=".LotteryApp"
+        android:icon="@drawable/push"
+        android:label="@string/app_name" >
+
+        <!--
+好中彩50bcc47252701566c1000008
+好中彩4f4f35cc52701545bc000001 
+号百彩票4f9a07ea52701575dd000051
+淘彩51bc182156240b55640289c8
+好中彩_深圳内嵌4f4f35cc52701545bc000001好中彩_海豚51e7658e56240ba9a1031bba
+        -->
+
+        <!-- 开发时用 -->
+        <!--
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4f4f35cc52701545bc000001" />
+        ours自己的版本 zzclemark好中彩联想乐市场版本 zzcyimaonline1好中彩亿玛在线1版本 zzcyimaonline2好中彩亿玛在线2版本 zzcyimaonline3好中彩亿玛在线3版本  anfen好中彩安粉市场版本
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="ours" />
+        <meta-data
+            android:name="LOTTERY_PID"
+            android:value="101001" />
+        <meta-data
+            android:name="LOTTERY_KEY"
+            android:value="A4Zgx6B7Yhw18j9f" />
+        <meta-data
+            android:name="LOTTERY_FLURRY"
+            android:value="DDA6N2P8PYB5F843QBCW" />
+        <meta-data
+            android:name="LOTTERY_VERSION"
+            android:value="BUKEIDZZCVH" />
+        <meta-data
+            android:name="TD_APP_ID"
+            android:value="8C02CD9AFF7829F645C2FE7271C59671" />
+        <meta-data
+            android:name="TD_CHANNEL_ID"
+            android:value="ours" />
+        -->
+        <!-- 打包时用 -->
+        <!-- 渠道信息 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="50bcc47252701566c1000008" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="ours" />
+        <meta-data
+            android:name="LOTTERY_PID"
+            android:value="191005" />
+        <meta-data
+            android:name="LOTTERY_KEY"
+            android:value="IoBv9TNKA3yxbaP7" />
+        <meta-data
+            android:name="LOTTERY_FLURRY"
+            android:value="9M5YPTG5J88RZBR3MKXS" />
+        <meta-data
+            android:name="LOTTERY_VERSION"
+            android:value="HZHZIDZZCVH" />
+       
+        <meta-data
+            android:name="TD_APP_ID"
+            android:value="ADD09A44AD4553020875050CC843E49E" />
+        <!-- 
+        <meta-data
+            android:name="TD_CHANNEL_ID"
+            android:value="ours" />
+        -->
+
+
+        <!-- 渠道信息结束 -->
+
+        <!-- 客服MMSDK开始 -->
+        <!--
+                                             需要：客服SDK界面的Activity 
+        <activity
+            android:name="com.mmi.cssdk.ui.ClientChatActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/qplus_theme" >
+        </activity>
+        -->
+
+
+        <!-- 需要：保持客服SDK用户在线的service -->
+        <service android:name="com.mmi.cssdk.main.CSService" />
+        <!-- 需要：android:value填写从网站上获取的APP KEY -->
+        <meta-data
+            android:name="QPLUS_CS_APP_KEY"
+            android:value="1C973BE6-A0C6-11E2-8E7B-3C07546C51A6" />
+        <!-- 客服MMSDK结束 -->
+
+
+        <!-- 聊天室SDK开始 -->
+        <!--
+                                              需要：保持聊天室SDK用户在线的service
+        <activity
+            android:name="com.qplus.sdk.entry.QplusEntryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/qplus_theme" />
+
+        <service android:name="com.qplus.sdk.entry.QplusService" />
+                                            聊天室SDK结束
+        -->
+
+
+        <!-- 个推SDK配置开始 -->
+
+        <meta-data
+            android:name="appid"
+            android:value="8Ezi5jdumDA8FiwcqRo6L2" />
+        <meta-data
+            android:name="appkey"
+            android:value="276si9FeB58gZYTtS4zIn4" />
+        <meta-data
+            android:name="appsecret"
+            android:value="kpRO6guryl6phrj1J21OQ7" />
+        <meta-data
+            android:name="groupid"
+            android:value="" />
+
+        <activity
+            android:name="com.igexin.sdk.SdkActivity"
+            android:excludeFromRecents="true"
+            android:process="com.haozan.caipiao.pushservice"
+            android:taskAffinity="android.task.SdkActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.igexin.action.popupact.com.haozan.caipiao" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.igexin.sdk.coordinator.SdkMsgService"
+            android:exported="true"
+            android:label="NotifyCenterAIDL"
+            android:process="com.haozan.caipiao.pushservice" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.coordinator.NotificationCenterAIDLReceiver" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.refreshls" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.sdk.SdkMainService"
+            android:exported="false"
+            android:label="NotifyCenter"
+            android:process="com.haozan.caipiao.pushservice" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.SdkReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.haozan.caipiao.GexinSdkMsgReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.8Ezi5jdumDA8FiwcqRo6L2" />
+                <!-- com.igexin.sdk.action.第三方的appId -->
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="sdk.download.DownloadService"
+            android:process="com.haozan.caipiao.pushservice" />
+
+        <receiver
+            android:name="sdk.download.DownloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+	
+        <provider
+            android:name="sdk.download.DownloadProvider"
+            android:authorities="sdk.download.com.haozan.caipiao"
+            android:exported="false"
+            android:process="com.haozan.caipiao.pushservice" />
+            
+        <!-- 个推增量升级SDK配置开始 -->
+        <!-- 配置弹框activity -->
+        <activity
+            android:name="com.igexin.increment.activity.IncrementActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 监听增量（全量）更新下推信息 -->
+        <receiver
+            android:name="com.igexin.increment.service.PayloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+
+                <!-- 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 -->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+                <!-- android:name="com.igexin.sdk.action.第三方的appId" -->
+                <action android:name="com.igexin.sdk.action.8Ezi5jdumDA8FiwcqRo6L2" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.increment.service.IncrementService"
+            android:exported="false"
+            android:process=":pushservice" />
+
+        <!-- 增量升级download模块配置 -->
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:exported="false"
+            android:process=":pushservice" />
+        <!-- increment.download.第三方的包名 -->
+        
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="increment.download.com.haozan.caipiao"
+            android:exported="false"
+            android:process=":pushservice" />
+ 
+        <receiver android:name="com.igexin.download.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- ================================================================================= -->
+        <!-- 个推设置结束 -->
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".activity.weibo.AllSearch" >
+        </meta-data>
+        <!-- QQ互联平台 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100440200" />
+            </intent-filter>
+        </activity>
+        <!-- QQ互联平台设置结束 -->
+
+        <activity
+            android:name=".activity.StartUp"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" >
+                </action>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragment.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.Login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.Main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Hall"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FriendlyCrashPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.ssq.SSQActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.qlc.QLCActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.sd.SDActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.syxw.SYXWActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.swxw.SWXWActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.eexw.EEXWActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.cqssc.CQSSCActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.jxssc.JXSSCActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.jlks.JLKSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.swxw.SWXW"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.swxw.BallsTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.dfljy.DFLJYActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.ssl.SSLActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.dlt.DLTActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.pls.PLSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.plw.PLWActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.klsf.KLSFActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.hnklsf.HNKLSFActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.qxc.QXCActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.ssq.SSQBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.qlc.QLCBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.sd.SDBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.swxw.SWXWBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.eexw.EEXWBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.dfljy.DFLJYBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.qxc.QXCBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.ssl.SSLBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.dlt.DLTBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.pls.PLSBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.plw.PLWBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.klsf.KLSFBetComfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.cqssc.CQSSCBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.jxssc.JXSSCBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.jlks.JLKSBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.hnklsf.HNKLSFBetComfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.syxw.SYXWBetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.shisichang.ShisichangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.renxuanjiu.RenXuanJiuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.jczq.JCZQActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.dcsfgg.DCSFGGActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.dcsfgg.DCSFGGBasicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.jclq.JCLQActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.jclq.JCLQBasicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.BetConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.BetCreateGroupBuy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotterychart.TrendChartActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name=".activity.Compass"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BetFootBallTeamListShow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LotteryGameList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StartUpSingle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SubHelp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.RegisterSucTips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PerfectInf"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.serviceweibo.QQAuthorizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.serviceweibo.SinaWeiboAuthorizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userinf.TopupHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userinf.WithdrawHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.topup.RechargeSelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.topup.RechargeFirstPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.topup.TopupSelectBank"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.topup.TopupRecommend"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.topup.MobileRecharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.topup.PhoneCardRecharge"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.topup.ShenZhouFuRecharge"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.topup.BonusRecharge"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.topup.ChinaUnionPaycharge"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.topup.UnicomRecharge"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.topup.WapBankRecharge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.topup.AlipayRecharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.topup.UnionpayDebitCardTopup"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.topup.UnionPayCreditCardTopup"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.topup.SNDARecharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.topup.BankCardNetRecharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.topup.TencentPayTopup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.webbrowser.GeneralWebBrowser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.webbrowser.WebBrowser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.WeiboSelectFansList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.BetSuccessPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.BetSuccessPageNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FindPasswordReq"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.AwardCondition"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GetMessageAuthCodeReq"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.ResetPassword"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.FootBallInstanceScore"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.CaiJinAccountDetail"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.CaiJinList"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.bet.BetPay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.BetPayUnite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.BetPayDigital"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.bet.BetPayUniteDigital"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.BetPayUniteSports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.BetPaySports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bet.BetPayDCSFGG"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OperationTips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userinf.MyLottery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userinf.UserCenter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Feedback"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.guess.CreateMyGuess"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.ModifyPassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.UserInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserInf_ModifyPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.About"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Help"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Helpyou"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PlusMinusLottery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LotteryHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userinf.MessageCenter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NoteListExtention"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.news.LotteryNewsHall"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.news.LotteryNewsOfOneType"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="activity.news.LotteryNewsContentty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.news.NewsCommentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedBackList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.guess.GuessParty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.guess.LotteryGuessHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bethistory.NormalOrderDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bethistory.NormalDigitalOrderDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bethistory.BetOrderDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bethistory.PursuitHistoryDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userinf.UserDetailInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userinf.UserScoreInf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserWithdraw"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.bethistory.FootballBetOrderDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.UserWithdrawExtra"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.LotteryDiviningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LotteryWinningRules"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewsSelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OpenHistory"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.SharePage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.bethistory.JingCaiOrderDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".widget.WeiboDialog"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.AuthorizeWebView"
+            android:screenOrientation="portrait"
+            android:theme="@style/title_style"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.LotteryStatisticsSetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.AllSearch"
+            android:label="@string/search_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".activity.weibo.WeiboHallActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.weibo.WeiboUserHallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.WeiboSearch"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.weibo.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.MyProfileActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="gerden_name"
+                    android:scheme="gerden" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.weibo.NewConmentsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.weibo.NewWeiboActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.weibo.ForwardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.weibo.ConmentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.UpdateMyProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.weibo.BlacklistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.MyWeiboActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.FansList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.Favorite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.FocusList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.WeiboZhengWen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.MyWeiboZhengwen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.FillNiceName"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.UserFansList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.UserFocusList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.UserWeiboList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.UserWeiboZhengwen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.MyComments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.MyForward"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.WeiboHallScroll"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.WeiboTypesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.WeiboList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weibo.WebViewActivity"
+            android:theme="@style/title_style" />
+        <activity
+            android:name=".activity.weibo.WeiboOauthActvity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="WeiboOauthActvity"
+                    android:scheme="myapp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.weibo.AuthorizeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <data
+                    android:host="OAuthActivity"
+                    android:scheme="weibo4andriod" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.serviceweibo.MySinaWeiboAuthorizeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <data
+                    android:host="OAuthActivity"
+                    android:scheme="weibo4andriod" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AdditionalService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RunChartWebview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SportsLotteryHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.JczqAnalyse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GiveLottery"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.bethistory.GiveLotteryDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LotteryHistoryDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.unite.UniteHallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.unite.TestXml"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.unite.UniteHallDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.upomp.lthj.plugin.ui.SplashActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.unionpay.upomp.lthj.android.plugin.init.test" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.lthj.plugin.ui.IndexActivityGroup"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.unionpay.upomp.lthj.android.plugin.index.test" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.lthj.plugin.ui.HomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.lthj.plugin.ui.PayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.lthj.plugin.ui.AccountActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.lthj.plugin.ui.BankCardInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.lthj.plugin.ui.SupportCardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.lthj.plugin.ui.UserProtocolActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.lthj.plugin.ui.AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 新浪微博2.1 -->
+        <activity android:name=".weibo.sdk.demo.RegisActivity" />
+        <activity android:name=".weibo.sdk.demo.MainActivity" />
+        <activity android:name=".weibo.sdk.demo.MainShareActivity" />
+        <activity
+            android:name=".weibo.sdk.demo.RequestMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".weibo.sdk.demo.ResponseMessageActivity" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_RESP_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".APITypeListActivity" >
+        </activity>
+        <activity android:name=".weibo.sdk.demo.ShareActivity" >
+        </activity>
+        <activity android:name=".BlogFunActivity" >
+        </activity>
+        <activity android:name=".CallActivityV3" >
+        </activity>
+
+        <receiver android:name="com.haozan.caipiao.activity.weibo.WeiboReceiverer" >
+            <intent-filter>
+                <action android:name="com.weibo.result" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".db.WholeProvider"
+            android:authorities="com.haozan.db" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- able to create new file int the sd card -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- able to write the sd card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+</manifest>

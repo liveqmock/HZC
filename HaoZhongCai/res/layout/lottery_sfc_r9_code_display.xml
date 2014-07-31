@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lottery_code_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bg"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:id="@+id/view_container_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:button="@drawable/check_box_button_bg"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:focusable="false"
+            android:paddingBottom="10dip"
+            android:paddingRight="5dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/contain_predicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toLeftOf="@+id/lottery_code_index" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lottery_code_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_toLeftOf="@+id/point_to"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/smaller_text_size" />
+
+        <ImageView
+            android:id="@+id/point_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="8dip"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+</RelativeLayout>

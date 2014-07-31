@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0.4"
+        android:background="@drawable/list_left_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_guess_status_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_guess_flag_underline" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/total_score"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="积分累计"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/allScore"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_score"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/large_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="@dimen/icon_margin"
+        android:paddingRight="@dimen/icon_margin"
+        android:paddingTop="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/guess_party_term"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/small_text_size"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="right"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/small_text_size"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/horzinal_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/guess_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="题目"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/large_text_size"
+                android:typeface="monospace" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/icon_margin"
+        android:src="@drawable/arrow_right" />
+
+</LinearLayout>

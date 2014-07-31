@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bet_popup_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/share_to_sina_weibo"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/bet_popup_item_not_choose_user_new_center"
+        android:gravity="center"
+        android:text="分享到新浪"
+        android:textColor="@color/dark_purple"
+        android:textSize="@dimen/basic_text_size" />
+
+    <TextView
+        android:id="@+id/share_to_weixin"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/bet_popup_item_not_choose_user_new_center"
+        android:gravity="center"
+        android:text="分享到微信"
+        android:textColor="@color/dark_purple"
+        android:textSize="@dimen/basic_text_size" />
+
+    <TextView
+        android:id="@+id/share_to_weixin_fans"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/bet_popup_item_not_choose_user_new_center"
+        android:gravity="center"
+        android:text="微信朋友圈"
+        android:textColor="@color/dark_purple"
+        android:textSize="@dimen/basic_text_size" />
+
+    <TextView
+        android:id="@+id/share_to_qq_weibo"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/bet_popup_item_not_choose_user_new_center"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="腾讯微博"
+        android:textColor="@color/dark_purple"
+        android:textSize="@dimen/basic_text_size" />
+
+    <TextView
+        android:id="@+id/share_to_others"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/bet_popup_item_not_choose_user_new_center"
+        android:gravity="center"
+        android:text="其他分享"
+        android:textColor="@color/dark_purple"
+        android:textSize="@dimen/basic_text_size" />
+
+</LinearLayout>

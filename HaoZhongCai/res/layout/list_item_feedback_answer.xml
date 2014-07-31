@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jczq_list_item_bg"
+    android:orientation="horizontal"
+    android:tag="itemview" >
+
+    <LinearLayout
+        android:id="@+id/lyRightLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3.0dip"
+            android:orientation="horizontal" >
+
+            <!-- 昵称 -->
+
+            <TextView
+                android:id="@+id/tvItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:text="昵称"
+                android:textColor="#ff666666"
+                android:textSize="@dimen/basic_text_size" />
+            <!--  -->
+
+            <ImageView
+                android:id="@+id/ivItemV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:saveEnabled="false"
+                android:src="@drawable/v"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3.0dip"
+                android:layout_weight="1.0"
+                android:gravity="right" >
+
+                <!-- 时间 -->
+
+                <TextView
+                    android:id="@+id/tvItemDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="3.0dip"
+                    android:text="7月29日 12：06"
+                    android:textColor="@color/dark_red"
+                    android:textSize="@dimen/smaller_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/layout_013"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <!-- 内容 -->
+
+                <TextView
+                    android:id="@+id/tvItemContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="反馈内容"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <ImageView
+                    android:id="@+id/tubiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip" >
+                </ImageView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

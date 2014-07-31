@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/layout_index"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <TextView
+            android:id="@+id/index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/league"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.8"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/first_team"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/basic_text_size" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/result01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="胜"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+            <TextView 
+                android:id="@+id/bqc_result"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/basic_text_size" />
+
+            <TextView
+                android:id="@+id/second_team"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/basic_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

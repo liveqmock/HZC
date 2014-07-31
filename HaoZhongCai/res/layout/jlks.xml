@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_k3_bet"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/bet_special_top" />
+
+    <include
+        android:id="@+id/tools"
+        android:layout_below="@+id/top"
+        layout="@layout/tool_top_bar" />
+
+    <com.haozan.caipiao.view.CustomScrollView
+        android:id="@+id/scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/lottery_introdution"
+        android:layout_below="@+id/tools"
+        android:layout_marginLeft="@dimen/icon_margin"
+        android:layout_marginRight="@dimen/icon_margin" >
+   </com.haozan.caipiao.view.CustomScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/tools" >
+
+        <LinearLayout
+            android:id="@+id/sub1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bt_left_dis"
+            android:layout_marginRight="@dimen/bt_right_dis"
+            android:layout_marginTop="5dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/sub_title1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_sub1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:text="猜开奖号码相加的和"
+                    android:textColor="@color/white_gray"
+                    android:textSize="@dimen/basic_text_size" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/grid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:horizontalSpacing="2.0dip"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:smoothScrollbar="true"
+                android:soundEffectsEnabled="true"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sub2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub1"
+            android:layout_marginLeft="@dimen/bt_left_dis"
+            android:layout_marginRight="@dimen/bt_right_dis"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/sub_title2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grid1" >
+
+                <TextView
+                    android:id="@+id/tv_sub2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="快速选号"
+                    android:textColor="@color/white_gray"
+                    android:textSize="@dimen/basic_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sub2_re"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/custom_button_redside_unselected"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/sub2_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="三同号通选"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/large_text_size" />
+
+                <TextView
+                    android:id="@+id/sub2_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sub2_tv1"
+                    android:layout_centerHorizontal="true"
+                    android:text="任意一个豹子开出即中40元"
+                    android:textColor="@color/light_white"
+                    android:textSize="@dimen/smaller_text_size" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/grid2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:gravity="center"
+                android:horizontalSpacing="2.0dip"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:smoothScrollbar="true"
+                android:soundEffectsEnabled="true"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sub3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub2"
+            android:layout_marginLeft="@dimen/bt_left_dis"
+            android:layout_marginRight="@dimen/bt_right_dis"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/sub_title3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grid2" >
+
+                <TextView
+                    android:id="@+id/tv_sub3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:text="复选:开奖号码中两个指定的相同号码,奖金15元"
+                    android:textColor="@color/white_gray"
+                    android:textSize="@dimen/basic_text_size" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/grid3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:horizontalSpacing="2.0dip"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:smoothScrollbar="true"
+                android:soundEffectsEnabled="true"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2.0dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lottery_introdution"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_tips_gray"
+        android:gravity="center"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:text=""
+        android:textColor="@color/white_gray"
+        android:textSize="@dimen/small_text_size"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bet_bottom" />
+
+    <include layout="@layout/bet_popup_big_ball_view" />
+
+    <ImageView
+        android:id="@+id/img_help_info_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/img_help_info_bg" />
+
+</RelativeLayout>

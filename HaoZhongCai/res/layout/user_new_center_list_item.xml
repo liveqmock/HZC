@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/list_left_layout"
+        android:layout_width="75dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/list_left_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/icon_margin"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_new_center_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow_text"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/user_new_center_day_of_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/use_new_center_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/icon_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:textColor="@color/yellow_text"
+            android:textSize="@dimen/larger_text_size"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_new_center_children_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="@dimen/icon_margin"
+        android:paddingRight="@dimen/icon_margin"
+        android:paddingTop="10dip" >
+
+        <LinearLayout
+            android:id="@+id/linear_balance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/bet_right_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/user_new_center_lottery_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/large_text_size"
+                android:typeface="monospace" />
+
+            <LinearLayout
+                android:id="@+id/linear_money"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/user_new_center_lottery_order_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/light_purple"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/user_new_center_lottery_order_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:gravity="center"
+                    android:textColor="@color/light_purple"
+                    android:textSize="@dimen/small_text_size"
+                    android:typeface="monospace" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bet_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/icon_margin"
+            android:layout_toLeftOf="@+id/arrow"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_new_center_lottery_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size"
+                android:typeface="monospace" />
+
+            <ImageView
+                android:id="@+id/award_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/award_sign_icon"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/icon_margin"
+            android:paddingLeft="@dimen/small_margin"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+</LinearLayout>

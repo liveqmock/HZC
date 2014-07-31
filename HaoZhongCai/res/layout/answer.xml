@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jczq_list_item_sub_bg"
+    android:orientation="horizontal"
+    android:tag="itemview" >
+
+    <ImageView
+        android:id="@+id/touxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="6dip"
+        android:src="@drawable/feedback_kefu" />
+    <!-- 内容 -->
+
+    <TextView
+        android:id="@+id/kefu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="6dip"
+        android:layout_toRightOf="@+id/touxiang"
+        android:text="客服："
+        android:textColor="#ff666666"
+        android:textSize="@dimen/basic_text_size" />
+
+    <TextView
+        android:id="@+id/tvItemContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kefu"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="6dip"
+        android:layout_toRightOf="@+id/touxiang"
+        android:text="回复内容"
+        android:textColor="#ff414951"
+        android:textSize="@dimen/basic_text_size" />
+
+</RelativeLayout>

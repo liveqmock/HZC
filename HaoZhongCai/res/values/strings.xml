@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- different from haobai -->
+    <string name="broadcast_name">com.haozan.caipiao.service.msg</string>
+    <string name="company">Copyright © 步客（上海）信息科技有限公司</string>
+    <string name="app_name">好中彩</string>
+    <string name="lottery_name">好赞彩票</string>
+    <string name="download_url">http://t.cn/zTKKsW0</string>
+    <!--好中彩差异性 -->
+    <string name="about_content">\t 福彩和体彩官方授权的专业手机彩票投注软件，为您提供安全、便捷的充值、投注、开奖提醒、中奖通知、即时返奖、彩票游戏等服务。\n\n
+		我们会不断更新、改进，竭诚为您服务。</string>
+    <!-- end -->
+
+
+    <!-- different from snda -->
+    <string name="login_timeout">您长时间无操作，请重新登录</string>
+    <string name="login_again">您的账号在另一个地方登录，如果不是您的本人的操作，那么你的密码可能已经泄漏。建议您的修改密码。如有疑问，请拨打客服：021-50328669。</string>
+    <string name="bet_transpont_tips">提示：\n1.以您的昵称分享，确保隐私安全\n2.分享将获得5个积分\n3.可以在”我的动态“里删除不想要的分享</string>
+    <!-- end -->
+
+
+    <!-- the tips in the bottom of page(页面底部提示) -->
+    <string name="menu_tips_hall">点击手机菜单键查看更多内容</string>
+    <string name="menu_tips_weibo_hall">点击手机菜单键可以搜索菜园</string>
+
+    <!-- help part(帮助部分) -->
+    <string name="update_fail">已经是最新版本</string>
+
+    <!-- faq of page(页面帮助部分) -->
+    <string name="helpinf03"><b>1. </b>	中奖后兑奖分三种情况
+		(1).
+		单笔单注奖金少于1万，系统会直接把奖金转到用户的彩票账户，用户可以用来投注或者通过提现功能转到自己的银行卡号。用户可以每月免费提现一次，后续每次提现扣取2元手续费，最低提现额是5元。
+		(2).
+		单笔单注奖金大于1万，小于100万，单注奖金壹万元以上一百万元（含）以下可以选择性委托指定的技术服务商代为兑奖。流程如下：
+		a).中奖者按要求填写委托函，并连同身份证复印件一并快递给指定技术服务商，委托其代为兑奖(兑奖授权委托书请联系我们)；
+		b).直接把中奖奖金扣税后发放到中奖者在授权委托书中指定的银行账户中；
+		c).个人完税证明原件由福利彩票发行中心保留存档。各彩种兑奖期限不同，请中奖者注意须在兑奖期限届满前完成兑奖。中奖者须妥善保管自己身份证以防第三人冒领、代领等。
+		3、单注奖金一百万元以上（不含）必须本人亲自兑奖。
+		\n\n<b>2.</b>提现：每次提现不少于5元，每月第1次提现不收取手续费，其余按照每笔2元代第三方支付平台收取，为配合国家反洗钱政策，充值金额无法提现。
+		\n\n<b>3.</b>		到账时间：用户提交提现请求后系统自动冻结提现奖金，提现金额4~5个工作日内到账，如遇提现失败则冻结金额退还指用户奖金账户，请务必核对银行卡信息填写正确无误。</string>
+    <string name="helpinf05"><b> 1. </b>	选择银行进行充值。\n\n<b>2. </b>	输入充值金额。\n\n<b>3. </b>	去手机银行付款。\n\n<b>4. </b>	登录手机银行。\n\n<b>5. </b>		输入支付密码等信息确认付款。</string>
+
+    <!-- bet(投注部分) -->
+    <string name="unite_order_full_status_tips">方案已满员，期待下次哦</string>
+    <string name="unite_order_win_status_tips">方案中奖咯，好运从这里开始</string>
+
+    <!-- others(其他部分) -->
+    <string name="guess_to_login_tips">您需要登录后才能竞猜</string>
+    <string name="guess_to_topup_tips">余额不足，充值玩积分竞猜</string>
+    <string name="guess_to_buy_integral_tips">积分不足，购买积分参与竞猜</string>
+    <string name="bet_transpont_tips_second">您将分享以下语句：</string>
+    <string name="bet_pay_status_add_more_inf">姓名身份证是领大奖依据，投注前请完善</string>
+    <string name="bet_pay_status_topup">余额不足，请充值</string>
+    <string name="bet_pay_status_login">需要登陆后才可以购彩</string>
+    <string name="joinunite_pay_status_login"> 需要登陆后才可以参与合买 </string>
+    <string name="perfect_inf_dialog_warning">姓名，身份证号码一经确认，不可更改。本中心保证您的信息将不作它用。请再次检查！如需帮助请与客服联系。</string>
+    <string name="network_not_avaliable">连网失败\n看看网络是否打开...</string>
+    <string name="user_perfect_inf_warning01"><b>温馨提示</b>：\n（1）姓名和身份证是兑奖凭证，请务必填写真实信息。</string>
+    <string name="user_perfect_inf_warning02">（2）请在填写真实姓名及身份证信息后充值，充值时系统会校验注册身份信息。如需修改请联系客服。</string>
+    <string name="to_add_inf_tips">投注属于数字无纸化彩票服务，所有购买的彩票绑定了用户的手机号码，真实姓名，身份证号个人详细信息，通过电子订单方式实时提交到福彩中心完成处理，确保投注安全有效。</string>
+    <string name="inf_getting">数据获取中</string>
+    <string name="search_fail">查询失败\n过一会儿再试试吧..</string>
+    <string name="no_more_data">已无更多记录</string>
+    <string name="get_again">点击再次尝试</string>
+    <string name="inf_getting_fail">数据查询不成功</string>
+    <string name="bet_order_tips">投注受福彩体彩监控，官网品质安全放心！\n有疑问可凭订单号联系客服。</string>
+    <string name="bet_award_tips">	您中奖了！我们也替您开心！您可以在提现页面里查看提现注意事项。\n你也可以点击下面分享中奖的按钮，跟你的家人朋友分享中奖的快乐！\n如果还有疑问，可凭订单号联系客服。</string>
+    <string name="find_password_req_tip">提示：请输入您注册的手机号码，提交成功后按照提示操作。</string>
+    <string name="get_message_auth_code_tip">提示：请输入图片中所示的数字，点击图片可以刷新。</string>
+    <string name="withdraw_tip01">温馨提示：\n1.提现最低金额5元，每次提现金额上限2万。</string>
+    <string name="withdraw_tip02">2.每月第1次提现不收取手续费，后续按照每笔2元代第三方支付平台收取，并在提现金额中扣除。</string>
+    <string name="withdraw_tip03">3.提现金额一般在2个工作日内(不包括周六日)到账，部分银行如邮政较慢请耐心等待，周一到周四提现速度较快。</string>
+    <string name="search_name">查询</string>
+    <string name="searchHint">请输入您想要查询的内容</string>
+    <string name="zhiweiwarning">谋事在人,成事在天,彩票有风险,购买需谨慎</string>
+    <string name="weibozhengwen">动态正文</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">下拉刷新</string>
+    <string name="award_notice_service01">               当你所购买的彩票中奖时，我们将会以短信方式来通知您，确保您及时领奖。</string>
+    <string name="award_notice_service02_01">本服务自成功定制后马上生效，每周一自动扣除积分</string>
+    <string name="award_notice_service02_02">，不足一个星期按照每天</string>
+    <string name="award_notice_service02_03">分计算。本服务可随时定阅或取消。取消服务，已扣积分不会返还。</string>
+    <string name="award_notice_service03">定制请按”订阅“。</string>
+    <string name="award_notice_service04">您好，以下操作会取消中奖短信通知服务。本服务成功取消后，我们将不会以短信方式来 通知你中奖。欢迎您再次定制。</string>
+    <string name="caijing_message01">提示：\n（1）彩金可用于所有彩种的购买，不可提现。\n（2）请在彩金失效时间前使用彩金，过期不使用彩金会失效并回收。\n（3）彩金余额将会优先进行使用。</string>
+
+    <!-- 下拉刷新 -->
+    <string name="lottery_divining_info">幸运选号每日提供财运信息及幸运号码,赶快测测您今天的手气吧！</string>
+    <string name="bet_success_info">万元以下直接返账户，万元以上专人联系</string>
+    <string name="new_user_center_perfect_inf">完善信息，中奖后领奖凭证</string>
+    <!-- 微信相关 -->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <!-- 用户提交竞猜题目提示 -->
+
+    <string name="commit_guess_info">1.请按照下列格式提交题目：
+		4月27日《天气预报》主持人的性别？\n
+		A.男 B.女\n
+		2.一经采用，将奖励提交者300积分，并在题目后面注明提交者的昵称。如有相同，我们会采用第一个提交者的。</string>
+    <string name="hk_head_infomation">你可以选择ATM机，柜台或者网上银行进行转 账。</string>
+    <string name="hk_tips01">温馨提示:\n
+1.为快速核对到账情况以便为您及时充值，您可以在转账时多转账几分钱便于核查，如200.01元。</string>
+    <string name="hk_tips02">2.转账成功后，请拨打好赞客服电话021-61319635，向客服人员说明转账相关信息。
+如“银行名称+购彩账号+姓名+转账金额”。</string>
+    <string name="hk_tips03">3.汇款后请尽量保留相关凭证，然后在银行转账凭证注明账号后传真到  021-61319635或者发送照片或扫描到service@haozan88.com。</string>
+    <string name="hk_tips04">4.周一至周五9点-17点的转账当天处理，17点以后的转账次日处理，节假日顺延。</string>
+    <string name="bet_info_share_to_caiyuan">投注信息分享财园</string>
+    <string name="bet_location_share_to_caiyuan">投注地点分享财园</string>
+
+</resources>

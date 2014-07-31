@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/analyse_yapei"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 亚赔数据 -->
+
+    <LinearLayout
+        android:id="@+id/rate_part"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/odds_sub_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:text="赔率公司"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="水位"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:text="让球"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="水位"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/light_gray" />
+
+        <ListView
+            android:id="@+id/list_odds"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_large"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_round"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/show_fail_page"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/show_fail_page"
+        android:visibility="invisible" >
+    </include>
+
+</RelativeLayout>

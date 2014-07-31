@@ -1,0 +1,197 @@
+body{ -webkit-text-size-adjust: none; font-size: 18px;}
+.page { height:32px; padding:15px 0 20px 0; width:95%; font-size:13px; position:relative; margin: 0 auto;}
+.up, .down, .up_no, .down_no { height:28px; line-height:28px; color:#FFF; display:inline; position:absolute; top:15px;}
+
+.page_i { font-size:14px; text-align:center; width: 95%; margin: 0 auto; }
+.page_i .rest {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    color: #1f376d;
+    margin-right: 4px;
+    width: 62px;
+    text-align: center;
+}
+
+.multiCols a {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    float: left;
+	font-size:16px;
+    display: block;
+}
+.cols5 a { width: 20%; }
+.cols6 a { width: 16.2%; }
+
+
+.lr2 a, lr2 img{ display:block;}
+.lr2{ overflow:hidden; border-bottom:1px solid #E3E1E1}
+.lr2 .l, .lr2 .r{width:50%; float:left;}
+.lr2 .pic{padding:8px; width:130px}
+.lr2 .l .pic{float:right}
+.lr2 .r .pic{float:left}
+
+
+.more{ float:right; padding-right:5px;}
+
+.link_c { padding:5px 10px; line-height:25px; white-space:normal; word-break:normal; color:#000; border-bottom:1px solid #e9e7e7; font-size:15px;}
+.link_c span { color:#777; font-size:14px;}
+.form { margin:15px 10px; overflow:hidden;}
+.form textarea { display:block; border:1px solid #ACACAC; color:#292929; font-size:15px; width:98%; height:50px; line-height:25px; margin-bottom:10px;-webkit-border-radius:0;}
+.zc_dl { float:left; color:#1F376D; font-size:14px; line-height:26px;}
+.zc_dl a { color:#1f376d;}
+.fr { float:right;}
+.nm { -webkit-border-radius:0;}
+.btn {
+   
+    border: none;
+    color: #1F376D;
+    font-size: 15px;
+    height: 28px;
+    width: 88px;
+    cursor: pointer;
+}
+.content_title h1{ color:#1F376D; font-size:20px; line-height:28px; margin-top: 5px;}
+.content_title h2{ color:#868686; font-size:14px; line-height:22px; font-weight:normal;}
+
+/*通用*/
+body .fz-20 {
+	font-size: 20px;
+}
+.clear {
+	display: block;
+	height: 1px;
+	font-size: 1px;
+	line-height: 1px;
+	clear: both;
+}
+.afterClear:after {
+	content: ".";
+	display: block;
+	height: 0px;
+	visibility: hidden;
+	clear: both;
+}
+.zoom-ie6-7 {
+	_zoom: 1;
+}
+.float-r {
+	float: right;
+}
+.padding-r-5 {
+	padding-right: 5px;
+}
+.color-1F376D {
+	color: #1F376D;
+}
+
+/*面包屑*/
+.nav2 {
+    no-repeat 0px 50%;
+	padding-left: 22px;
+	color: #1F376D;
+}
+
+/**/
+.ctPageTop:after {
+	display: block;
+	height: 0px;
+	visibility: hidden;
+	clear: both;
+	content: ".";
+}
+.ctPageTop {
+	*zoom: 1;
+	/*padding: 8px;
+	height: 35px;
+	overflow: hidden;*/
+    repeat-x 0px 100%;
+	padding: 0px 8px;
+}
+.ctPageTop a {
+	line-height: 68px;
+}
+.ctPageTop .logo {
+	float: left;
+	padding-top: 6px;
+}
+.ctPageTop .share {
+	/*background: url("http://xuan.3g.cn/res/i/content/share1.png") no-repeat 0px 0px;
+	display: inline-block;
+	width: 40px;
+	height:  40px;
+	float: right;*/
+	display: inline-block;
+	width: 24px;
+	height:  24px;
+	float: right;
+	margin-top: 7px;
+}
+.ctPageTop .size {	
+	/*display: inline-block;
+	width: 40px;
+	height:  40px;
+	float: right;*/
+	display: inline-block;
+	width: 24px;
+	height:  24px;
+	float: right;
+	margin-top: 7px;
+}
+.ctPageTop .charBig {
+	/*background: url("http://xuan.3g.cn/res/i/content/size2.png") no-repeat 0px 0px;*/
+}
+.ctPageTop .charSmall {
+	/*background: url("http://xuan.3g.cn/res/i/content/size1.png") no-repeat 0px 0px;*/
+}
+.ctPageTop .lineBg {
+	/*background: url("http://xuan.3g.cn/res/i/content/topBg2.png") no-repeat 0px 50%;
+	display: inline-block;
+	height:  100%;
+	margin: 0px 8px;
+	float: right;
+    height: 44px;
+    width: 7px;*/
+	display: inline-block;
+	height:  100%;
+	margin: 0px 8px;
+	float: right;
+    height: 44px;
+    width: 7px;
+}
+
+/*分页*/
+.page2 {
+    font-size: 13px;
+    height: 32px;
+    margin: 0 auto;
+    padding: 15px 0 20px;
+    position: relative;
+    width: 95%;
+}
+.page2 .up, 
+.page2 .down, 
+.page2 .up_no, 
+.page2 .down_no {
+	height: 32px;
+}
+.page2 .up_no {
+	color: #707070;
+}
+.page2 .up {
+}
+.page2 .down {
+}
+.page2 .down_no {
+	color: #707070;
+}
+.page2 .page_i .rest {
+
+}
+
+.content-apppop1{padding-left: 8px;text-align: left;}
+/*.content-apppop1 img{width:16px;height:16px;}*/
+.content-apppop1 a{font-size:15px;}
+/*.content-apppop2 img{width:32px;height:32px;}*/
+.content-apppop2 a{font-size:15px;}

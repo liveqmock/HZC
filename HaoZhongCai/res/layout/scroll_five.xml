@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/five_typeName"
+        style="@style/nickname_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:text="高频彩"
+        android:textColor="@color/dark_purple"
+        android:textSize="@dimen/large_text_size" />
+    <!-- 第一行 -->
+
+    <LinearLayout
+        android:id="@+id/four_LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/five_typeName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/syxwly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image411"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_jx11x5_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image411"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="11选5"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+        <!-- 时时彩 -->
+
+        <RelativeLayout
+            android:id="@+id/square_cqsscly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image_cqssc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_cqssc_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_cqssc"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="时时彩"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+        <!-- 湖南快乐十分 -->
+
+        <RelativeLayout
+            android:id="@+id/square_hnklsfly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_hnklsf_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image01"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="快乐十分"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 第二行 -->
+
+    <LinearLayout
+        android:id="@+id/four_LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/four_LinearLayout01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/jxsscly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image_jxssc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_jxssc_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_jxssc"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="新时时彩"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jlksly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image_jlks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_jlks_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_jlks"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="新快三"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+        <!-- 快乐十分 -->
+
+        <RelativeLayout
+            android:id="@+id/square_klsfly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/image01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_klsf_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image01"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="快乐十分"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/foot_ballbet_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jczq_list_item_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_index"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/match_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/match_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/show_analyse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/tab_divide_line" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="0.8"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/the_home_team"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <TextView
+                    android:id="@+id/the_vs_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:text="VS"
+                    android:textColor="@color/dark_purple" />
+
+                <TextView
+                    android:id="@+id/the_guess_team"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingRight="20dip"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/game_win"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button_redside_unselected"
+                        android:text="胜"
+                        android:textColor="@color/dark_purple" />
+
+                    <ImageView
+                        android:id="@+id/img_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="4dip"
+                        android:background="@drawable/sports_selected_log"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/game_equal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/custom_button_redside_unselected"
+                        android:text="平"
+                        android:textColor="@color/dark_purple" />
+
+                    <ImageView
+                        android:id="@+id/img_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="4dip"
+                        android:background="@drawable/sports_selected_log"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/game_lost"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/custom_button_redside_unselected"
+                        android:text="负"
+                        android:textColor="@color/dark_purple" />
+
+                    <ImageView
+                        android:id="@+id/img_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="4dip"
+                        android:background="@drawable/sports_selected_log"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/game_dan_ma"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/custom_button_redside_unselected"
+                    android:enabled="false"
+                    android:text="胆"
+                    android:textColor="@color/dark_purple"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

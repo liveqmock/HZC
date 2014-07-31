@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.6"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/small_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="初盘"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/small_text_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="即时"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/init_water1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/current_water1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.6"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/init_odds"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/current_odds"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/init_water2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/current_water2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

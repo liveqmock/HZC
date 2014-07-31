@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/initName"
+            style="@style/title"
+            android:text="罗盘" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/OrientText"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:gravity="center"
+        android:textColor="@color/light_white"
+        android:textSize="18dip" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OrientText"
+        android:layout_margin="10dip"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/compass_lay1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" >
+
+                    <TextView
+                        android:id="@+id/compass_north"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="北"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="@dimen/large_text_size"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/compass_north"
+                        android:text="玄武位"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="@dimen/smaller_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/compass_lay0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/compass_lay1" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/ivCompass" >
+
+                        <TextView
+                            android:id="@+id/compass_west"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="西"
+                            android:textColor="@color/dark_purple"
+                            android:textSize="@dimen/large_text_size"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/compass_west"
+                            android:layout_marginTop="13dip"
+                            android:singleLine="true"
+                            android:text="白虎位"
+                            android:textColor="@color/dark_purple"
+                            android:textSize="@dimen/smaller_text_size" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/ivCompass"
+                        android:layout_width="180dip"
+                        android:layout_height="180dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="10dip"
+                        android:src="@drawable/compass" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/ivCompass" >
+
+                        <TextView
+                            android:id="@+id/compass_east"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="东"
+                            android:textColor="@color/dark_purple"
+                            android:textSize="@dimen/large_text_size"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/compass_east"
+                            android:layout_marginTop="13dip"
+                            android:singleLine="true"
+                            android:text="青龙位"
+                            android:textColor="@color/dark_purple"
+                            android:textSize="@dimen/smaller_text_size" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/compass_lay0"
+                    android:layout_centerHorizontal="true" >
+
+                    <TextView
+                        android:id="@+id/compass_south"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="南"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="@dimen/large_text_size"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/compass_south"
+                        android:text="朱雀位"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="@dimen/smaller_text_size" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/OrientValue"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center|center_vertical"
+                android:text="NESW"
+                android:textColor="#FF000000"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

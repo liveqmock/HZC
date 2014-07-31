@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/newCmtextView"
+            style="@style/title" />
+
+        <ImageView
+            android:id="@+id/weibo_right_button_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dip"
+            android:layout_toRightOf="@+id/title_btinit_left"
+            android:src="@drawable/vertical_line" />
+
+        <Button
+            android:id="@+id/title_btinit_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_title"
+            android:paddingLeft="@dimen/bt_left_dis"
+            android:paddingRight="@dimen/bt_left_dis"
+            android:text="发表动态"
+            android:textColor="@color/white"
+            android:textSize="@dimen/basic_text_size" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/vertical_line" />
+
+            <Button
+                android:id="@+id/title_btinit_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_title"
+                android:textColor="@color/white" >
+            </Button>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_search_nor_title" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="@drawable/top_tips_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="您有新的消息，点击查看"
+            android:textColor="@color/red"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/circle_red"
+            android:gravity="center"
+            android:text="新"
+            android:textColor="@color/white"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+    <com.haozan.caipiao.util.scroll.MyScrollLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layout_update"
+        android:scrollbars="none" >
+
+        <!-- 页面一 -->
+
+        <ScrollView
+            android:id="@+id/scrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <include
+                android:id="@+id/scroll_one"
+                layout="@layout/scroll_one" />
+        </ScrollView>
+
+        <!-- 页面二 -->
+
+        <ScrollView
+            android:id="@+id/scrollView02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <include
+                android:id="@+id/scroll_two"
+                layout="@layout/scroll_two" />
+        </ScrollView>
+
+        <!-- 页面三 -->
+
+        <ScrollView
+            android:id="@+id/scrollView03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <include
+                android:id="@+id/scroll_three"
+                layout="@layout/scroll_three" />
+        </ScrollView>
+
+        <!-- 页面四 -->
+
+        <ScrollView
+            android:id="@+id/scrollView04"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <include
+                android:id="@+id/scroll_four"
+                layout="@layout/scroll_four" />
+        </ScrollView>
+
+        <!-- 页面五 -->
+
+        <ScrollView
+            android:id="@+id/scrollView05"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <include
+                android:id="@+id/scroll_five"
+                layout="@layout/scroll_five" />
+        </ScrollView>
+   </com.haozan.caipiao.util.scroll.MyScrollLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24.0dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/guide_round_frist" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/guide_round_second" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/guide_round_third" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/guide_round_fourth" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/guide_round_fifth" />
+    </LinearLayout>
+
+</RelativeLayout>

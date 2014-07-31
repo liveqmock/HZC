@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hall_item"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/bet_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/large_text_size" />
+
+        <ImageView
+            android:id="@+id/bet_item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/small_margin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/history_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@drawable/hall_item_bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/small_margin" >
+
+            <TextView
+                android:id="@+id/bet_term"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第            期"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/bet_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:textColor="@color/dark_red"
+                android:textSize="@dimen/small_text_size" />
+
+            <com.haozan.caipiao.widget.PredicateLayout
+                android:id="@+id/open_balls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bet_term"
+                android:layout_toLeftOf="@+id/search_history_inf" />
+
+            <TextView
+                android:id="@+id/search_history_inf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/bet_term"
+                android:layout_marginRight="@dimen/small_margin"
+                android:drawableRight="@drawable/red_right_arrow"
+                android:text="查奖"
+                android:textColor="@color/red_text"
+                android:textSize="@dimen/small_text_size" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/hall_item_dev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hall_item_divider" />
+
+        <RelativeLayout
+            android:id="@+id/bet_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@drawable/hall_item_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新一期:"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/lottery_jackpot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/bet_count_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lottery_jackpot"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@color/dark_red"
+                android:textSize="@dimen/basic_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/lottery_jackpot"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hall_bet"
+                android:gravity="center"
+                android:text="立即投注"
+                android:textColor="@color/dark_red"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

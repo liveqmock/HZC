@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- the standard -->
+    <dimen name="title_text_size">18.0dp</dimen>
+    <dimen name="most_large_text_size">45.0dp</dimen>
+    <dimen name="largest_text_size">28.0dp</dimen>
+    <dimen name="larger_text_size">20.0dp</dimen>
+    <dimen name="large_text_size">18.0dp</dimen>
+    <dimen name="basic_text_size">16.0dp</dimen>
+    <dimen name="small_text_size">14.0dp</dimen>
+    <dimen name="smaller_text_size">12.0dp</dimen>
+    <dimen name="smallest_text_size">10.0dp</dimen>
+    <dimen name="button_width">200dp</dimen>
+    <dimen name="two_button_width">120dp</dimen>
+    <dimen name="normal_margin">15dp</dimen>
+    <dimen name="icon_margin">6dp</dimen>
+    <dimen name="small_margin">2dp</dimen>
+    <dimen name="bet_popup_num_width">35dp</dimen>
+
+    <!-- end -->
+
+
+    <!-- 微博授权对话框 -->
+    <dimen name="dialog_left_margin">5dp</dimen>
+    <dimen name="dialog_top_margin">40dp</dimen>
+    <dimen name="dialog_right_margin">5dp</dimen>
+    <dimen name="dialog_bottom_margin">5dp</dimen>
+    <dimen name="dialog_btn_close_right_margin">10dp</dimen>
+    <dimen name="dialog_btn_close_top_margin">10dp</dimen>
+    <dimen name="dialog_title_height">30dp</dimen>
+    <!-- 财园搜索 -->
+    <dimen name="searchbar_padding">5.0px</dimen>
+    <dimen name="searchbar_radiobutton_padding">40.0dip</dimen>
+    <dimen name="searchbar_radiobutton_padding_user">55.0dip</dimen>
+
+    <!-- 页面顶部菜单按钮，分隔线 -->
+    <dimen name="bt_left_dis">4.0dip</dimen>
+    <dimen name="bt_right_dis">4.0dip</dimen>
+    <!-- 充值提示左边间距 -->
+    <dimen name="recharge_tips_left_dis">15.0dip</dimen>
+    <!-- 充值提交按钮左右边边间距 -->
+    <dimen name="recharge_bt_right_dis">15.0dip</dimen>
+    <dimen name="recharge_bt_left_dis">15.0dip</dimen>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="bottle_green">#458B00</color>
+    <color name="golden">#EEEE00</color>
+    <color name="light_black">#363636</color>
+    <color name="light_golden">#FFDFAC</color>
+    <color name="hoary">#EDEDED</color>
+    <color name="dark_gray">#ff888888</color>
+    <color name="middle_gray">#B3B3B3</color>
+    <color name="gray_light_for_list">#F1F1F1</color>
+    <color name="gray_dark_for_list">#D9D9D9</color>
+    <color name="light_gray">#B8B8B8</color>
+    <color name="lightgrey">#D3D3D3</color>
+    <color name="user_new_center_header_bg">#171719</color>
+    <color name="user_new_center_balance_score_text">#d6d6d6</color>
+    <color name="title">#53361e</color>
+    <color name="title_shadow">#fbedcc</color>
+    <color name="light_purple">#707070</color>
+    <color name="dark_purple">#34312e</color>
+    <color name="light_white">#34312e</color>
+    <color name="white_gray">#d0d0d0</color>
+    <color name="red_text">#bc1514</color>
+    <color name="dark_red">#610000</color>
+    <color name="light_red">#ebc7c7</color>
+    <color name="blue_text">#1c71d9</color>
+    <color name="gray_text">#dedede</color>
+    <color name="yellow_text">#734811</color>
+    <color name="orange_text">#fff0d1</color>
+    <color name="orange_bg">#f0eae1</color>
+    <color name="orange_bg_new">#f3f3ef</color>
+    <color name="orange_bg_middle">#f56108</color>
+    <color name="yellow_light">#beaa96</color>
+    <color name="yellow_lightter">#C2AF9C</color>
+    <color name="black_light">#2f343d</color>
+    
+    <color name="trend_chart_top">#e9e0d3</color>
+    <color name="trend_chart_term1">#f8f1e6</color>
+    <color name="trend_chart_term2">#f2ebde</color>
+    <color name="trend_chart_content">#fff0d1</color>
+    <color name="trend_chart_selected_column">#e3ddd1</color>
+    <color name="trend_chart_line">#c5bfb4</color>
+    <color name="red_ball">#e45c5c</color>
+    <color name="blue_ball">#3876ca</color>
+    <color name="blue">#817ce2</color>
+    
+    <color name="k3_custom_button_normal">#431504</color>
+    <color name="k3_custom_button_disabled">#6a2f19</color>
+    <color name="k3_bet_custom_button">#5a2e13</color>
+
+    <!-- 银联充值 -->
+    <color name="black">#FF000000</color>
+    <color name="gray">#FF888888</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    
+    <color name="yellow">#FFFFFF00</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#FFFFAC22</color>
+    <color name="orange_transparent">#7FFFAC22</color>
+    <color name="sports_history_bk_01">#FFD0E3FF</color>
+    <color name="sports_history_bk_02">#FFCCDAFF</color>
+
+</resources>

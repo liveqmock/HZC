@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_top_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:gravity="center" >
+
+        <TextView
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="双色球走势图" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none" >
+
+        <com.haozan.caipiao.view.lotterychart.ZoushituFrame
+            android:id="@+id/table_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+       </com.haozan.caipiao.view.lotterychart.ZoushituFrame>
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <LinearLayout
+            android:id="@+id/bet_help_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_title"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/bet_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/questionmark" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dip"
+            android:layout_toRightOf="@+id/bet_help_lin"
+            android:src="@drawable/vertical_line" />
+
+        <RelativeLayout
+            android:id="@+id/bet_top_term_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/league_filter_lin"
+            android:layout_toRightOf="@+id/bet_help_lin"
+            android:background="@drawable/btn_title"
+            android:paddingLeft="@dimen/icon_margin"
+            android:paddingRight="@dimen/icon_margin" >
+
+            <TextView
+                android:id="@+id/bet_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size" />
+
+            <ImageView
+                android:id="@+id/arrow_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/searchbar_padding"
+                android:layout_toRightOf="@+id/bet_title"
+                android:src="@drawable/arrow_down_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/league_filter_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/vertical_line" />
+
+            <Button
+                android:id="@+id/league_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_title"
+                android:drawableRight="@drawable/arrow_down_white"
+                android:paddingLeft="@dimen/icon_margin"
+                android:paddingRight="@dimen/icon_margin"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_temp1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:background="@drawable/top_tips_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:gravity="center"
+            android:text="赛事"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/tv_jczq_zhusign"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="主场(让球)"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/light_gray" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="客场"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/ll_temp1" >
+
+        <com.haozan.caipiao.widget.CustomExpandleListView
+            android:id="@+id/match_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottom"
+        layout="@layout/bet_sports_bottom_jczq" />
+
+    <ProgressBar
+        android:id="@+id/progress_large"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_round"
+        android:visibility="gone" />
+
+</RelativeLayout>

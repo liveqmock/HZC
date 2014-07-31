@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_bg" >
+
+    <TextView
+        android:id="@+id/newCmtextView"
+        style="@style/title" />
+
+    <ImageView
+        android:id="@+id/vertical_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-2dip"
+        android:layout_toRightOf="@+id/title_btinit_left_rela"
+        android:src="@drawable/vertical_line"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/title_btinit_left_rela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/title_btinit_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_title"
+            android:paddingLeft="@dimen/bt_left_dis"
+            android:paddingRight="@dimen/bt_left_dis"
+            android:textColor="@color/white"
+            android:textSize="@dimen/basic_text_size" >
+        </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_btinit_right_rala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/vertical_line" />
+
+        <Button
+            android:id="@+id/title_btinit_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_title"
+            android:paddingLeft="@dimen/bt_left_dis"
+            android:paddingRight="@dimen/bt_left_dis"
+            android:textColor="@color/white"
+            android:textSize="@dimen/basic_text_size" >
+        </Button>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/title_reflash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dip"
+        android:textColor="@color/light_white"
+        android:textSize="@dimen/basic_text_size"
+        android:visibility="gone" >
+    </Button>
+
+    <ProgressBar
+        android:id="@+id/reloadProgress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dip"
+        android:indeterminateDrawable="@drawable/progress_round"
+        android:indeterminateOnly="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="积分明细"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size" />
+
+        <LinearLayout
+            android:id="@+id/score_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_title"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/bet_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/questionmark" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dip"
+            android:layout_toRightOf="@+id/score_help"
+            android:src="@drawable/vertical_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/integral_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:background="@drawable/bottombg" >
+
+        <TextView
+            android:id="@+id/integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/icon_margin"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/icon_margin"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="center"
+            android:text="购买积分    "
+            android:textColor="@color/blue"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/point_reward_layout"
+        android:layout_below="@+id/integral_layout"
+        layout="@layout/include_new_viewpager_listview" />
+
+    <RelativeLayout
+        android:id="@+id/point_reward_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombg" >
+
+        <Button
+            android:id="@+id/point_reward"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/icon_margin"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="积分商城，兑礼品"
+            android:textColor="@color/custom_button"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/progress_bar" />
+
+</RelativeLayout>

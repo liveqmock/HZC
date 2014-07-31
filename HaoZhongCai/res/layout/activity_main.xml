@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_hall_bottom" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/tab_hall"
+                    style="@style/main_tab_bottom"
+                    android:src="@drawable/main_tab_hall" />
+                
+                <ImageButton
+                    android:id="@+id/tab_groupbuy"
+                    style="@style/main_tab_bottom"
+                    android:src="@drawable/main_tab_groupbuy" />
+
+                <ImageButton
+                    android:id="@+id/tab_news"
+                    style="@style/main_tab_bottom"
+                    android:src="@drawable/main_tab_news" />
+
+                <ImageButton
+                    android:id="@+id/tab_wealth_garden"
+                    style="@style/main_tab_bottom"
+                    android:src="@drawable/main_tab_garden" />
+
+                <ImageButton
+                    android:id="@+id/tab_my_lottery"
+                    style="@style/main_tab_bottom"
+                    android:src="@drawable/main_tab_usercenter" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        layout="@layout/progress_bar" />
+
+</TabHost>

@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/list_left_layout"
+        android:layout_width="60dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/list_left_bg_with_line"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/withdraw_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow_text"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/withdraw_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow_text"
+            android:textSize="@dimen/larger_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/list_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/withdraw_money"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/large_text_size" />
+
+            <TextView
+                android:id="@+id/withdraw_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_toLeftOf="@+id/withdraw_money"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+
+            <TextView
+                android:id="@+id/withdraw_bank"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/withdraw_status"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_toLeftOf="@+id/withdraw_money"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/small_text_size" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/horzinal_line" />
+    </LinearLayout>
+
+</LinearLayout>

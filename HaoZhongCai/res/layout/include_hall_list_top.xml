@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:layout_marginTop="@dimen/icon_margin"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/app_center"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:background="@drawable/hall_item"
+        android:drawableLeft="@drawable/icon_hall_game"
+        android:gravity="center"
+        android:paddingLeft="@dimen/normal_margin"
+        android:text="应用大厅"
+        android:textColor="@color/black"
+        android:textSize="@dimen/basic_text_size" />
+
+    <TextView
+        android:id="@+id/point_reward"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:background="@drawable/hall_item"
+        android:drawableLeft="@drawable/icon_hall_market"
+        android:gravity="center"
+        android:paddingLeft="@dimen/normal_margin"
+        android:text="积分乐园"
+        android:textColor="@color/black"
+        android:textSize="@dimen/basic_text_size" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/analyse_duizhen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 对阵数据 -->
+
+    <LinearLayout
+        android:id="@+id/analyse_part"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <com.haozan.caipiao.widget.CustomExpandleListView
+            android:id="@+id/match_list"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_large"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_round"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/show_fail_page"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/show_fail_page"
+        android:visibility="invisible" >
+    </include>
+
+</RelativeLayout>

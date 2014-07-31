@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/bottombg" >
+
+    <ImageView
+        android:id="@+id/sport_bet_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/icon_margin"
+        android:background="@drawable/custom_button"
+        android:enabled="false"
+        android:src="@drawable/img_clear_src"
+        android:text=""
+        android:textSize="@dimen/large_text_size" />
+
+    <TextView
+        android:id="@+id/sport_bet_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/random_button"
+        android:layout_toRightOf="@+id/sport_bet_clear"
+        android:gravity="center_horizontal"
+        android:text="金额：0元"
+        android:textColor="@color/light_white" >
+    </TextView>
+
+    <Button
+        android:id="@+id/random_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dip"
+        android:layout_toLeftOf="@+id/sport_bet_make_a_order"
+        android:background="@drawable/custom_button"
+        android:text=" 低 赔 "
+        android:textColor="@color/light_white"
+        android:textSize="@dimen/large_text_size" />
+
+    <Button
+        android:id="@+id/sport_bet_make_a_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/custom_button_highlight"
+        android:enabled="false"
+        android:text="  购 彩  "
+        android:textColor="@color/custom_button_highlight"
+        android:textSize="@dimen/large_text_size" />
+
+</RelativeLayout>

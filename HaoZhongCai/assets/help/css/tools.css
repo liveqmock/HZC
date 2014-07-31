@@ -1,0 +1,11 @@
+.tools_xuandan{border:solid 1px #c7d1e3;width:45%;height:138px;float:left;}
+.tools_xuandan ul{list-style:none;padding:0 0 0 0;margin:0;float:left;}
+.tools_xuandan ul li{color:#1164b1;font:normal 11px 宋体;margin-bottom:5px;}
+.tools_xuandan ul.ssq_dt li{margin-bottom:4px;}
+.tools_xuandan ul li span{color:#c71102;font:bold 12px 宋体;}
+.tools_table{width:96%;height:363px;margin-top:6px; margin-bottom:20px; float:left; }
+.tools_table table{width:96%;height:300px;font:normal 14px 宋体;text-align:center;border-collapse:collapse;}
+.tools_table table th{color:#1164b1;border:solid 1px #c7d1e3;height:32px;background-color:#d8d8d8;}
+.tools_table table tr.tr_color1{background-color:#edf1f8;}
+.tools_table table tr td{border:solid 1px #c7d1e3;height:32px;}
+.tools_main_left{float:left;width:100%;margin-right:6px;overflow:hidden;padding:0 0 10px 0;}

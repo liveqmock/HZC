@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/bet_kind"
+            style="@style/title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bet_inf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_margin="10dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/bet_term"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/bet_time_inf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="离截止："
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/bet_countdown_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bet_add_operation_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8.0dip" >
+
+            <Button
+                android:id="@+id/add_manual_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/custom_button"
+                android:drawableLeft="@drawable/icon_add"
+                android:drawablePadding="@dimen/small_margin"
+                android:text="增加手选号码"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" >
+            </Button>
+
+            <Button
+                android:id="@+id/add_random_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/custom_button"
+                android:drawableLeft="@drawable/icon_add"
+                android:drawablePadding="@dimen/small_margin"
+                android:text="增加机选号码"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/bet_inf"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:text="已选择的号码如下"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/choosing_balls_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 合买金额少于8元时的提示 -->
+
+            <LinearLayout
+                android:id="@+id/unite_checkmoney_infomation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:background="@drawable/spinner_image_button"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/dialog_title_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="方案最少金额为8元"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/large_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombg" >
+
+        <ImageView
+            android:id="@+id/bet_clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/icon_margin"
+            android:background="@drawable/custom_button"
+            android:src="@drawable/img_clear_src"
+            android:text=""
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:id="@+id/bet_money_inf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/light_white"
+            android:textSize="@dimen/basic_text_size" />
+
+        <Button
+            android:id="@+id/bet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dip"
+            android:background="@drawable/custom_button_highlight"
+            android:text="  购 彩  "
+            android:textColor="@color/custom_button_highlight"
+            android:textSize="@dimen/large_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

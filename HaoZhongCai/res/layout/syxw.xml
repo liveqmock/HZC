@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/bet_special_top" />
+
+    <include
+        android:id="@+id/tools"
+        android:layout_below="@+id/top"
+        layout="@layout/tool_top_bar" />
+
+    <com.haozan.caipiao.view.CustomScrollView
+        android:id="@+id/scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/lottery_introdution"
+        android:layout_below="@+id/tools"
+        android:layout_marginLeft="@dimen/icon_margin"
+        android:layout_marginRight="@dimen/icon_margin" >
+
+        <LinearLayout
+            android:id="@+id/syxw_hongqiu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:orientation="horizontal"
+                android:paddingTop="2dip" >
+
+                <TextView
+                    android:id="@+id/syxw_hongqiu01_text"
+                    style="@style/bet_each_individual_text"
+                    android:text="万位：0/1个"
+                    android:textSize="@dimen/basic_text_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/select_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <TextView
+                    android:id="@+id/switch_button_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dip"
+                    android:layout_marginRight="6dip"
+                    android:layout_toLeftOf="@+id/switch_button_dantuo"
+                    android:text="   普  通   "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/smaller_text_size" />
+
+                <TextView
+                    android:id="@+id/switch_button_dantuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="3dip"
+                    android:text="   胆  拖   "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/smaller_text_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/syxw_hongqiu01_linear"
+                style="@style/bet_each_individual_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_flag_hongqiu01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="9dip"
+                        android:paddingTop="9dip"
+                        android:text="万位"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/smaller_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_flag_lengre01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="冷热"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/smaller_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_flag_yilou01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="遗漏"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/smaller_text_size" />
+                </LinearLayout>
+
+                <com.haozan.caipiao.view.NewBetBallsLayout
+                    android:id="@+id/syxw_hongqiu_balls01"
+                    style="@style/bet_each_individual_balls_layout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/syxw_hongqiu02_text"
+                style="@style/bet_each_individual_text"
+                android:text="千位：0/1个"
+                android:textSize="@dimen/basic_text_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/syxw_hongqiu02_linear"
+                style="@style/bet_each_individual_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_flag_hongqiu02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="9dip"
+                        android:paddingTop="9dip"
+                        android:text="千位"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/smaller_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_flag_lengre02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="冷热"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/smaller_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_flag_yilou02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="遗漏"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/smaller_text_size" />
+                </LinearLayout>
+
+                <com.haozan.caipiao.view.NewBetBallsLayout
+                    android:id="@+id/syxw_hongqiu_balls02"
+                    style="@style/bet_each_individual_balls_layout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/syxw_hongqiu03_text"
+                style="@style/bet_each_individual_text"
+                android:text="百位：0/1个"
+                android:textSize="@dimen/basic_text_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/syxw_hongqiu03_linear"
+                style="@style/bet_each_individual_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_flag_hongqiu03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="9dip"
+                        android:paddingTop="9dip"
+                        android:text="百位"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/smaller_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_flag_lengre03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="冷热"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/smaller_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_flag_yilou03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="遗漏"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/smaller_text_size" />
+                </LinearLayout>
+
+                <com.haozan.caipiao.view.NewBetBallsLayout
+                    android:id="@+id/syxw_hongqiu_balls03"
+                    style="@style/bet_each_individual_balls_layout" />
+            </LinearLayout>
+        </LinearLayout>
+   </com.haozan.caipiao.view.CustomScrollView>
+
+    <TextView
+        android:id="@+id/lottery_introdution"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_tips_gray"
+        android:gravity="center"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:text=""
+        android:textColor="@color/dark_purple"
+        android:textSize="@dimen/small_text_size"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bet_bottom" />
+
+    <include layout="@layout/bet_popup_big_ball_view" />
+
+    <ImageView
+        android:id="@+id/img_help_info_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/img_help_info_bg" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+dl.rightdl { background:url(list/list_21.jpg) no-repeat bottom; padding-bottom:2px; clear:both;}
+dl.rightdl dt { background:url(list/list_15.jpg) no-repeat right top; padding:12px 15px 0 35px; height:20px; font-weight:bold;}
+dl.rightdl h2 { width:90px; font-size:14px;}
+dl.rightdl dt span { float:right; font-weight:normal;}
+dl.rightdl dt span a { color:#00378a;}
+dl.rightdl dd { border-left:solid 1px #cacaca; border-right:solid 1px #cacaca; padding:10px 10px 0; overflow:hidden; }
+dl.rightdl dd .img { width:128px; float:left; text-align:center; margin-left:5px;}
+dl.rightdl dd .img a { color:#333;}
+dl.rightdl dd .img img { width:98px; height:68px; border:solid 1px #333; margin-bottom:5px;}
+dl.rightdl dd ul { border-top:dotted 1px #333; padding:10px 0;}
+dl.rightdl dd ul li { height:20px; line-height:20px; overflow:hidden; white-space:nowrap;}
+dl.rightdl dd.po { padding:0;}
+dl.rightdl dd .img2 { line-height:20px; overflow:hidden; padding:0 10px;}
+dl.rightdl dd .img2 a { color:#FF0000;}
+dl.rightdl dd .img2 img { display:block; float:left; width:98px; height:68px; border:solid 1px #333; margin-right:5px;}
+dl.rightdl dd .zhcwad { padding-bottom:10px;}
+dl.rightdl dd .zhcwad li { line-height:20px;}
+
+
+
+dl.mrjc { border-bottom:solid 3px #cd0007; border-top:solid 3px #cd0007; position:relative; overflow:hidden;}
+dl.mrjc dt { background:#cd0007; color:#fff; font-size:14px; font-weight:bold; position:absolute; width:85px; text-align:center; height:25px; line-height:25px; left:20px;}
+dl.mrjc dd { background:#f5f5f5;height:120px; padding:38px 0 12px 20px; overflow:hidden;}
+dl.mrjc dd .img { float:left; text-align:center; padding-left:30px;}
+dl.mrjc dd .img a { color:#333;}
+dl.mrjc dd .img img { width:118px; height:88px; border:solid 1px #333; margin-bottom:5px;}
+
+
+dl.xgxw { width:550px; margin:0 auto; }
+dl.xgxw dt { padding:12px 15px 0 0px; height:20px; font-size:14px;}
+dl.xgxw dd { padding:10px 10px 10px 0; overflow:hidden; }
+dl.xgxw dd ul { padding:0;}
+dl.xgxw dd ul li { height:22px; line-height:22px; overflow:hidden; white-space:nowrap; font-size:12px;}
+dl.xgxw dd ul li a { font-size:12px; color:#585858;}
+
+
+
+
+

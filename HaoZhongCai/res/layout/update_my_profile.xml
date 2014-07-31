@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_init_name" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/title"
+        android:layout_margin="15dip"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/linear01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/potoLy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/potoView"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_marginTop="15.0dip"
+                    android:paddingBottom="15dip"
+                    android:saveEnabled="true"
+                    android:src="@drawable/lucky_cat" />
+
+                <Button
+                    android:id="@+id/upPoto"
+                    android:layout_width="100dip"
+                    android:layout_height="40dip"
+                    android:layout_alignBottom="@+id/potoView"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_toRightOf="@+id/potoView"
+                    android:background="@drawable/init_bt_bg"
+                    android:text="头像上传"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/large_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="昵       称:"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <EditText
+                    android:id="@+id/niceNameET"
+                    style="@style/my_EditText_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@+id/tip01"
+                    android:layout_toRightOf="@+id/user_phone"
+                    android:hint="昵称"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <TextView
+                    android:id="@+id/tip01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/basic_text_size" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/line01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:src="@drawable/new_devide_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.5dip"
+                    android:layout_marginTop="15dip"
+                    android:paddingBottom="15dip"
+                    android:text="性       别:"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:layout_toRightOf="@+id/user_phone"
+                    android:orientation="horizontal" >
+
+                    <!--
+                    style="@style/radiobutton"
+                    android:drawableLeft="@drawable/search_radio_1"
+                    -->
+
+                    <RadioButton
+                        android:id="@+id/men"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="男"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/basic_text_size" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/women"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="女"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/basic_text_size" >
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="城       市:"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <EditText
+                    android:id="@+id/cityET"
+                    style="@style/my_EditText_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_toRightOf="@+id/city"
+                    android:hint="城市"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textSize="@dimen/basic_text_size" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/line03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:src="@drawable/new_devide_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="电子邮箱:"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <EditText
+                    android:id="@+id/emailET"
+                    style="@style/my_EditText_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_toRightOf="@+id/mail"
+                    android:hint="电子邮箱"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textSize="@dimen/basic_text_size" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/line04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:src="@drawable/new_devide_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/qianming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="个性签名:"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <EditText
+                    android:id="@+id/conmentET"
+                    style="@style/my_EditText_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_toRightOf="@+id/qianming"
+                    android:hint="个性签名"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="90dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/conmentET"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/custom_button"
+                    android:text="保存资料"
+                    android:textColor="@color/light_white"
+                    android:textSize="@dimen/basic_text_size" >
+                </Button>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_round" />
+
+</RelativeLayout>

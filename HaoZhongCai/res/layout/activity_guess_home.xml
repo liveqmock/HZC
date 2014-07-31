@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/guess_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/score_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_title"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/bet_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/questionmark" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dip"
+            android:layout_toRightOf="@+id/score_help"
+            android:src="@drawable/vertical_line" />
+
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_title"
+            android:scaleType="centerInside"
+            android:src="@drawable/questionmark" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/help"
+            android:src="@drawable/vertical_line" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/to_submit_quetion"
+            android:src="@drawable/vertical_line" />
+
+        <Button
+            android:id="@+id/to_submit_quetion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_title"
+            android:text="发起竞猜"
+            android:textColor="@color/white"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/guess_title"
+            style="@style/title"
+            android:text="积分竞猜" />
+    </RelativeLayout>
+
+    <com.haozan.caipiao.widget.TopMenuLayout
+        android:id="@+id/top_menu_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guess_top_title" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/point_reward_layout"
+        android:layout_below="@+id/top_menu_layout" />
+
+    <RelativeLayout
+        android:id="@+id/point_reward_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombg" >
+
+        <Button
+            android:id="@+id/point_reward"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/icon_margin"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="积分商城，兑礼品"
+            android:textColor="@color/custom_button"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/show_fail_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_menu_layout"
+        layout="@layout/show_fail_page"
+        android:visibility="gone" >
+    </include>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/progress_bar" >
+    </include>
+
+</RelativeLayout>

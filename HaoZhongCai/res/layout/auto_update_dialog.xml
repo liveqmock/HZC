@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/check_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="检测到新版本，是否下载?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:id="@+id/new_version_num"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/check_file_size"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/basic_text_size" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/update_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/update_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/basic_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

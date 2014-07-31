@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/award_sms_notice_title"
+            style="@style/title" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/award_sms_notice_Linear01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/award_sms_notice_title01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="服务介绍："
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/basic_text_size" />
+
+                        <TextView
+                            android:id="@+id/award_sms_notice_text01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="4px"
+                            android:shadowRadius="3.0"
+                            android:text="@string/award_notice_service01"
+                            android:textColor="@color/dark_purple"
+                            android:textSize="@dimen/small_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/award_sms_notice_title02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="资费标准："
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/basic_text_size" />
+
+                        <TextView
+                            android:id="@+id/award_sms_notice_text02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="4px"
+                            android:shadowRadius="3.0"
+                            android:text=""
+                            android:textColor="@color/dark_purple"
+                            android:textSize="@dimen/small_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/award_sms_notice_title03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="办理方式："
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/basic_text_size" />
+
+                        <TextView
+                            android:id="@+id/award_sms_notice_text03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="4px"
+                            android:shadowRadius="3.0"
+                            android:text="@string/award_notice_service03"
+                            android:textColor="@color/dark_purple"
+                            android:textSize="@dimen/small_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/award_sms_notice_Linear02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/award_sms_notice_text04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:lineSpacingExtra="4px"
+                        android:shadowRadius="3.0"
+                        android:text="@string/award_notice_service04"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="@dimen/small_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/award_sms_notice_subcrite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:text="订阅 "
+                    android:textSize="@dimen/basic_text_size" />
+
+                <Button
+                    android:id="@+id/award_sms_notice_cancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:text="取消"
+                    android:textSize="@dimen/basic_text_size"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

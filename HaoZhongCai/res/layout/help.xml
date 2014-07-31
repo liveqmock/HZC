@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/conments_title"
+        layout="@layout/title_right_button" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ImageView>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/conments_title"
+        android:background="@drawable/general_bg"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 玩法介绍 -->
+
+            <RelativeLayout
+                android:id="@+id/guizeLy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/guize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="1.玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/tubiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/arrow_down" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ssqGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/ssqGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="a.双色球玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sdGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/sdGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="b.3D玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/qlcGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/qlcGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="c.七乐彩玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/swxwGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/swxwGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="d.十五选五玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dfljyGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/dfljyGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="e.东方6+1玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sslGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/sslGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="f.时时乐玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dltGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/dltGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="g.大乐透玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/plwGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/plwGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="h.排列五玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/plsGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/plsGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="i.排列三玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/qxcGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/qxcGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="j.七星彩玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/eexwGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/eexwGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="k.22选5玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/jczqGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/jczqGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="l.竞彩足球玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rxjGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/rxjGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="m.任选九玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sfcGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/sfcGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="n.胜负彩玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/syxwGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/syxwGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="o.11选5玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/jclqGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/jclqGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="p.竞彩篮球玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cqsscGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/cqsscGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="q.时时彩玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hnklsfGzLy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/hnklsfGz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="r.快乐十分玩法介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+            <!-- 如何买彩票 -->
+
+            <RelativeLayout
+                android:id="@+id/maicaiLy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maicai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="2.如何买彩票？"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/tubiao02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+            <!-- 如何充值 -->
+
+            <RelativeLayout
+                android:id="@+id/chongzhiLy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/chongzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="3.如何充值？"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/tubiao03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+            <!-- 如何领奖 -->
+
+            <RelativeLayout
+                android:id="@+id/lingjiangLy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lingjiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="4.如何领奖？"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/tubiao04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <!-- 合买介绍 -->
+
+            <RelativeLayout
+                android:id="@+id/uniteLy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/unite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="5.合买介绍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+
+            <!-- 积分说明 -->
+
+            <RelativeLayout
+                android:id="@+id/jifenLy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="6.积分说明"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/tubiao05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+            <!-- 竞猜 -->
+
+            <RelativeLayout
+                android:id="@+id/jingcaiLy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/jingcai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="7.竞猜说明"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/tubiao05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+            <!-- 赠送彩票说明 -->
+
+            <RelativeLayout
+                android:id="@+id/givelotteryLy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/givelottery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="8.赠送彩票说明"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+            <!-- 修改个人信息 -->
+
+            <RelativeLayout
+                android:id="@+id/xinxiLy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/xinxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="9.如何修改个人信息？"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/tubiao07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/arrow_right" >
+                </ImageView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

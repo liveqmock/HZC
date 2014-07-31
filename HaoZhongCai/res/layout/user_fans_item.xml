@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bg"
+    android:orientation="horizontal"
+    android:tag="itemview" >
+
+    <!-- 头像 -->
+
+    <ImageView
+        android:id="@+id/ivItemPortrait"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:saveEnabled="true"
+        android:src="@drawable/lucky_cat" />
+
+    <LinearLayout
+        android:id="@+id/lyRightLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3.0dip"
+            android:orientation="horizontal" >
+
+            <!-- 昵称 -->
+
+            <TextView
+                android:id="@+id/niceName"
+                style="@style/nickname_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+            <!-- 性别图标 -->
+
+            <ImageView
+                android:id="@+id/genderPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:saveEnabled="false" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3.0dip"
+                android:layout_weight="1.0"
+                android:gravity="right" >
+
+                <!-- 时间 -->
+
+                <TextView
+                    android:id="@+id/tvItemDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="3.0dip"
+                    android:text=""
+                    android:textColor="@color/dark_red"
+                    android:textSize="@dimen/smaller_text_size" />
+                <!-- 时间图片 -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tvItemDate"
+                    android:layout_marginTop="3.0dip"
+                    android:layout_toLeftOf="@id/tvItemDate"
+                    android:saveEnabled="false"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/layout_013"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <!-- 内容 -->
+
+                <TextView
+                    android:id="@+id/tvItemContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:ellipsize="end"
+                    android:paddingRight="90dip"
+                    android:singleLine="true"
+                    android:textColor="#ff414951"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <Button
+                    android:id="@+id/addFocus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/init_bt_bg"
+                    android:text="     关  注     "
+                    android:textSize="@dimen/basic_text_size"
+                    android:visibility="gone" >
+                </Button>
+
+                <Button
+                    android:id="@+id/deleteFocus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/init_bt_bg"
+                    android:text="  取消关注  "
+                    android:textSize="@dimen/basic_text_size"
+                    android:visibility="gone" >
+                </Button>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

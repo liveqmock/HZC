@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bg_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <LinearLayout
+            android:id="@+id/bet_help_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_title"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/bet_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/questionmark" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/vertical_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dip"
+            android:layout_toRightOf="@+id/bet_help_lin"
+            android:src="@drawable/vertical_line" />
+
+        <RelativeLayout
+            android:id="@+id/bet_top_term_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/rela_bet_shake"
+            android:layout_toRightOf="@+id/bet_help_lin"
+            android:background="@drawable/btn_title"
+            android:paddingLeft="@dimen/icon_margin"
+            android:paddingRight="@dimen/icon_margin" >
+
+            <TextView
+                android:id="@+id/bet_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size" />
+
+            <ImageView
+                android:id="@+id/arrow_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/searchbar_padding"
+                android:layout_toRightOf="@+id/bet_title"
+                android:src="@drawable/arrow_down_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/analyse_tips_rala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/vertical_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/vertical_line" />
+
+            <Button
+                android:id="@+id/analyse_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_title" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tools" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_bet_shake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/analyse_tips_rala" >
+
+            <ImageView
+                android:id="@+id/vertical_line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vertical_line" />
+
+            <Button
+                android:id="@+id/btn_bet_shake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_title" />
+
+            <ImageView
+                android:id="@+id/bet_shake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bet_shake_close" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_term"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tips_light_yellow"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/bet_term"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/searchbar_padding"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/bet_time_inf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/bet_countdown_time"
+            android:text="离截止："
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/bet_countdown_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/searchbar_padding"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

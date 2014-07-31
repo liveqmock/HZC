@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:text="温馨提示" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/push" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="付款成功!"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/larger_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:text="@string/bet_success_info"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/smaller_text_size" />
+
+            <ImageView
+                android:id="@+id/division"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/new_devide_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_perfect_inf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="完善信息保证领奖:"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <Button
+                    android:id="@+id/to_perfect_inf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="40dip"
+                    android:layout_marginRight="40dip"
+                    android:layout_marginTop="3dip"
+                    android:background="@drawable/custom_button"
+                    android:text="完善信息"
+                    android:textColor="@color/light_white"
+                    android:textSize="@dimen/basic_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="可到个人中心查看投注信息:"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <Button
+                    android:id="@+id/to_betagain"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="40dip"
+                    android:layout_marginRight="40dip"
+                    android:layout_marginTop="3dip"
+                    android:background="@drawable/custom_button"
+                    android:text="投注信息"
+                    android:textColor="@color/light_white"
+                    android:textSize="@dimen/basic_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text=""
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <Button
+                    android:id="@+id/to_usercenter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="40dip"
+                    android:layout_marginRight="40dip"
+                    android:layout_marginTop="3dip"
+                    android:background="@drawable/custom_button"
+                    android:text="积分竞猜"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="轻松一刻:"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <Button
+                    android:id="@+id/to_gamecenter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="40dip"
+                    android:layout_marginRight="40dip"
+                    android:layout_marginTop="3dip"
+                    android:background="@drawable/custom_button"
+                    android:text="游戏大厅"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/basic_text_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="30dip"
+                android:background="@drawable/new_devide_line" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="40dip"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

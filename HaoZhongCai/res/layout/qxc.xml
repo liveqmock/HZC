@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/bet_special_top" />
+
+    <include
+        android:id="@+id/tools"
+        android:layout_below="@+id/top"
+        layout="@layout/tool_top_bar" />
+
+    <com.haozan.caipiao.view.CustomScrollView
+        android:id="@+id/scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/tools"
+        android:layout_marginLeft="@dimen/icon_margin"
+        android:layout_marginRight="@dimen/icon_margin" >
+
+        <LinearLayout
+            android:id="@+id/qxc_hongqiu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/select_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="请每位至少选择1个号码"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+
+            <TextView
+                android:id="@+id/qxc_hongqiu_text01"
+                style="@style/bet_each_individual_text"
+                android:text="第一位：0/1个"
+                android:textSize="@dimen/basic_text_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/bet_each_individual_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_flag_hongqiu01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="9dip"
+                        android:paddingTop="9dip"
+                        android:text="第一位"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/smaller_text_size" />
+                </LinearLayout>
+
+                <com.haozan.caipiao.view.NewBetBallsLayout
+                    android:id="@+id/qxc_hongqiu_balls01"
+                    style="@style/bet_each_individual_balls_layout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/qxc_hongqiu_text02"
+                style="@style/bet_each_individual_text"
+                android:text="第二位：0/1个"
+                android:textSize="@dimen/basic_text_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/bet_each_individual_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_flag_hongqiu02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="9dip"
+                        android:paddingTop="9dip"
+                        android:text="第二位"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/smaller_text_size" />
+                </LinearLayout>
+
+                <com.haozan.caipiao.view.NewBetBallsLayout
+                    android:id="@+id/qxc_hongqiu_balls02"
+                    style="@style/bet_each_individual_balls_layout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/qxc_hongqiu_text03"
+                style="@style/bet_each_individual_text"
+                android:text="第三位：0/1个"
+                android:textSize="@dimen/basic_text_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/bet_each_individual_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_flag_hongqiu03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="9dip"
+                        android:paddingTop="9dip"
+                        android:text="第三位"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/smaller_text_size" />
+                </LinearLayout>
+
+                <com.haozan.caipiao.view.NewBetBallsLayout
+                    android:id="@+id/qxc_hongqiu_balls03"
+                    style="@style/bet_each_individual_balls_layout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/qxc_hongqiu_text04"
+                style="@style/bet_each_individual_text"
+                android:text="第四位：0/1个"
+                android:textSize="@dimen/basic_text_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/bet_each_individual_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_flag_hongqiu04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="9dip"
+                        android:paddingTop="9dip"
+                        android:text="第四位"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/smaller_text_size" />
+                </LinearLayout>
+
+                <com.haozan.caipiao.view.NewBetBallsLayout
+                    android:id="@+id/qxc_hongqiu_balls04"
+                    style="@style/bet_each_individual_balls_layout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/qxc_hongqiu_text05"
+                style="@style/bet_each_individual_text"
+                android:text="第五位：0/1个"
+                android:textSize="@dimen/basic_text_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/bet_each_individual_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_flag_hongqiu05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="9dip"
+                        android:paddingTop="9dip"
+                        android:text="第五位"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/smaller_text_size" />
+                </LinearLayout>
+
+                <com.haozan.caipiao.view.NewBetBallsLayout
+                    android:id="@+id/qxc_hongqiu_balls05"
+                    style="@style/bet_each_individual_balls_layout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/qxc_hongqiu_text06"
+                style="@style/bet_each_individual_text"
+                android:text="第六位：0/1个"
+                android:textSize="@dimen/basic_text_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/bet_each_individual_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_flag_hongqiu06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="9dip"
+                        android:paddingTop="9dip"
+                        android:text="第六位"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/smaller_text_size" />
+                </LinearLayout>
+
+                <com.haozan.caipiao.view.NewBetBallsLayout
+                    android:id="@+id/qxc_hongqiu_balls06"
+                    style="@style/bet_each_individual_balls_layout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/qxc_hongqiu_text07"
+                style="@style/bet_each_individual_text"
+                android:text="第七位：0/1个"
+                android:textSize="@dimen/basic_text_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/bet_each_individual_layout"
+                android:layout_marginBottom="10dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_flag_hongqiu07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="9dip"
+                        android:paddingTop="9dip"
+                        android:text="第七位"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/smaller_text_size" />
+                </LinearLayout>
+
+                <com.haozan.caipiao.view.NewBetBallsLayout
+                    android:id="@+id/qxc_hongqiu_balls07"
+                    style="@style/bet_each_individual_balls_layout" />
+            </LinearLayout>
+        </LinearLayout>
+   </com.haozan.caipiao.view.CustomScrollView>
+
+    <include
+        android:id="@+id/bottom"
+        layout="@layout/bet_bottom" />
+
+    <include layout="@layout/bet_popup_big_ball_view" />
+
+    <ImageView
+        android:id="@+id/img_help_info_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/img_help_info_bg" />
+
+</RelativeLayout>

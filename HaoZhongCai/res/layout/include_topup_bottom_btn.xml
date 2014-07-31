@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottombg"
+    android:orientation="horizontal"
+    android:paddingRight="3dp" >
+
+    <Button
+        android:id="@+id/btn_contact_customer_service"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/custom_button"
+        android:text="联系客服"
+        android:textColor="@color/black_light" />
+
+    <Button
+        android:id="@+id/btn_more_top_up_way"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/custom_button"
+        android:text="更多充值方式"
+        android:textColor="@color/black_light" />
+
+</LinearLayout>

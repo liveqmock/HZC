@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <ImageView
+            android:id="@+id/bet_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/questionmark" />
+
+        <RelativeLayout
+            android:id="@+id/bet_top_term_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/league_filter"
+            android:layout_toRightOf="@+id/bet_help"
+            android:background="@drawable/custom_button_highlight"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/bet_title_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/bet_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/title_text_size" />
+
+                <TextView
+                    android:id="@+id/bet_term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/basic_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bet_header_news_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/bet_time_inf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="离截止："
+                    android:textColor="@color/light_white"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <TextView
+                    android:id="@+id/bet_countdown_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_white"
+                    android:textSize="@dimen/basic_text_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/arrow_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/arrow_down" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/league_filter"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="7dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/custom_button_highlight"
+            android:drawablePadding="2px"
+            android:drawableRight="@drawable/arrow_down"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingRight="3dip"
+            android:singleLine="true"
+            android:textColor="@color/light_white"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/layout_title" >
+
+        <com.haozan.caipiao.widget.CustomExpandleListView
+            android:id="@+id/match_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottom"
+        layout="@layout/bet_sports_bottom" />
+
+    <ProgressBar
+        android:id="@+id/progress_large"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_round"
+        android:visibility="gone" />
+
+</RelativeLayout>

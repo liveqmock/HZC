@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fore_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/general_bg_small_account_detail"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dip"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/flip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_head_button_click_left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="3dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:text="余额"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/sub_title_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text=""
+            android:textColor="@color/yellow_text"
+            android:textSize="@dimen/basic_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/tab_divide_line" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="3dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:gravity="right"
+            android:text="中奖"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/user_win_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text=""
+            android:textColor="@color/yellow_text"
+            android:textSize="@dimen/basic_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/tab_divide_line" />
+
+    <LinearLayout
+        android:id="@+id/caijin_title_tv"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="3dip" >
+
+        <TextView
+            android:id="@+id/tv_temp01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/user_new_center_header_right_arrow"
+            android:gravity="right"
+            android:text="彩金"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/sub_score_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:text="$123"
+            android:textColor="@color/yellow_text"
+            android:textSize="@dimen/basic_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

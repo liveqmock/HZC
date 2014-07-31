@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/bottombg" >
+
+    <ImageView
+        android:id="@+id/bet_clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/icon_margin"
+        android:background="@drawable/custom_button"
+        android:enabled="false"
+        android:src="@drawable/img_clear_src"
+        android:text=""
+        android:textSize="@dimen/large_text_size" />
+
+    <TextView
+        android:id="@+id/bet_money_inf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/bet_random_button"
+        android:layout_toRightOf="@+id/bet_clear_button"
+        android:gravity="center"
+        android:textColor="@color/light_white"
+        android:textSize="@dimen/basic_text_size" />
+
+    <Button
+        android:id="@+id/bet_random_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="112dip"
+        android:background="@drawable/custom_button"
+        android:text=" 机 选 "
+        android:textColor="@color/custom_button"
+        android:textSize="@dimen/large_text_size" />
+
+    <Button
+        android:id="@+id/bet_button"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/custom_button_highlight"
+        android:enabled="false"
+        android:text="  确 定  "
+        android:textColor="@color/custom_button_highlight"
+        android:textSize="@dimen/large_text_size" />
+
+    <Button
+        android:id="@+id/bet_way_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/img_show_bet_way"
+        android:background="@drawable/btn_bet"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="  购 彩  "
+        android:textColor="@color/custom_button_highlight"
+        android:textSize="@dimen/large_text_size" />
+
+    <Button
+        android:id="@+id/img_show_bet_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/btn_bet_way"
+        android:textSize="@dimen/large_text_size"
+        android:visibility="gone" />
+
+</RelativeLayout>

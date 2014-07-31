@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- different from haobai -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/conments_title"
+        layout="@layout/title_init_name" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conments_title"
+        android:layout_margin="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/feedback_content"
+                style="@style/my_EditText_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="top"
+                android:hint="输入您宝贵的建议(200字以内)"
+                android:imeOptions="actionDone"
+                android:maxLength="200"
+                android:minHeight="90dip"
+                android:textSize="@dimen/small_text_size" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/custom_button_highlight"
+                android:text="提         交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/larger_text_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/all_advice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/five_tab" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="3dip"
+                        android:drawableLeft="@drawable/all_opinion"
+                        android:drawablePadding="11dip"
+                        android:gravity="center"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:text="大家提的建议"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dip"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:src="@drawable/arrow_right" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/horzinal_line" />
+
+                <RelativeLayout
+                    android:id="@+id/my_advice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/six_tab" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="3dip"
+                        android:drawableLeft="@drawable/my_opinion"
+                      android:drawablePadding="16dp"
+                        android:gravity="center"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:text="我提过的建议"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dip"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:src="@drawable/arrow_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 在线客服 -->
+
+            <RelativeLayout
+                android:id="@+id/online_service"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/five_tab" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:drawableLeft="@drawable/cs_online"
+                  android:drawablePadding="16dp"
+                    android:paddingBottom="7dip"
+                    android:paddingTop="7dip"
+                    android:text="在线客服"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/small_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:paddingBottom="7dip"
+                    android:paddingTop="7dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/horzinal_line" />
+            <!-- 客服电话、qq -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/custom_service_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/four_tab" >
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dip"
+                        android:drawableLeft="@drawable/cs_phone"
+                      android:drawablePadding="15dp"
+                        android:gravity="left"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:text="123456"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="21dip"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:src="@drawable/arrow_right" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/horzinal_line" />
+
+                <RelativeLayout
+                    android:id="@+id/qq_service_relative"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/six_tab" >
+
+                    <TextView
+                        android:id="@+id/custom_service_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dip"
+                        android:drawableLeft="@drawable/cs_qq"
+                      android:drawablePadding="16dp"
+                        android:gravity="left"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:text="123456"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="21dip"
+                        android:paddingBottom="7dip"
+                        android:paddingTop="7dip"
+                        android:src="@drawable/arrow_right" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_round"
+        android:visibility="gone" />
+
+</RelativeLayout>

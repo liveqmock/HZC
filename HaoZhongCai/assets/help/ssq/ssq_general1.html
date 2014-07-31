@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /> 
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<meta name="format-detection" content="telephone=no"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="iscroll.js"></script>
+`	
+</head>
+<body>
+<div>
+	<header>
+		<ul id="nav">
+			<li name="l1" id="first" class="on">简介</li>
+			<li name="l2" id="mid1" >玩法</li>
+			<li name="l3" id="mid2" >奖项</li>
+			<li name="l4" id="last" >规则</li>
+		</ul>
+	</header>
+	<section id="wrapper">
+		<article id="scroller">
+			<div id="l1">
+				<dl class="dline">
+					<dt>开奖时间</dt>
+					<dd>每周二、四、日21：30开奖</dd>
+				</dl>
+				<dl class="dline">
+					<dt>玩法规则</dt>
+					<dd><em class="red">6个红球</em>+<em class="blue">1个蓝球</em>=1注（2元）</dd>
+				</dl>
+				<dl>
+					<dt>奖项设置</dt>
+					<dd><em class="red">一等奖</em>（当期高等奖奖金的70%和奖池中累积的奖金之和）：全部6个红球+1个蓝球相同</dd>
+					<dd><em class="red">二等奖</em>（当期高等奖奖金的30%）：全部6个红球相同</dd>
+					<dd><em class="red">三等奖</em>（3000元）：任意5个红球+1个蓝球相同</dd>
+					<dd><em class="red">四等奖</em>（200元）：任意5个红球 或 任意4个红球+1个蓝球相同</dd>
+					<dd><em class="red">五等奖</em>（10元）：任意4个红球 或 任意3个红球+1个蓝球相同</dd>
+					<dd><em class="red">六等奖</em>（5元）：蓝球相同（有无红球相同均可）</dd>
+				</dl>
+			</div>
+			<div id="l2" style="display:none;">
+				<dl>
+					<dt>游 戏</dt>
+					<dd>第一条 “双色球”彩票投注区分为红色球号码区和蓝色球号码区。</dd>
+					<dd>第二条 “双色球”每注投注号码由6个红色球号码和1个蓝色球号码组成。红色球号码从1~33中选择；蓝色球号码从1~16中选择。</dd>
+					<dd>第三条 “双色球”每注2元。</dd>
+					<dd>第四条 “双色球”采取全国统一奖池计奖。</dd>
+					<dd>第五条 “双色球”每周销售三期，期号以开奖日界定，按日历年度编排。</dd>
+				</dl>
+				<dl>
+					<dt>投 注</dt>
+					<dd>第六条 “双色球”的投注方法可分为自选号码投注和机选号码投注；其投注方式有单式投注和复式投注。</dd>
+					<dd>第七条 自选号码投注是指由投注者自行选定投注号码的投注。</dd>
+					<dd>第八条 机选号码投注是指由投注机为投注者随机产生投注号码的投注。</dd>
+					<dd>第九条 单式投注是从红色球号码中选择6个号码，从蓝色球号码中选择1个号码，组合为一注投注号码的投注。</dd>
+					<dd>第十条 复式投注有三种：</dd>
+					<dd class="sub">（一）红色球号码复式：从红色球号码中选择7~20个号码，从蓝色球号码中选择1个号码，组合成多注投注号码的投注；</dd>
+					<dd class="sub">（二）蓝色球号码复式：从红色球号码中选择6个号码，从蓝色球号码中选择2~16个号码，组合成多注投注号码的投注；</dd>
+					<dd class="sub">（三）全复式：从红色球号码中选择7~20个号码，从蓝色球号码中选择2~16个号码，组合成多注投注号码的投注。</dd>
+				</dl>
+			</div>
+			<div id="l3"  style="display: none;" >
+				<dl>
+					<dt>设 奖</dt>
+					<dd>第一条 “双色球”设奖奖金为销售总额的50%，其中当期奖金为销售总额的49%，调节基金为销售总额的1%。</dd>
+					<dd>第二条 “双色球”奖级设置分为高等奖和低等奖。一等奖和二等奖为高等奖，三至六等奖为低等奖。高等奖采用浮动设奖，低等奖采用固定设奖。当期奖金减去当期低等奖奖金为当期高等奖奖金。设奖如下：</dd>
+					<dd class="except">
+						<table>
+							<tbody>
+								<tr>
+									<th rowspan="2" width="10%">奖级</th>
+									<th colspan="2" width="40%">中奖条件</th>
+									<th rowspan="2" width="30%">奖金分配</th>
+									<th rowspan="2" width="25%">说明</th>
+								</tr>
+								<tr>
+									<td>红色球号码</td>
+									<td>蓝色球号码</td>
+								</tr>
+								<tr>
+									<td>一等奖</td>
+									<td>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+									</td>
+									<td>
+										<span class="b-ball"></span>
+									</td>
+									<td>当期高等奖奖金的70%和奖池中累计的奖金之和</td>
+									<td>选6+1中6+1</td>
+								</tr>
+								<tr>
+									<td>二等奖</td>
+									<td>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+									</td>
+									<td></td>
+									<td>当期高等奖奖金的30%</td>
+									<td>选6+1中6+0</td>
+								</tr>
+								<tr>
+									<td>三等奖</td>
+									<td>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+									</td>
+									<td>
+										<span class="b-ball"></span>
+									</td>
+									<td>单注奖金额固定为3000元</td>
+									<td>选6+1中5+1</td>
+								</tr>
+								<tr>
+									<td rowspan="2">四等奖</td>
+									<td>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+									</td>
+									<td></td>
+									<td rowspan="2">单注奖金额固定为200元</td>
+									<td rowspan="2">选6+1中5+0或中4+1</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+									</td>
+									<td>
+										<span class="b-ball"></span>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="2">五等奖</td>
+									<td>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+									</td>
+									<td></td>
+									<td rowspan="2">单注奖金额固定为10元</td>
+									<td rowspan="2">选6+1中4+0或中3+1</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+									</td>
+									<td>
+										<span class="b-ball"></span>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="3">六等奖</td>
+									<td>
+										<span class="r-ball"></span>
+										<span class="r-ball"></span>
+									</td>
+									<td>
+										<span class="b-ball"></span>
+									</td>
+									<td rowspan="3">单注奖金额固定为5元</td>
+									<td rowspan="3">选6+1中2+1或中1+1或中0+1</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="r-ball"></span>
+									</td>
+									<td>
+										<span class="b-ball"></span>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										<span class="b-ball"></span>
+									</td>
+								</tr>				
+							</tbody>
+						</table>
+					</dd>
+					<dd>第三条 根据国家有关规定，“双色球”彩票单注奖金封顶的最高限额为500万元。</dd>
+					<dd>第四条“双色球”设立奖池。奖池资金来源：未中出的高等奖奖金和超出单注封顶限额部分的奖金。奖池资金计入下期一等奖。</dd>
+					<dd>第五条 当一等奖的单注奖金额低于二等奖的单注奖金额时，将一、二等奖的奖金相加，由一、二等奖中奖者平分；当二等奖的单注奖金额低于三等奖的单注奖金额的两倍时，补足为三等奖的单注奖金额的两倍。当期奖金不足部分由调节基金补充，调节基金不足时，用发行费垫支。</dd>
+				</dl>
+				<dl>
+					<dt>开 奖</dt>
+					<dd>第六条“双色球”由中福彩中心统一开奖，每周开奖三次。开奖前，省中心将当期投注的全部数据刻入不可改写的光盘，作为查验的依据。</dd>
+					<dd>第七条“双色球”通过摇奖器确定中奖号码。摇奖时先摇出6个红色球号码，再摇出1个蓝色球号码，摇出的红色球号码按从小到大的顺序和蓝色球号码一起公布。</dd>
+					<dd>第八条 开奖公告在各地主要媒体公布，并在各投注站张贴。</dd>
+					<dd>第九条“双色球”的开奖结果以中国福利彩票发行管理中心公布的开奖公告为准。</dd>
+				</dl>
+				<dl>
+					<dt>中 奖</dt>
+					<dd>第十条“双色球”彩票以投注者所选单注投注号码（复式投注按所覆盖的单注计）与当期开出中奖号码相符的球色和个数确定中奖等级：</dd>
+					<dd>一等奖：7个号码相符（6个红色球号码和1个蓝色球号码）（红色球号码顺序不限，下同）；</dd>
+					<dd>二等奖：6个红色球号码相符；</dd>
+					<dd>三等奖：5个红色球号码和1个蓝色球号码相符；</dd>
+					<dd>四等奖：5个红色球号码或4个红色球号码和1个蓝色球号码相符；</dd>
+					<dd>五等奖：4个红色球号码或3个红色球号码和1个蓝色球号码相符；</dd>
+					<dd>六等奖：1个蓝色球号码相符（有无红色球号码相符均可）。</dd>
+					<dd>第十一条 一等奖和二等奖中奖者按各奖级的中奖注数均分该奖级的奖金；三至六等奖按各奖级的单注固定奖额获得奖金。</dd>
+					<dd>第十二条 当期每注投注号码只有一次中奖机会，不能兼中兼得（另行设奖按设奖规定执行）。</dd>
+				</dl>
+				<dl>
+					<dt>兑 奖</dt>
+					<dd>第十三条“双色球”彩票兑奖当期有效。每期开奖次日起，兑奖期限为60天，逾期未兑奖者视为弃奖，弃奖奖金进入调节基金。</dd>
+					<dd>第十四条 中奖人须提交完整的兑奖彩票，因玷污、损坏等原因造成不能正确识别的，不能兑奖。</dd>
+					<dd>第十五条 一等奖中奖者，需持中奖彩票和本人有效身份证明，在兑奖期限内到各地省中心验证、登记和兑奖。其他奖级的兑奖办法由省中心规定并公布。</dd>
+					<dd>第十六条 按国家有关规定，单注奖金额超过一万元者，须缴纳个人偶然所得税。</dd>
+				</dl>
+			</div>
+			<div id="l4" style="display:none;">
+				<dl>
+					<dt>总 则</dt>
+					<dd>第一条 本规则依据财政部《彩票发行与销售管理暂行规定》和《中国福利彩票（电脑型）联合发行与销售管理暂行办法》（以下简称《管理办法》）制定。</dd>
+					<dd>第二条 中国福利彩票“双色球”（以下简称“双色球”）是一种联合发行的“乐透型”福利彩票。采用计算机网络系统发行销售，定期电视开奖。</dd>
+					<dd>第三条 “双色球”由中国福利彩票发行管理中心（以下简称中福彩中心）统一组织发行，在全国销售。</dd>
+					<dd>第四条 参与“双色球”销售的省级行政区域福利彩票发行中心（以下称省中心）在中福彩中心的直接领导下，负责对本地区的“双色球”销售活动实施具体的组织和管理。</dd>
+					<dd>第五条 “双色球”彩票实行自愿购买，凡购买者均被视为同意并遵守本规则。</dd>
+				</dl>
+				<dl>
+					<dt>附 则</dt>
+					<dd>第六条 本规则未尽事宜，均按《管理办法》和有关规定执行。</dd>
+					<dd>第七条 本规则由中国福利彩票发行管理中心负责解释。</dd>
+					<dd>第八条 本规则由自发布之日起施行。</dd>
+				</dl>
+			</div>
+		</article>
+	</section>
+</div>
+<script>
+	var nav = document.getElementById('nav'),
+		navNode = document.getElementsByTagName('li')[0],
+		conNode = document.getElementById('l1');
+	nav.addEventListener('click', function(e){
+		if(navNode == e.target)return;
+		navNode.className = '';
+		conNode.style.display = 'none';
+		navNode = e.target;
+		conNode = document.getElementById(navNode.attributes.name.nodeValue);
+		navNode.className = 'on';
+		conNode.style.display = 'block';
+		myScroll.scrollTo(0,0,100);//滚动条置顶部
+		setTimeout(function () { myScroll.refresh() }, 0);//刷新滚动条属性
+	},true);
+	var myScroll;
+	function loaded() {
+		document.addEventListener('touchmove', function (e) { 
+			e.preventDefault(); 
+		}, false);
+		myScroll = new iScroll('wrapper');
+	}
+	document.addEventListener('DOMContentLoaded', function () { 
+		setTimeout(loaded, 100); 
+	}, false);
+</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/text_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="金额："
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/dialog_item_second"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text_money"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/basic_text_size"
+            android:typeface="monospace"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_phonecard_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_item_second"
+            android:layout_marginLeft="10dip"
+            android:text="类型："
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/phonecard_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_item_second"
+            android:layout_toRightOf="@+id/text_phonecard_type"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/basic_text_size"
+            android:typeface="monospace"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_card_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phonecard_type"
+            android:layout_marginLeft="10dip"
+            android:text="卡号："
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/cardnum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phonecard_type"
+            android:layout_toRightOf="@+id/text_card_num"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/basic_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_card_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardnum"
+            android:layout_marginLeft="10dip"
+            android:text="密码："
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/card_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardnum"
+            android:layout_toRightOf="@+id/text_card_password"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/basic_text_size"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_password"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/new_devide_line" />
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/perfect_inf_dialog_warning"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/smaller_text_size"
+            android:typeface="monospace"
+            android:width="270dip" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tips"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/new_devide_line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dlg_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="确  定"
+            android:textSize="@dimen/basic_text_size" />
+
+        <Button
+            android:id="@+id/dlg_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="取  消"
+            android:textSize="@dimen/basic_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

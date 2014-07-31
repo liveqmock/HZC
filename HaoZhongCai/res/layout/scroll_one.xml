@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/three_typeName"
+        style="@style/nickname_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:text="动态信息"
+        android:textColor="@color/dark_purple"
+        android:textSize="@dimen/large_text_size" />
+    <!-- 第一行 -->
+
+    <LinearLayout
+        android:id="@+id/two_LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/three_typeName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/putongly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/weibo_icon" />
+
+            <TextView
+                android:id="@+id/putongText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image111"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="财友互动"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/zhongjiangly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image112"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/win_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image112"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="中奖动态"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goucaily"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/bet_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image113"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="购彩动态"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 第二行 -->
+
+    <LinearLayout
+        android:id="@+id/two_LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/two_LinearLayout01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/gamesly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image_xinwen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/games_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_xinwen"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="游戏动态"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hemaily"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image_xinwen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/square_hemai_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_xinwen"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="合买动态"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jingcaily"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image_zw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/square_jincai_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_zw"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="竞猜动态"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

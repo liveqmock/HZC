@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@drawable/bg_dialog">
+    
+	<EditText
+	    android:id="@+id/user_address"
+	    style="@style/my_EditText_style"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dip"
+	    android:layout_marginLeft="15dip"
+	    android:layout_marginRight="15dip"
+	    android:hint="请填写身份证上的住址" >
+	</EditText>
+	
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_margin="15dip"
+	    android:text="@string/enter_address"
+	    android:textColor="@color/dark_purple"
+	    android:textSize="@dimen/smaller_text_size" >
+	</TextView>
+	
+</LinearLayout>

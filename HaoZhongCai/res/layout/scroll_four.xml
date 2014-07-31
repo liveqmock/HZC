@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/four_typeName"
+        style="@style/nickname_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:text="竞彩、足彩"
+        android:textColor="@color/dark_purple"
+        android:textSize="@dimen/large_text_size" />
+    <!-- 第一行 -->
+
+    <LinearLayout
+        android:id="@+id/three_LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/four_typeName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/jjzqly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image411"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_jczq_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image411"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="竞彩足球"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sfcly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image413"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_sfc_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image413"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="胜负彩"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rxjly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image412"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_rxj_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image412"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="任选九"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 第二行 -->
+
+    <LinearLayout
+        android:id="@+id/three_LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/three_LinearLayout01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/square_jclq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image_jclq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_jclq_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_jclq"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="竞彩篮球"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xinwenly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/image_xinwen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/bet_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_xinwen"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="新闻评论"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/zwly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/image_zw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/bet_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_zw"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="暂无"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ContentOverlay" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="popup_ball">
+        <item name="android:windowEnterAnimation">@anim/popup_ball</item>
+    </style>
+
+    <!-- 设置标题栏样式 -->
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/top_bg</item>
+    </style>
+
+    <style name="title_style" parent="android:Theme">
+        <item name="android:windowTitleSize">35dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+    <!-- 搜索单选按钮 -->
+    <style name="search_radiobutton_weibo">
+        <item name="android:textColor">#ff7f7f7f</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:paddingLeft">@dimen/searchbar_radiobutton_padding</item>
+        <item name="android:background">@drawable/btn_user_center_left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">6.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="search_radiobutton_user">
+        <item name="android:textColor">#ff7f7f7f</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:paddingLeft">@dimen/searchbar_radiobutton_padding</item>
+        <item name="android:background">@drawable/btn_user_center_right</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">8.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- 修改资料 -->
+    <style name="radiobutton">
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">6.0dip</item>
+    </style>
+
+    <style name="my_AutoCompleteText_style" parent="@android:style/Widget.AutoCompleteTextView"></style>
+
+    <style name="my_EditText_style" parent="@android:style/Widget.AutoCompleteTextView">
+
+        <!-- <item name="android:background">@drawable/bg_edittext</item> -->
+        <item name="android:background">@drawable/edittext_bg</item>
+    </style>
+
+    <style name="bet_each_individual_text" parent="android:Theme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dip</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:textColor">@color/red_text</item>
+    </style>
+
+    <style name="bet_each_individual_text_blue" parent="android:Theme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dip</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:textColor">@color/blue_text</item>
+    </style>
+
+    <style name="bet_each_individual_layout" parent="android:Theme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dip</item>
+    </style>
+
+    <style name="bet_each_individual_balls_layout" parent="android:Theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--
+    昵称加粗 :方法一
+    <style name="nickname_bold" parent="android:Theme">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">0.3</item>
+        <item name="android:shadowDy">0.3</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style>
+    -->
+    <!-- 昵称加粗 :方法二 -->
+    <style name="nickname_bold">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="RelativeLayout_Text">
+        <item name="android:layout_width">100dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RelativeLayout_Text2">
+        <item name="android:layout_width">110dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 定义一个样式，继承Android系统的对话框样式 android:style/Theme.Dialog -->
+    <style name="Theme.FloatActivity" parent="android:style/Theme.Dialog">
+
+        <!-- float_box为我们定义的窗口背景 -->
+        <item name="android:windowBackground">@drawable/float_box</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--
+模糊true,清洗false
+       <item name="android:layout_alignParentBottom">true</item>
+        -->
+    </style>
+
+    <style name="unite_hall_btn_style">
+
+        <!-- 去除原生的单选按钮图标 -->
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:padding">@dimen/small_margin</item>
+        <item name="android:textColor">@color/title</item>
+        <item name="android:shadowColor">@color/title_shadow</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:textSize">@dimen/basic_text_size</item>
+
+        <!-- 引用 main_btn_bg_d.xml，设定当按钮被press、checked时的背景图，以此增强点击、选中按钮时的视觉效果 -->
+    </style>
+
+    <style name="jczq_bf_btn_style">
+
+        <!-- 去除原生的单选按钮图标 -->
+        <item name="android:button">@null</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <!-- 引用 main_btn_bg_d.xml，设定当按钮被press、checked时的背景图，以此增强点击、选中按钮时的视觉效果 -->
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/hall_tab</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <!-- title标题栏 -->
+    <style name="title">
+        <item name="android:padding">@dimen/small_margin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/larger_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+</resources>

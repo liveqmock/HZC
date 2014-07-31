@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="get_user_inf">信息获取中。。</string>
+    <string name="topup_submit">充    值</string>
+    <string name="topup_submit_request">充值提交中。。</string>
+    <string name="more_topup_way">更多充值方式</string>
+    <string name="more_topup_way_describe">移动手机支付、盛付通、WAP银行、彩票码充值</string>
+    <string name="account_topup">账户充值</string>
+
+    <!-- 银联语音借记卡充值 -->
+    <string name="debitcard_topup_bind_tips">卡号已绑定，如需修改请联系客服</string>
+    <string name="debitcard_topup_cardnum_tips">卡号，户名需与彩票账号一致</string>
+    <string name="debitcard_topup_tips">温馨提示：\n
+      1.充值无需手续费，提交信息后，您将收到银联020-96585的来电，请按语音电话提示输入银行卡密码完成支付。\n
+      2.银行卡在线充值由中国银联提供，目前支持农行，建行，招行，工行，华夏，邮储，中信，兴业，深发，交行、广发、广州农信社、广州银行等13家银行的储蓄卡。\n
+      3.充值成功后绑定银行卡，下次使用默认用该卡支付，如需修改请联系客服,绑定后充值金额从50元起。\n
+      4.充值金额无法提现。</string>
+    <string name="unionpay_voice_topup_success">充值申请成功，请接听电话<![CDATA[ <font color="#FF0000"><b>020-96585</b></font>]]>，并按语音提示输入密码等验证信息。如需帮助请与客服联系，QQ：</string> 
+   
+    
+    <!-- 银联语音信用卡充值 -->
+    <string name="creditcard_topup_card_tips">信用卡卡号</string>
+    <string name="creditcard_topup_reserved_num_tips">信用卡预留手机号码</string>
+    <string name="creditcard_topup_tips">温温馨提示：\n
+      1.充值无需手续费，提交信息后，您将收到银联020-96585的来电，请按语音提示操作完成支付。\n
+      2.银联信用卡充值支持：中国建设银行、中国工商银行、中国银行、交通银行、光大银行、平安银行、民生银行、兴业银行、华夏银行、中信银行、浦东发展银行、广发银行、招商银行、上海银行、北京银行。\n
+      3.充值成功后，为了下次充值更方便我们将会保存所填的部分信息。\n
+      4.充值金额无法提现。	</string>
+
+    <!-- 支付宝充值 -->
+    <string name="alipay_topup">支付宝充值</string>
+    <string name="alipay_whole_tips">支付宝账户余额支付和银行卡支付</string>
+    <string name="alipay_tip01">温馨提示：\n1.充值无需手续费。</string>
+    <string name="alipay_tip02">2.无需支付宝账户,银行卡可直接充值。</string>
+    <string name="alipay_tip03">3.支付宝客服电话：0571-88156688。</string>
+    
+    <!-- WAP充值 -->
+    <string name="wap">中国建设银行和招商银行手机wap充值</string>
+    <string name="wap_bank_tip01">温馨提示：\n1.充值无需手续费。</string>
+    <string name="wap_bank_tip02">2.充值请确保连接wap网络。</string>
+
+
+
+    <!-- 财付通充值 -->
+    <string name="tencentpay">快捷支付（支持储蓄卡，信用卡）</string>
+    
+    
+    
+
+    <!-- 盛付通充值 -->
+    <string name="sndapay">盛付通充值</string>
+    <string name="snda">盛付通余额、一点充、手机网银支付</string>
+    <string name="sndapay_tip01">温馨提示：\n1.充值无需手续费。</string>
+    <string name="sndapay_tip02">2.盛付通客服电话：4007208888。</string>
+    
+    
+    
+
+    <!-- 手机充值卡充值 -->
+    <string name="phonecard_topup">手机充值卡充值</string>
+    <string name="phone_card_topup">支持移动、联通、电信全国充值卡</string>
+    <string name="phone_card_tip01">温馨提示：\n1.充值卡充值需扣除5%左右手续费。</string>
+    <string name="phone_card_tip02">2.支持中国移动的全国卡(卡号17位、卡密18位)，中国联通的全国卡（卡号15位、卡密19位），中国电信的全国卡（卡号为19位、卡密18位）。</string>
+
+    
+    
+    <!-- 移动充值 -->
+    <string name="moblie_topup">移动充值</string>
+    <string name="mobile_whole_tips_sub">支持储蓄卡/信用卡，中国移动赠送的电子券</string>
+    <string name="mobile_tip01">温馨提示：\n1.您可以通过三种途径开通手机支付账户：手机支付业务网站、短信、营业厅，详情请点击左上角提示。	</string>
+    <string name="mobile_tip02">        2.移动充值只支持中国移动手机用户，请确保已开通手机支付业务，充值金额不能提现，充值无需收取任何手续费。	</string>
+    <string name="mobile_tip03">        3.移动支付客服电话：10086。</string>
+
+    
+    
+    <!-- 银联插件快捷支付充值 -->
+    <string name="union_card_topup">快捷支付（支持储蓄卡，信用卡）</string>
+    <string name="union_card_recharge_tips01">温馨提示：\n
+      1.充值无需收取任何手续费。	</string>
+    <string name="union_card_recharge_tips02">2. 支持国内大部分银行信用卡。	</string>
+    <string name="union_card_recharge_tips03">3.中国银行、招商银行暂不支持。其他银行储蓄卡均能够支持支付，如在支付中遇到问题，请拨打95516进行相关咨询。	</string>
+    <string name="union_card_recharge_tips04">4.更多信息请点击“？”。	</string>
+
+    
+    
+    
+    <!-- 彩票码充值 -->
+    <string name="caipiaoma_topup">彩票码充值</string>
+    <string name="caipiaoma">通过活动获赠彩票码，输入即可使用</string>
+    <string name="red_packet_recharge_tips">4.想免费赢取彩票码，下载【免费达人】试试吧！</string>
+    <string name="bonus_tips01">温馨提示：\n 1.请关注彩票码的有效期，过期将被收回。</string>
+    <string name="bonus_tips02">2.充值成功后请点击手机返回键返回大厅购彩。</string>
+    <string name="bonus_tips03">3.充值金额不可提现。</string>
+
+    
+    <!-- recharge part(充值部分) -->
+    <string name="unionpay_whole_tips">无需开通网银，语音回拨，安全快捷</string>
+    <string name="eco_credit_card_pay">无需开通网银，语音回拨，支持信用卡</string>
+    <string name="chinaunionpay">无需开通网银，支持信用卡/储蓄卡支付</string>
+    
+    
+    <string name="bank_card_whole_tips">支持大部分储蓄卡和信用卡</string>
+    
+    
+
+    <string name="yinhanghuikuang">通过柜台、ATM或网银转账。支持：工行、农行，邮政、建行、招商等银行</string>
+    
+    <string name="alipay_wap_tip01">温馨提示：\n1.支持储蓄卡和信用卡直充、免开通网银。</string>
+    <string name="alipay_wap_tip02">2.单卡单笔2000元，单卡单日2000元，单卡当月1万。</string>
+    <string name="alipay_wap_tip03">3.支持多数银行的储蓄卡和信用卡。</string>
+    
+    
+    <string name="enter_address">为了保障您的账户安全，以上输入需按照身份证上的住址描述并填写到乡镇或街道，以供银联核查。</string>
+    <string name="snda_tip">温馨提示：\n1.充值无需手续费。</string>
+    
+    
+    <string name="union_recharge_tips01">温馨提示：\n
+      1.充值无需手续费，提交信息后，您将收到银联020-96585的来电，请按语音电话提示输入银行卡密码完成支付。
+</string>
+    <string name="union_recharge_tips02">      2.银行卡在线充值由中国银联提供，目前支持农行，建行，招行，工行，华夏，邮储，中信，兴业，深发，交行、广发、广州农信社、广州银行等13家银行的储蓄卡。
+</string>
+    <string name="union_recharge_tips03">      3.充值成功后绑定银行卡，下次使用默认用该卡支付，绑定后充值金额从50元起。
+</string>
+    <string name="union_recharge_promt_tips">     提示：开户姓名必须与账户姓名一致
+</string>
+    <string name="union_recharge_tips_plus">      3.充值成功绑定银行卡，如需修改请联系客服。</string>
+    <string name="cdredit_card_recharge_tips01">温馨提示：\n
+        1.充值无需手续费，提交信息后，您将收到银联020-96585的来电，请按语音提示操作完成支付。
+</string>
+    <string name="cdredit_card_recharge_tips02">        2.银联信用卡充值支持：中国建设银行、中国工商银行、中国银行、交通银行、光大银行、平安银行、民生银行、兴业银行、华夏银行、中信银行、浦东发展银行、广发银行、招商银行、上海银行、北京银行。
+</string>
+    <string name="credit_card_pay_help"><b>1.</b>如果是第一次在本软件使用银联信用卡充值，请按要求输入信息。\n\n
+<b>2.</b>输入充值金额。\n\n
+<b>3.</b>点击“充值”后，提交充值申请，申请成功后请留意银联电话020-96585。\n\n
+<b>4.</b>接到银联电话后按照提示操作即可完成充值，充值成功后，为了下次充值更方便我们将会保存所填的部分信息。\n\n
+<b>5.</b>      支持银行：中国工商银行，中国农业银行，中国银行，中国建设银行，中国邮政储蓄银行，交通银行，光大银行，平安银行，中信银行，民生银行，兴业银，华夏银行，浦东发展银行，广发银行，招商银行，上海银行，北京银行
+                                                     ，徽商银行，大连银行，福建农信社，兰州银行，广州银行，顺德农商行，广州农村商业银行，贵阳银行，河北银行，承德银行，哈尔滨银行，宜昌银行，长沙银行，湖南农信社，常熟农商行，江阴农商行，江苏银行，江苏锡州银行，上饶银行
+                                                    ，九江银行，乌鲁木齐商业银行，包商银行，青海银行，潍坊银行，东营银行，威海银行，上海农商行，成都市农信社，台州银行，宁波银行，鄞州银行，浙江泰隆银行，浙江民泰银行，杭州银行，浙江稠州银行，重庆银行，重庆农信社（农商），龙江银行，东亚银行，锦州银行，鄂尔多斯银行。</string>
+    <string name="topup_contact_us">如有任何问题请<![CDATA[ <u><font color="blue">联系我们</font></u> ]]></string>
+    <string name="topup_fail_tips">充值失败，请联系客服，或者尝试其他充值方式</string>
+    
+</resources>

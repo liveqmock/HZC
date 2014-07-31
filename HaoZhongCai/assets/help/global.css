@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0; font-size:12px;}
+img{border:0;}
+dt,dd,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:12px;}
+a { color:#000; text-decoration:none;}
+a:hover { color:#000; text-decoration:underline;}
+
+/*ClearFix*/
+.clearfix {	display: block;}
+.clearfix:after {	/*/*/content: "."; /* HACK for IE8 */display: block;height: 0;clear: both;visibility: hidden;}
+* html .clearfix {	height: 1%;}
+
+ 
+/* Header */
+.topnav { background: url(http://images.zhcw.com/zhcw2011/common/top_bg1.gif) repeat-x; width:100%; margin:0 auto; height:34px;}
+.topnav .leftbar { width:960px; margin:0 auto; background:url(http://images.zhcw.com/zhcw2011/common/top_bg2.gif) 5px top no-repeat;; height:34px; overflow:hidden; }
+.topnav .leftbar h1 { float:left; padding:12px 0 0 27px; color:#999; font-weight:normal;}
+.topnav .leftbar h6 { float:left; padding:12px 0 0 27px; color:#999; font-weight:normal;}
+
+
+.topnav .leftbar .joinus { float:right; padding-top:10px; color:#999;}
+.topnav .leftbar .joinus a { color:#999; padding:0 10px;}
+.subnav { width:960px;height:40px; background:none; margin:0 auto; padding:8px 0; color:#000; position: relative;}
+.subnav ul { float:left; width:960px;}
+.subnav ul li { float:left; width:65px; height:20px; line-height:20px; text-align:center;}
+.subnav ul li strong{font-weight:bold;}
+.subnav ul li a{color:#000;}
+.subnav ul li.three { width:55px; text-align:center;}
+.subnav ul li.rtborder, .subnav ul li.rtborder2 { height:20px; background:url(http://images.zhcw.com/zhcw2011/common/nav_2.gif) no-repeat; padding-right:5px; margin-right:7px;}
+.subnav ul li.rtborder { background-position:right bottom;}
+.subnav ul li.rtborder2 { background-position:right top}
+.subnav ul li a { font-size:12px; font-family:"宋体";}
+.news_blanck { clear:both; width:958px; height:88px; border:1px solid #CCC; margin:0 auto; overflow:hidden;}
+
+.newshead { width:960px; height:50px; margin:0 auto; overflow:hidden;}
+.newshead h2 {float:left;}
+.newshead .news_search { float:right; padding:15px 20px 0 0;}
+.newshead .news_search a { padding:0 5px;}
+.newshead .news_search .ns1 { width:140px; height:22px; background:url(http://images.zhcw.com/zhcw2011/common/news_sbg.gif) left no-repeat; border:none; padding:0 5px; color:#ccc; line-height:22px;}
+.newshead .news_search .ns2 { width:50px; height:22px; background:url(http://images.zhcw.com/zhcw2011/common/news_sbg.gif) right no-repeat; border:none;}
+
+/*PageTag*/
+DIV.digg {
+	PADDING:5px 3px; MARGIN: 3px; TEXT-ALIGN: center
+}
+DIV.digg A {
+	BORDER-RIGHT: #aaaadd 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #aaaadd 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; MARGIN: 2px; BORDER-LEFT: #aaaadd 1px solid; COLOR: #000099; PADDING-TOP: 2px; BORDER-BOTTOM: #aaaadd 1px solid; TEXT-DECORATION: none
+}
+DIV.digg A:hover {
+	BORDER-RIGHT: #000099 1px solid; BORDER-TOP: #000099 1px solid; BORDER-LEFT: #000099 1px solid; COLOR: #000; BORDER-BOTTOM: #000099 1px solid
+}
+DIV.digg A:active {
+	BORDER-RIGHT: #000099 1px solid; BORDER-TOP: #000099 1px solid; BORDER-LEFT: #000099 1px solid; COLOR: #000; BORDER-BOTTOM: #000099 1px solid
+}
+DIV.digg SPAN.current {
+	BORDER-RIGHT: #000099 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #000099 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #000099 1px solid; COLOR: #fff; PADDING-TOP: 2px; BORDER-BOTTOM: #000099 1px solid; BACKGROUND-COLOR: #000099
+}
+DIV.digg SPAN.disabled {
+	BORDER-RIGHT: #eee 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #eee 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #eee 1px solid; COLOR: #ddd; PADDING-TOP: 2px; BORDER-BOTTOM: #eee 1px solid
+}
+
+/* 视频和新闻页公共样式 */
+.VPaboutlink02{ width:555px; margin:0 auto; padding:5px 0; color:#696969; text-align:left; background:url(http://images.zhcw.com/zhcw2011/video/bg_x_pub_02.gif) repeat-x left -226px; }
+.VPaboutlink02 .upzt{ height:22px; padding:0px 5px 0 10px; }
+.VPaboutlink02 .upzt img{ vertical-align:middle; margin:0px 2px 0px 10px;}
+.VPaboutlink02 .upzt a{ border:0; padding:0px; margin: 0 0 0 0; color:#696969;}
+.VPaboutlink02 .upzt a:hover{ border:0; padding:0px; margin: 0 0 0 0; color:#333;}
+/* footer */
+.bottomnav{ width:920px; background:url(b_navbg.gif) no-repeat; height:30px; line-height:30px; padding-left:40px; color:#666; margin:10px auto; position:relative; clear:both;}
+.bottomnav a{color:#666;}
+.bottomnav .backtop { position:absolute; right:30px; top:-6px;}
+#footer {clear:both;width:960px;margin:10px auto 0;overflow:hidden;}
+#footer .f_logo {background:url("http://images.zhcw.com/zhcw2011/common/footer_line.gif") repeat-x scroll center center transparent;height:40px;margin-bottom:10px;text-align:center;}
+#footer p{ clear:both; text-align:center;line-height:20px;}
+#footer ul{clear:both;width:735px;margin:0 auto;padding:10px 0;}
+#footer ul li{float:left;padding-left:20px;}
+#footer ul li a img{position:relative;top:-5px;display:block;float:left;padding-right:2px;}
+#footer ul li span{display:block;float:left;cursor:pointer;text-align:center;}
+#footer ul li a{white-space:nowrap;}
+
+.xf1 {Z-INDEX:20; POSITION: absolute; WIDTH: 135px; BACKGROUND: #fff; top:30px; left:210px;}
+.xf2 {Z-INDEX:10; POSITION: absolute; WIDTH: 135px; BACKGROUND: #fff; top:50px; left:210px;}
+.xf4 {PADDING-BOTTOM: 4px; BACKGROUND: url(http://images.zhcw.com/zhcw2011/common/top_14.gif) no-repeat 50% bottom; OVERFLOW: hidden;}
+.xf4 DT {BACKGROUND: url(http://images.zhcw.com/zhcw2011/common/top_13.gif) no-repeat; HEIGHT: 4px; OVERFLOW: hidden;}
+.xf4 DD {TEXT-ALIGN: left; BORDER-LEFT: #ff0000 1px solid; BORDER-RIGHT: #ff0000 1px solid; padding:5px 6px 15px; line-height:18px;}
+.xf3 {
+	POSITION: absolute; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; BOTTOM: 5px; PADDING-RIGHT: 2px; RIGHT: 5px; PADDING-TOP: 2px
+}
+
+

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="充值" />
+
+        <ImageButton
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_title"
+            android:src="@drawable/questionmark" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dip"
+            android:layout_toRightOf="@+id/help"
+            android:src="@drawable/vertical_line" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view_unionpay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/topup_bottom_btn"
+        android:layout_below="@+id/title_layout"
+         >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/unionpay_icon" />
+
+                <TextView
+                    android:id="@+id/title_dlg_ad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="1dip"
+                    android:text="借记卡语音支付"
+                    android:textColor="@color/light_purple"
+                    android:textSize="@dimen/large_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/debit_card_input_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/bank_card_num_et"
+                    style="@style/my_EditText_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:digits="0123456789"
+                    android:hint="@string/debitcard_topup_cardnum_tips"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="21"
+                    android:textSize="@dimen/large_text_size" />
+
+                <RelativeLayout
+                    android:id="@+id/province_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_image_button"
+                    android:drawSelectorOnTop="true" >
+
+                    <TextView
+                        android:id="@+id/provinces_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_text_size" />
+
+                    <ImageView
+                        android:id="@+id/recharge_bank_provinces_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/spinner_triangle_down" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/city_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/spinner_image_button"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/city_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_text_size" />
+
+                    <ImageView
+                        android:id="@+id/bank_location_select_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/spinner_triangle_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bind_card_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bank_card_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size" />
+
+                <TextView
+                    android:id="@+id/recharge_num_inf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/debitcard_topup_bind_tips"
+                    android:textColor="@color/light_purple"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/topup_money_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/spinner_image_button"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/topup_money_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size" />
+
+                <ImageView
+                    android:id="@+id/recharge_money_spinner_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/spinner_triangle_down" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dip"
+                android:background="@drawable/custom_button"
+                android:enabled="false"
+                android:text="@string/topup_submit"
+                android:textColor="@color/custom_button"
+                android:textSize="@dimen/basic_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:layout_marginTop="15dip"
+                android:text="@string/debitcard_topup_tips"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="@dimen/recharge_tips_left_dis"
+                android:layout_marginTop="5dip"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/smaller_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/topup_bottom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/include_topup_bottom_btn" >
+    </include>
+
+</RelativeLayout>

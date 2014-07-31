@@ -1,0 +1,357 @@
+<app>
+    <brand pid="191005">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191005</pid>
+        <key>IoBv9TNKA3yxbaP7</key>
+        <version>HZHZIDZZCVH</version>
+        <flurry>9M5YPTG5J88RZBR3MKXS</flurry>
+        <name>好中彩</name>
+        <inf>好中彩自己的版本</inf>
+        <download>http://t.cn/8kVWOwS</download>
+        <channel>ours</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>ours</tdchannel>
+    </brand>
+    
+    <!-- 
+    <brand pid="191101">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191101</pid>
+        <key>q2d55TXpd2J6a4w1</key>
+        <version>HZCAIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩展唐版</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>HZCA</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>HZCA</tdchannel>
+    </brand>
+    
+  <brand pid="191102">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191102</pid>
+        <key>XqX2Thw257h8jaH1</key>
+        <version>HZCBIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩个推版</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>HZCB</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>HZCB</tdchannel>
+    </brand>
+    <brand pid="191005">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+         <pid>191005</pid>
+        <key>IoBv9TNKA3yxbaP7</key>
+        <version>HZHZIDZZCVH</version>
+        <flurry>9M5YPTG5J88RZBR3MKXS</flurry>
+        <name>好中彩</name>
+        <inf>好中彩自己的版本</inf>
+        <download>http://t.cn/8kVWOwS</download>
+        <channel>ours</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>ours</tdchannel>
+    </brand>
+  
+    <brand pid="191001">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191001</pid>
+        <key>Z1FpG7tTZ4kH5d2y</key>
+        <version>HZLTIDZZCVH</version>
+        <flurry>GN79CR2BVJZX2WP3Q24N</flurry>
+        <name>好中彩</name>
+        <inf>好中彩版本</inf>
+        <download>http://t.cn/8kVWOwS</download>
+        <channel>UnKnown</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>haitun</tdchannel>
+    </brand>
+   <brand pid="191002">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191002</pid>
+        <key>1fX3N5pN5BUw2UM9</key>
+        <version>HZYDIDZZCVH</version>
+        <flurry>2T7QW5N7QKNGKGMFD98F</flurry>
+        <name>好中彩</name>
+        <inf>好中彩移动版本</inf>
+        <download>http://t.cn/8kVWOwS</download>
+        <channel>mobile</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>mobile</tdchannel>
+    </brand>
+<brand pid="191003">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191003</pid>
+        <key>AvPq1O118PWB6zB4</key>
+        <version>HZJYIDZZCVH</version>
+        <flurry>N3SQKXXJ4BTT4HVS3VFZ</flurry>
+        <name>好中彩</name>
+        <inf>好中彩91版本</inf>
+        <download>http://t.cn/8kVWOwS</download>
+        <channel>91mobile</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>91mobile</tdchannel>
+    </brand>
+   <brand pid="191005">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+         <pid>191005</pid>
+        <key>IoBv9TNKA3yxbaP7</key>
+        <version>HZHZIDZZCVH</version>
+        <flurry>9M5YPTG5J88RZBR3MKXS</flurry>
+        <name>好中彩</name>
+        <inf>好中彩自己的版本</inf>
+        <download>http://t.cn/8kVWOwS</download>
+        <channel>ours</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>ours</tdchannel>
+    </brand>
+    <brand pid="191005">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+         <pid>191005</pid>
+        <key>IoBv9TNKA3yxbaP7</key>
+        <version>HZFBIDZZCVH</version>
+        <flurry>9M5YPTG5J88RZBR3MKXS</flurry>
+        <name>好中彩</name>
+        <inf>好中彩thefansbook版本</inf>
+        <download>http://t.cn/8kVWOwS</download>
+        <channel>thefansbook</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>thefansbook</tdchannel>
+    </brand>   
+    <brand pid="191013">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191013</pid>
+        <key>HkLmEt5114p82IU3</key>
+        <version>HZLDIDZZCVH</version>
+        <flurry>DHYXXS8SGGP2F32Z3XMG</flurry>
+        <name>好中彩</name>
+        <inf>好中彩悠悠村版本</inf>
+        <download>http://t.cn/8kVWOwS</download>
+        <channel>youyoucun</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>youyoucun</tdchannel>
+    </brand> 
+   <brand pid="191007">
+       <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191007</pid>
+        <key>pyhMq9ggH5cq2Yj7</key>
+        <version>HZLEIDZZCVH</version>
+        <flurry>937G9F44JPM6N7YDJ72G</flurry>
+        <name>好中彩</name>
+        <inf>好中彩应用宝版本</inf>
+        <download>http://t.cn/8kVWOwS</download>
+        <channel>yingyongbao</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>yingyongbao</tdchannel>
+    </brand>
+    <brand pid="191008">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191008</pid>
+        <key>71xXIH21gqTe7BT9</key>
+        <version>HZLFIDZZCVH</version>
+        <flurry>937G9F44JPM6N7YDJ72G</flurry>
+        <name>好中彩</name>
+        <inf>好中彩应用宝第二个版本</inf>
+        <download>http://t.cn/8kVWOwS</download>
+        <channel>yingyongbao2</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>yingyongbao2</tdchannel>
+    </brand>
+    <brand pid="192301">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+          <pid>192301</pid>
+        <key>TEjQ3xBb85d88VA5</key>
+        <version>HZZQIDZZCVH</version>
+        
+        <flurry>26CT5WN8378CJD4GB2RC</flurry>
+        <name>好中彩</name>
+        <inf>好中彩-上海朱雀</inf>
+        <download>t.cn/SxafAe</download>
+        <channel>hzc_shzq</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>hzc_shzq</tdchannel>
+    </brand>
+  <brand pid="191014">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191014</pid>
+        <key>I28iv53aUveVRdUf</key>
+        <version>TAOFIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩_淘粉吧版</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>taofenba</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>taofenba</tdchannel>
+    </brand>
+    
+    <brand pid="191015">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191015</pid>
+        <key>w9n2PG4GA911lBQ5</key>
+        <version>HZWYIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>51信用卡</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>wuyi_xinyongka</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>wuyi_xinyongka</tdchannel>
+    </brand>
+    
+   <brand pid="191016">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191016</pid>
+        <key>nvpGA847C6tA39Cp</key>
+        <version>KKCXIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>KK畅想</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>kkchangxiang</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>kkchangxiang</tdchannel>
+    </brand>  
+    
+   <brand pid="191101">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191101</pid>
+        <key>q2d55TXpd2J6a4w1</key>
+        <version>HZCAIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>HZCA</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>HZCA</tdchannel>
+    </brand>
+    
+  <brand pid="191102">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191102</pid>
+        <key>XqX2Thw257h8jaH1</key>
+        <version>HZCBIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>HZCB</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>HZCB</tdchannel>
+    </brand>
+    
+     <brand pid="191103">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191103</pid>
+        <key>da7bosE3f7viS92W</key>
+        <version>HZCCIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>HZCC</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>HZCC</tdchannel>
+    </brand>
+    
+    <brand pid="191104">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191104</pid>
+        <key>6G1R5GPt37e3Mb23</key>
+        <version>HZCDIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>HZCD</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>HZCD</tdchannel>
+    </brand>
+    
+     <brand pid="191105">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191105</pid>
+        <key>5orFebpb9e8yzn6c</key>
+        <version>HZCEIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>HZCE</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>HZCE</tdchannel>
+    </brand>
+    
+     <brand pid="191106">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191106</pid>
+        <key>q6t4Lj4e6t2Q8dm7</key>
+        <version>HZCFIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>HZCF</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>HZCF</tdchannel>
+    </brand>
+    
+   <brand pid="191107">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191107</pid>
+        <key> ZPS2483TbJ6XvmqM</key>
+        <version>HZCGIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>HZCG</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>HZCG</tdchannel>
+    </brand>
+    
+      <brand pid="191010">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191010</pid>
+        <key> mXvuAv8LR92aH2DN</key>
+        <version>HZLAIDZZCVH</version>
+        <flurry>HF42XG59H882BNTY6SBB</flurry>
+        <name>好中彩</name>
+        <inf>好中彩机锋网的版本</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>jialiang</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>jialiang</tdchannel>
+    </brand>
+    
+     <brand pid="191101">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191101</pid>
+        <key>q2d55TXpd2J6a4w1</key>
+        <version>HZYYIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩音乐会1</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>yingyuehui</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>yingyuehui</tdchannel>
+    </brand> 
+    
+       <brand pid="191102">
+        <umengkey>50bcc47252701566c1000008</umengkey>
+        <pid>191102</pid>
+        <key>XqX2Thw257h8jaH1</key>
+        <version>NDOOIDAAACP</version>
+        <flurry>DDA6N2P8PYB5F843QBCW</flurry>
+        <name>好中彩</name>
+        <inf>好中彩ndoo</inf>
+        <download>http://t.cn/zTKKsW0</download>
+        <channel>ndoo</channel>
+        <tdid>ADD09A44AD4553020875050CC843E49E</tdid>
+        <tdchannel>ndoo</tdchannel>
+    </brand> -->
+</app>

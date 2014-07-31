@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/icon_margin"
+        android:background="@drawable/five_tab"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/subtitle_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/alipay_icon" />
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="支付宝支付"
+            android:textColor="@color/title"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/recharge_tv_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/recharge_activity_bg"
+            android:gravity="center"
+            android:paddingBottom="2dip"
+            android:paddingLeft="10dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/smaller_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/horzinal_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/six_tab"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:id="@+id/spinner_text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="8"
+                android:gravity="left"
+                android:paddingLeft="10dip"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/basic_text_size" />
+
+            <ImageView
+                android:id="@+id/spinner_icon"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:src="@drawable/spinner_triangle_down" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/red_packet_recharge_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:digits="0123456789"
+            android:hint="请输入12位彩票码"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="12"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/alipay_wap"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="@dimen/icon_margin"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_highlight"
+            android:gravity="center"
+            android:text="WAP支付"
+            android:textColor="@color/custom_button_highlight"
+            android:textSize="@dimen/large_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/torecharge"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="@dimen/icon_margin"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_highlight"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="@color/custom_button_highlight"
+            android:textSize="@dimen/large_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/new_devide_line" />
+
+</LinearLayout>

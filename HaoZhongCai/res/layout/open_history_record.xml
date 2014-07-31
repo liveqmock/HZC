@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/history_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/open_history_title"
+            style="@style/title" />
+
+        <RelativeLayout
+            android:id="@+id/open_check_top_term_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/vertical_line" />
+
+            <Button
+                android:id="@+id/check_lucky_num_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_title"
+                android:drawableRight="@drawable/arrow_down_white"
+                android:paddingLeft="@dimen/icon_margin"
+                android:paddingRight="@dimen/icon_margin"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/open_select_top_term_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_title" >
+
+            <TextView
+                android:id="@+id/select_lucky_num_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="15dip"
+                android:text=" 继续选号 "
+                android:textColor="@color/white"
+                android:textSize="@dimen/basic_text_size" />
+
+            <ImageView
+                android:id="@+id/arrow_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/bt_left_dis"
+                android:src="@drawable/arrow_left_white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dip"
+            android:layout_toRightOf="@+id/open_select_top_term_layout"
+            android:src="@drawable/vertical_line" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/selected_num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history_top"
+        android:layout_centerHorizontal="true"
+        android:background="@color/hoary"
+        android:gravity="center"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip"
+        android:text="您已选的号码："
+        android:textColor="@color/black"
+        android:textSize="@dimen/basic_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/history_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/gray"
+        android:textSize="@dimen/large_text_size"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress_large"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_round"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/selected_num" >
+
+        <com.haozan.caipiao.widget.CustomExpandleListView
+            android:id="@+id/open_history_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

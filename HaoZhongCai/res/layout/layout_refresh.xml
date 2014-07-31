@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/left_part_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:id="@+id/pull_to_refresh_progress"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dip"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progress_round"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/pull_to_refresh_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pull_to_refresh_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:text="@string/pull_to_refresh_pull_label"
+        android:textColor="@color/dark_purple"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/orange_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tips1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="选 号："
+            android:textColor="@color/light_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/tips2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tips1"
+            android:text="点击下面列选号，可翻转查看"
+            android:textColor="@color/light_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <com.haozan.caipiao.widget.PredicateLayout
+            android:id="@+id/balls"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/icon_margin"
+            android:layout_toLeftOf="@+id/finish_selected"
+            android:layout_toRightOf="@+id/tips1" />
+
+        <Button
+            android:id="@+id/finish_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/custom_button"
+            android:text="确  定" />
+    </RelativeLayout>
+
+    <com.haozan.caipiao.widget.CustomScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/trendchart_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" />
+        </HorizontalScrollView>
+   </com.haozan.caipiao.widget.CustomScrollView>
+
+</LinearLayout>

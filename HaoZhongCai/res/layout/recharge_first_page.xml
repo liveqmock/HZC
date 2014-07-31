@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:text="@string/account_topup" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/vertical_line" />
+
+            <Button
+                android:id="@+id/service_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_title"
+                android:paddingLeft="@dimen/bt_left_dis"
+                android:paddingRight="@dimen/bt_left_dis"
+                android:text="联系客服"
+                android:textColor="@color/white"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--
+    <ListView
+        android:id="@+id/recharge_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="20dip"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:scrollbars="none" >
+    </ListView>
+    -->
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_bar"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.haozan.caipiao.widget.ExpandableHeightGridView
+                android:id="@+id/recharge_list_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:horizontalSpacing="0dip"
+                android:listSelector="#00000000"
+                android:numColumns="1"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dip" >
+           </com.haozan.caipiao.widget.ExpandableHeightGridView>
+
+            <com.haozan.caipiao.widget.ExpandableHeightGridView
+                android:id="@+id/recharge_more_ways"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recharge_list_view"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:horizontalSpacing="0dip"
+                android:listSelector="#00000000"
+                android:numColumns="1"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dip"
+                android:visibility="gone" >
+           </com.haozan.caipiao.widget.ExpandableHeightGridView>
+
+            <RelativeLayout
+                android:id="@+id/more_ways"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recharge_list_view"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/list_single_item" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/top_up_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="3dip" >
+
+                    <TextView
+                        android:id="@+id/recharge_selection_bt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/more_topup_way"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/basic_text_size" />
+
+                    <TextView
+                        android:id="@+id/recharge_selection_inf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/more_topup_way_describe"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/smaller_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    
+</RelativeLayout>

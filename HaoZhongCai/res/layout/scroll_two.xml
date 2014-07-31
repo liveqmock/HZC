@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/one_typeName"
+        style="@style/nickname_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:text="福彩信息"
+        android:textColor="@color/dark_purple"
+        android:textSize="@dimen/large_text_size" />
+    <!-- 第一行 -->
+
+    <LinearLayout
+        android:id="@+id/one_LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one_typeName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/ssqly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image211"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_ssq_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image211"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="双色球 "
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sdly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_sd_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image212"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="3D"
+                android:textColor="@color/dark_purple" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/qlcly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image213"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_qlc_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image213"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="七乐彩　"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 第二行 -->
+
+    <LinearLayout
+        android:id="@+id/one_LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one_LinearLayout01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/dfljyly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_dfljy_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image222"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="东方6+1"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/swxwly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg" >
+
+            <ImageView
+                android:id="@+id/image223"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hall_swxw_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image223"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="十五选五"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sslly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/weiboscroll_item_bg"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/image221"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image221"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dip"
+                android:text="时时乐"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 第 三行 -->
+
+    <LinearLayout
+        android:id="@+id/one_LinearLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one_LinearLayout02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dip"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

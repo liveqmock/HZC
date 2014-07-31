@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <com.haozan.caipiao.widget.RefreshableView
+        android:id="@+id/pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="0dip"
+        android:orientation="vertical" >
+
+        <com.haozan.caipiao.widget.AutoLoadListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:focusable="true" />
+
+        <include
+            android:id="@+id/show_fail_page"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/show_fail_page"
+            android:gravity="center"
+            android:visibility="gone" />
+   </com.haozan.caipiao.widget.RefreshableView>
+
+</RelativeLayout>

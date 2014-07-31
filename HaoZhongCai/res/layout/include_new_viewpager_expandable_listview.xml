@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <com.haozan.caipiao.widget.RefreshLayout
+        android:id="@+id/pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="0dip"
+        android:orientation="vertical" >
+
+        <com.haozan.caipiao.widget.AutoLoadExpandableListView
+            android:id="@+id/expandable_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:childDivider="@drawable/horzinal_line"
+            android:childIndicator="@null"
+            android:clickable="false"
+            android:divider="@null"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:focusable="false"
+            android:groupIndicator="@null"
+            android:listSelector="@color/transparent"
+            android:visibility="gone" />
+   </com.haozan.caipiao.widget.RefreshLayout>
+
+    <com.haozan.caipiao.widget.EmptyLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

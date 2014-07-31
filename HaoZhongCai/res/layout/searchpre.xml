@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/sreachET"
+                style="@style/my_AutoCompleteText_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:hint="请输入搜索关键字"
+                android:maxLength="11"
+                android:paddingLeft="25dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/clearButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/searchButton"
+                android:background="@drawable/search_button_clear"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:background="@drawable/icon_search" >
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/searchWeibo"
+                style="@style/search_radiobutton_weibo"
+                android:checked="true"
+                android:drawableLeft="@drawable/search_radio_1"
+                android:tag="radio_button0"
+                android:text="搜索信息"
+                android:textSize="@dimen/basic_text_size" />
+
+            <RadioButton
+                android:id="@+id/searchPeople"
+                style="@style/search_radiobutton_user"
+                android:drawableLeft="@drawable/search_radio_2"
+                android:tag="radio_button1"
+                android:text="搜索用户"
+                android:textSize="@dimen/basic_text_size" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

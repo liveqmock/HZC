@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- different from haobai -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/initName"
+            style="@style/title"
+            android:text="发起竞猜" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_layout"
+        android:layout_margin="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/feedback_top_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="您有好的竞猜题目吗?赶快发给我们吧!一经选中即可获赠300积分!"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/new_devide_line" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="请输入竞猜题目：(必填，200字以内)"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+
+            <EditText
+                android:id="@+id/feedback_content"
+                style="@style/my_EditText_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="top"
+                android:hint="200字以内"
+                android:imeOptions="actionNext"
+                android:maxLength="200"
+                android:minHeight="80dip"
+                android:textSize="@dimen/basic_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="请输入竞猜的答题选项：(可选)"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size" />
+
+            <EditText
+                android:id="@+id/feedback_content_answer"
+                style="@style/my_EditText_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="top"
+                android:hint="100字以内"
+                android:imeOptions="actionDone"
+                android:maxLength="200"
+                android:minHeight="60dip"
+                android:textSize="@dimen/basic_text_size" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="70dip"
+                android:layout_marginRight="70dip"
+                android:background="@drawable/custom_button"
+                android:text=" 提  交 "
+                android:textSize="@dimen/basic_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/commit_guess_info"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/smaller_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_round"
+        android:visibility="gone" />
+
+</RelativeLayout>

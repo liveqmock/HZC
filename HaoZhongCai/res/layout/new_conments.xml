@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffd1d8e3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/update_weibo_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/updater_faceGrid" >
+
+        <include
+            android:id="@+id/conments_title"
+            layout="@layout/title_init" />
+
+        <EditText
+            android:id="@+id/comentEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/conments_title"
+            android:autoLink="none"
+            android:gravity="top"
+            android:hint="说点什么..."
+            android:padding="10dip"
+            android:textColorLink="@color/blue" style="@style/my_EditText_style"/>
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/normal_dantuo_selected_disable"
+            android:text="140 "
+            android:textColor="@color/black"
+            android:textSize="@dimen/basic_text_size" />
+
+        <Button
+            android:id="@+id/face_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/clear_button"
+            android:background="@drawable/btn_insert_face" />
+
+        <Button
+            android:id="@+id/keyboard_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/clear_button"
+            android:background="@drawable/btn_insert_keyboard"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/updater_faceGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="180.dip"
+        android:layout_alignParentBottom="true"
+        android:listSelector="@drawable/grid_selector"
+        android:numColumns="6"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5.0dip"
+        android:visibility="gone" >
+    </GridView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_round"
+        android:visibility="gone" />
+
+</RelativeLayout>

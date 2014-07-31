@@ -1,0 +1,379 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>в||</title>
+
+
+
+<link href="file:///android_asset/help/list.css" rel="stylesheet" type="text/css">
+
+<script src="file:///android_asset/help/ssq_calc.js" type="text/javascript"></script>
+<link href="file:///android_asset/help/global.css" rel="stylesheet" type="text/css">
+<link href="../db_main.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+<!--
+.STYLE1 {color: #0080FF}
+.STYLE2 {color: #FF0000}
+-->
+</style>
+</head>
+
+<body>
+<div id="hot_content_0" style="width:330px">
+   <ul class="tags_tools">
+          <li class="active"> 复式奖金计算</li>
+          <li><a href="../jiangjindantuo.html">胆拖奖金计算</a></li>
+   </ul> 
+  <h3 class="fs_calc"><span><a href="#info"></a>&nbsp;</span><img src="file:///android_asset/help/qian.jpg" align="absmiddle"><img src="file:///android_asset/help/pic-fushi.gif" align="absmiddle"></h3>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" style=" border:1px solid #ccc;;">
+    <tbody>
+      <tr>
+        <td height="25" align="center" valign="top" bgcolor="#eeeeee"><form>
+            <table width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td class="f14px" align="middle" colspan="2">&nbsp;&nbsp;<span class="STYLE2">红球区号码个数</span>
+                      <select onChange="doChangeNumber(this.form,'infoTable');" name="redBallCount">
+                        <option value="07" selected="">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </select>
+                    &nbsp;&nbsp;<span class="STYLE1">&nbsp;蓝球区个数</span>
+                    <select onChange="doChangeNumber(this.form,'infoTable');" name="blueBallCount">
+                      <option value="01" selected="">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="f14px" align="right" width="50%">金额：</td>
+                  <td align="left"><div id="castMoney" class="red">14元</div></td>
+                </tr>
+              </tbody>
+            </table>
+        </form>
+            <table width="330px" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" id="infoTable">
+              <tbody>
+                <tr align="middle" bgcolor="#E1E1E1" class="de">
+                   <td width="44" style="DISPLAY: none"><div align="center"></div></td>
+                  <td width="44" style="DISPLAY: none"><div align="center"></div></td>
+                  <td width="28" style="DISPLAY: none"><div align="center"></div></td>
+                  <td width="35"><div align="center"><br>
+                    <DIV align="center">红球<BR>
+                      中奖数</DIV>
+                  </div></td>
+                  <td width="35"><div align="center"><br>
+                          <DIV align="center">蓝球<BR>
+                            中奖数</DIV>
+                  </div></td>
+                  <td width="20" nowrap=""><div align="center">
+                      <DIV align="center">一等奖</DIV>
+                  </div></td>
+                  <td width="20" nowrap=""><div align="center">
+                      <DIV align="center">二等奖</DIV>
+                  </div></td>
+                  <td width="20" nowrap=""><div align="center">
+                      <DIV align="center">三等奖</DIV>
+                  </div></td>
+                  <td width="20" nowrap=""><div align="center">
+                      <DIV align="center">四等奖</DIV>
+                  </div></td>
+                  <td width="20" nowrap=""><div align="center">
+                      <DIV align="center">五等奖</DIV>
+                  </div></td>
+                  <td width="20" nowrap=""><div align="center">
+                      <DIV align="center">六等奖</DIV>
+                  </div></td>
+                  <td width="20" nowrap="" bgcolor="#E1E1E1"><div align="center">
+                      <DIV align="center">中奖金额</DIV>
+                  </div></td>
+                </tr>
+                <tr align="middle" class="dd">
+                  <td style="DISPLAY: none"><div align="center">07</div></td>
+                  <td style="DISPLAY: none"><div align="center">01</div></td>
+                  <td style="DISPLAY: none"><div align="center">14</div></td>
+                  <td><div align="center">6</div></td>
+                  <td><div align="center">1</div></td>
+                  <td><div align="center">1</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">6</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td width="60"><div align="center">1A+18000</div></td>
+                </tr>
+                <tr align="middle" class="dd">
+                  <td style="DISPLAY: none"><div align="center">07</div></td>
+                  <td style="DISPLAY: none"><div align="center">01</div></td>
+                  <td style="DISPLAY: none"><div align="center">14</div></td>
+                  <td><div align="center">6</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">1</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">6</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td width="60"><div align="center">1B+1200 </div></td>
+                </tr>
+                <tr align="middle" class="dd">
+                  <td style="DISPLAY: none"><div align="center">07</div></td>
+                  <td style="DISPLAY: none"><div align="center">01</div></td>
+                  <td style="DISPLAY: none"><div align="center">14</div></td>
+                  <td><div align="center">5</div></td>
+                  <td><div align="center">1</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">2</div></td>
+                  <td><div align="center">5</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td width="60"><div align="center">7000</div></td>
+                </tr>
+                <tr align="middle" class="dd">
+                  <td style="DISPLAY: none"><div align="center">07</div></td>
+                  <td style="DISPLAY: none"><div align="center">01</div></td>
+                  <td style="DISPLAY: none"><div align="center">14</div></td>
+                  <td><div align="center">5</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">2</div></td>
+                  <td><div align="center">5</div></td>
+                  <td><div align="center">0</div></td>
+                  <td width="60"><div align="center">450</div></td>
+                </tr>
+                <tr align="middle" class="dd">
+                  <td style="DISPLAY: none"><div align="center">07</div></td>
+                  <td style="DISPLAY: none"><div align="center">01</div></td>
+                  <td style="DISPLAY: none"><div align="center">14</div></td>
+                  <td><div align="center">4</div></td>
+                  <td><div align="center">1</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">3</div></td>
+                  <td><div align="center">4</div></td>
+                  <td><div align="center">0</div></td>
+                  <td width="60"><div align="center">640</div></td>
+                </tr>
+                <tr align="middle" class="dd">
+                  <td style="DISPLAY: none"><div align="center">07</div></td>
+                  <td style="DISPLAY: none"><div align="center">01</div></td>
+                  <td style="DISPLAY: none"><div align="center">14</div></td>
+                  <td><div align="center">4</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">3</div></td>
+                  <td><div align="center">0</div></td>
+                  <td width="60"><div align="center">30</div></td>
+                </tr>
+                <tr align="middle" class="dd">
+                  <td style="DISPLAY: none"><div align="center">07</div></td>
+                  <td style="DISPLAY: none"><div align="center">01</div></td>
+                  <td style="DISPLAY: none"><div align="center">14</div></td>
+                  <td><div align="center">3</div></td>
+                  <td><div align="center">1</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">4</div></td>
+                  <td><div align="center">3</div></td>
+                  <td width="60"><div align="center">55</div></td>
+                </tr>
+                <tr align="middle" class="dd">
+                  <td style="DISPLAY: none"><div align="center">07</div></td>
+                  <td style="DISPLAY: none"><div align="center">01</div></td>
+                  <td style="DISPLAY: none"><div align="center">14</div></td>
+                  <td><div align="center">2</div></td>
+                  <td><div align="center">1</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">7</div></td>
+                  <td width="60"><div align="center">35</div></td>
+                </tr>
+                <tr align="middle" class="dd">
+                  <td style="DISPLAY: none"><div align="center">07</div></td>
+                  <td style="DISPLAY: none"><div align="center">01</div></td>
+                  <td style="DISPLAY: none"><div align="center">14</div></td>
+                  <td><div align="center">1</div></td>
+                  <td><div align="center">1</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">7</div></td>
+                  <td width="60"><div align="center">35</div></td>
+                </tr>
+                <tr align="middle" class="dd">
+                  <td style="DISPLAY: none"><div align="center">07</div></td>
+                  <td style="DISPLAY: none"><div align="center">01</div></td>
+                  <td style="DISPLAY: none"><div align="center">14</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">1</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">0</div></td>
+                  <td><div align="center">7</div></td>
+                  <td width="60"><div align="center">35</div></td>
+                </tr>
+              </tbody>
+          </table></td>
+      </tr>
+	  <tr bgcolor="#eeeeee"><td> <table>
+   <tr>
+   <td>*提示：</td>
+   </tr>
+   <tr >
+   <td>A代表双色球一等奖奖金</td>
+   </tr>
+   <tr>
+   <td>B代表双色球二等奖奖金</td>
+   </tr>
+  </table></td></tr>
+    </tbody>
+  </table>
+ 
+</div>
+<!--div style="text-align:center;display:none;"-->
+<!-- 51루ȫվbegin -->
+<!--script language="javascript" type="text/javascript" src="http://js.users.51.la/4505205.js"></script-->
+<!--noscript><a href="http://www.51.la/?4505205" target="_blank"><img alt="51.la" src="http://img.users.51.la/4505205.asp" style="border:none" /></a></noscript-->
+<!-- 51루ȫվend -->
+<!--/div-->
+<script type="text/javascript"></script>
+<script type="text/javascript"> /*dl-shuang-960-ssq*/ var cpro_id = 'u238652';</script>
+<script type="text/javascript" src="http://cpro.baidu.com/cpro/ui/f.js"></script><script type="text/javascript" charset="utf-8" src="http://pos.baidu.com/ecom?di=u238652&amp;tm=BAIDU_CPRO_SETJSONADSLOT&amp;fn=BAIDU_CPRO_SETJSONADSLOTFLOAT&amp;baidu_id="></script>
+<!-- ҳʱ -->
+<div id="zhcwAd3_tmp" style="display: none;"><script type="text/javascript">
+var youdao_client="1005";
+var youdao_member="108065";
+var youdao_template="text_300_300";
+var youdao_width="300";
+var youdao_height="300";
+</script>
+<script type="text/javascript" src="http://impservice.union.youdao.com/imp/union_req_ads.js"></script><div style="display:none">-</div><iframe align="center,center" width="300" height="300" src="http://impservice.union.youdao.com/imp/request.s?req=http%3A%2F%2Fwww.zhcw.com%2Fssq%2Fjisuanqi%2Findex.shtml%3Ffrom%3Dssqdh%26do%3Djsq%23info&amp;rnd=549&amp;syndid=1005&amp;memberid=108065&amp;tn=text_300_300&amp;width=300&amp;height=300&amp;ref2=http://www.zhcw.com/ssq/" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" allowtransparency=""></iframe></div>
+<div id="zhcwAd4_tmp" style="display: none;"><script type="text/javascript">
+var sogou_param = new Array();
+sogou_param["pid"]  = 'zhcwcom';
+sogou_param["ct"]  = 'context';
+sogou_param["fmt"]  = 'v_300_250';
+sogou_param["iw"]   = '295';
+sogou_param["ih"]   = '380';
+sogou_param["charset"]   = 'gb2312';
+sogou_param["c_bo"] = 'FFFFFF';
+sogou_param["c_bg"] = 'FFFFFF';
+sogou_param["c_li"] = '0022AA';
+sogou_param["c_te"] = '777777';
+sogou_param["c_bt"] = '777777';
+sogou_param["c_hl"] = 'FF0900';
+sogou_param["sv"] = '1';
+sogou_param["sl"] = '1';
+sogou_param["hl"] = '0';
+sogou_param["ul"] = '3';
+sogou_param["tfs"] = '13';
+sogou_param["tft"] = '1';
+sogou_param["tml"] = '40';
+sogou_param["dn"] = '6';
+sogou_param["ucl"] = '1B8800';
+sogou_param["ufs"] = '12';
+sogou_param["uft"] = '0';
+sogou_param["dfs"] = '12';
+sogou_param["mhc"] = 'FF0900';
+sogou_param["mht"] = '0';
+sogou_param["tdw"] = '';
+sogou_param["lod"] = '44';
+sogou_param["ppc"] = '0';
+sogou_param["dul"] = '1';
+sogou_param["new"] = '1';
+sogou_param["tlh"] = '16';
+sogou_param["tpl"] = '0';
+</script>
+<script language="JavaScript" type="text/javascript" charset="gb2312" src="http://images.sohu.com/cs/jsfile/js/ct.js"></script><iframe id="cttbss1" onload="document.cc1=true;" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" src="http://inte.sogou.com/cpc_ads?pid=zhcwcom&amp;ct=context&amp;fmt=v_300_250&amp;iw=295&amp;ih=380&amp;charset=gb2312&amp;c_bo=FFFFFF&amp;c_bg=FFFFFF&amp;c_li=0022AA&amp;c_te=777777&amp;c_bt=777777&amp;c_hl=FF0900&amp;sv=1&amp;sl=1&amp;hl=0&amp;ul=3&amp;tfs=13&amp;tft=1&amp;tml=40&amp;dn=6&amp;ucl=1B8800&amp;ufs=12&amp;uft=0&amp;dfs=12&amp;mhc=FF0900&amp;mht=0&amp;tdw=&amp;lod=44&amp;ppc=0&amp;dul=1&amp;new=1&amp;tlh=16&amp;tpl=0&amp;ti=%E4%B8%AD%E5%BD%A9%E7%BD%91%7C%E8%AE%A1%E7%AE%97%E5%99%A8%7C&amp;ref=http://www.zhcw.com/ssq/&amp;sohuurl=http://www.zhcw.com/ssq/jisuanqi/index.shtml?from=ssqdh%26do=jsq#info&amp;ilp=2" width="295" height="380"></iframe></div>
+<div id="zhcwAd6_tmp" style="display: none;"><script type="text/javascript"> /*banner-580-ҳ*/ var cpro_id = 'u65945';</script>
+      <script type="text/javascript" src="http://cpro.baidu.com/cpro/ui/c.js"> </script><script type="text/javascript" charset="utf-8" src="http://pos.baidu.com/ecom?di=u65945&amp;tm=BAIDU_CPRO_SETJSONADSLOT&amp;fn=BAIDU_CPRO_SETJSONADSLOT&amp;baidu_id="></script><div style="display:none">-</div> <iframe id="cproIframe5" src="http://cpro.baidu.com/cpro/ui/uijs.php?tu=u65945&amp;tn=text_default_580_90&amp;n=addzy9019269_cpr&amp;rsi1=90&amp;rsi0=580&amp;rad=&amp;rss0=%23FFFFFF&amp;rss1=%23FFFFFF&amp;rss2=%230000ff&amp;rss3=%23444444&amp;rss4=%23008000&amp;rss5=&amp;rss6=%23e10900&amp;rsi5=4&amp;ts=1&amp;at=103&amp;ch=0&amp;cad=1&amp;aurl=&amp;rss7=&amp;cpa=1&amp;fv=10&amp;cn=0&amp;if=16&amp;word=http%3A%2F%2Fwww.zhcw.com%2Fssq%2Fjisuanqi%2Findex.shtml%3Ffrom%3Dssqdh%26do%3Djsq%23info&amp;refer=http%3A%2F%2Fwww.zhcw.com%2Fssq%2F&amp;ready=1&amp;jk=3da1ac4d6c3f1fec&amp;jn=3&amp;lmt=1325199154&amp;csp=1920,1080&amp;ccd=32&amp;chi=6&amp;cja=true&amp;cpl=17&amp;cmi=104&amp;cce=true&amp;csl=zh-CN&amp;did=5&amp;rt=12&amp;dt=1325227955&amp;pn=4:3|text_default_960_90:text_default_300_250|103:103&amp;ev=50331648&amp;c01=0&amp;prt=1325227954091" width="580" height="90" align="center,center" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" allowtransparency="true"></iframe></div>
+<div id="zhcwAd7_tmp" style="display: none;"><script type="text/javascript">
+var sogou_param = new Array();
+sogou_param["pid"]  = 'zhcwcom';
+sogou_param["ct"]  = 'context';
+sogou_param["fmt"]  = 'h_468_60';
+sogou_param["iw"]   = '468';
+sogou_param["ih"]   = '60';
+sogou_param["charset"]   = 'gb2312';
+sogou_param["c_bo"] = 'FFFFFF';
+sogou_param["c_bg"] = 'FFFFFF';
+sogou_param["c_li"] = '0055E5';
+sogou_param["c_te"] = '000000';
+sogou_param["c_bt"] = '000000';
+sogou_param["c_hl"] = 'FF0900';
+sogou_param["sv"] = '1';
+sogou_param["sl"] = '1';
+sogou_param["hl"] = '0';
+</script>
+<script language="JavaScript" type="text/javascript" src="http://images.sohu.com/cs/jsfile/js/ct.js"></script><iframe id="cttbss2" onload="document.cc2=true;" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" src="http://inte.sogou.com/cpc_ads?pid=zhcwcom&amp;ct=context&amp;fmt=h_468_60&amp;iw=468&amp;ih=60&amp;charset=gb2312&amp;c_bo=FFFFFF&amp;c_bg=FFFFFF&amp;c_li=0055E5&amp;c_te=000000&amp;c_bt=000000&amp;c_hl=FF0900&amp;sv=1&amp;sl=1&amp;hl=0&amp;ti=%E4%B8%AD%E5%BD%A9%E7%BD%91%7C%E8%AE%A1%E7%AE%97%E5%99%A8%7C&amp;ref=http://www.zhcw.com/ssq/&amp;sohuurl=http://www.zhcw.com/ssq/jisuanqi/index.shtml?from=ssqdh%26do=jsq#info&amp;ilp=3" width="468" height="60"></iframe></div>
+ 
+<script type="text/javascript">
+if (document.getElementById("zhcwAd3") != null) {
+  document.getElementById("zhcwAd3").innerHTML = document.getElementById("zhcwAd3_tmp").innerHTML;
+}
+if (document.getElementById("zhcwAd4") != null) {
+  document.getElementById("zhcwAd4").innerHTML = document.getElementById("zhcwAd4_tmp").innerHTML;
+}
+if (document.getElementById("zhcwAd6") != null) {
+  document.getElementById("zhcwAd6").innerHTML = document.getElementById("zhcwAd6_tmp").innerHTML;
+}
+if (document.getElementById("zhcwAd7") != null) {
+  document.getElementById("zhcwAd7").innerHTML = document.getElementById("zhcwAd7_tmp").innerHTML;
+}
+</script>
+
+<!---->
+<script></script>
+
+<!---->
+<script></script>
+
+
+<script src="http://app.zhcw.com/Services/Stat.js" type="text/javascript"></script>
+<script>
+if(window._zcms_stat)_zcms_stat("SiteID=214&Type=Article&CatalogInnerCode=002347000002000022&Dest=http://app.zhcw.com/Services/Stat.jsp");
+</script>
+<!-- Powered by ZCMS(Ԫݹϵͳ) 1.3.4.17276 PublishDate 2011-12-14 09:35:18-->
+</body></html>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提现" />
+
+        <ImageButton
+            android:id="@+id/chzhelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_title"
+            android:src="@drawable/questionmark" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dip"
+            android:layout_toRightOf="@+id/chzhelp"
+            android:src="@drawable/vertical_line" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/vertical_line" />
+
+            <Button
+                android:id="@+id/history_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_title"
+                android:paddingLeft="@dimen/bt_left_dis"
+                android:paddingRight="@dimen/bt_left_dis"
+                android:text="提现记录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/basic_text_size" >
+            </Button>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_bar"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dip" >
+
+            <LinearLayout
+                android:id="@+id/name_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="用户姓名："
+                    android:textColor="@color/light_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inf_getting"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="身份证号："
+                    android:textColor="@color/light_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <TextView
+                    android:id="@+id/user_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inf_getting"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="可提现额："
+                    android:textColor="@color/light_purple"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <TextView
+                    android:id="@+id/user_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inf_getting"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/basic_text_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/new_devide_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <com.haozan.caipiao.widget.PopUpEditText
+                    android:id="@+id/bank_name_et"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="银行名称"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="@dimen/basic_text_size"
+                    android:visibility="gone" >
+               </com.haozan.caipiao.widget.PopUpEditText>
+
+                <LinearLayout
+                    android:id="@+id/withdraw_bank_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/spinner_image_button" >
+
+                    <TextView
+                        android:id="@+id/withdraw_bank_name_text"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="8"
+                        android:drawSelectorOnTop="true"
+                        android:text="点击选择银行"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/basic_text_size" />
+
+                    <ImageView
+                        android:id="@+id/withdraw_bank_name_icon"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:src="@drawable/spinner_triangle_down" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <com.haozan.caipiao.widget.PopUpEditText
+                    android:id="@+id/bank_card_num"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/edittext_bg"
+                    android:digits="0123456789"
+                    android:hint="银行卡号"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="21"
+                    android:textSize="@dimen/basic_text_size" >
+               </com.haozan.caipiao.widget.PopUpEditText>
+
+                <Button
+                    android:id="@+id/edit_card_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/bank_card_num"
+                    android:layout_alignRight="@+id/bank_card_num"
+                    android:background="@drawable/ic_delete"
+                    android:textColor="@color/black"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_widget"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <com.haozan.caipiao.widget.PopUpEditText
+                    android:id="@+id/user_withdraw_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/edittext_bg"
+                    android:digits="0123456789"
+                    android:hint="提现金额"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="6"
+                    android:textSize="@dimen/basic_text_size" />
+
+                <Button
+                    android:id="@+id/delete_winthdraw_money_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/user_withdraw_money"
+                    android:layout_alignRight="@id/user_withdraw_money"
+                    android:background="@drawable/ic_delete"
+                    android:visibility="invisible" >
+                </Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_widget"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <com.haozan.caipiao.widget.PopUpEditText
+                    android:id="@+id/bank_location_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="城 市"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="@dimen/basic_text_size" >
+               </com.haozan.caipiao.widget.PopUpEditText>
+
+                <Button
+                    android:id="@+id/delete_bank_location_et_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/bank_location_et"
+                    android:layout_alignRight="@+id/bank_location_et"
+                    android:background="@drawable/ic_delete"
+                    android:visibility="invisible" >
+                </Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_widget"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <com.haozan.caipiao.widget.PopUpEditText
+                    android:id="@+id/bank_full_name_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="银行网点"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textSize="@dimen/basic_text_size" >
+               </com.haozan.caipiao.widget.PopUpEditText>
+
+                <Button
+                    android:id="@+id/delete_wbank_full_name_et_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/bank_full_name_et"
+                    android:layout_alignRight="@+id/bank_full_name_et"
+                    android:background="@drawable/ic_delete"
+                    android:visibility="invisible" >
+                </Button>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/line1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/new_devide_line" />
+
+            <Button
+                android:id="@+id/rechargebt"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/custom_button"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="查询资料中，请稍后"
+                android:textColor="@color/black"
+                android:textSize="@dimen/basic_text_size" />
+
+            <Button
+                android:id="@+id/get_inf_again"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_button"
+                android:gravity="center"
+                android:text="再次获取资料"
+                android:textColor="@color/black"
+                android:textSize="@dimen/basic_text_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="@string/withdraw_tip01"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/smaller_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="@string/withdraw_tip02"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/smaller_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="@string/withdraw_tip03"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/smaller_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="290dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="80dip"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/basic_text_size"
+        android:visibility="gone" />
+
+</RelativeLayout>

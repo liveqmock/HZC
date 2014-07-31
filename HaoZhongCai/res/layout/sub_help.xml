@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+          android:id="@+id/title_linear_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:orientation="vertical" android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:text="提  示" >
+        </TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_linear_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/hy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:lineSpacingExtra="5dip"
+                android:shadowRadius="3.0"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/basic_text_size"
+                android:typeface="monospace"
+                android:width="300dip" >
+            </TextView>
+
+            <Button
+                android:id="@+id/more_help_inf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/hy_text"
+                android:text="积分详情请点击"
+                android:textSize="@dimen/basic_text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

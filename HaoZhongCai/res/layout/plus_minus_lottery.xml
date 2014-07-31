@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="彩种显示调整"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_margin="@dimen/icon_margin"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="您可以在这里调整大厅显示的彩种，按”完成“确认保存，按“取消”退出，至少保留两种彩种，点击“+”，“X”或拖动右边图标进行调整。"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size" />
+
+    <com.haozan.caipiao.view.DragListView
+        android:id="@+id/drag_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/plus_minus_bottom"
+        android:layout_below="@+id/tips"
+        android:layout_marginBottom="10dip"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000" />
+
+    <RelativeLayout
+        android:id="@+id/plus_minus_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombg" >
+
+        <Button
+            android:id="@+id/reset_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/custom_button"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="@dimen/basic_text_size" />
+
+        <Button
+            android:id="@+id/complete_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/custom_button"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="完成"
+            android:textColor="@color/black"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

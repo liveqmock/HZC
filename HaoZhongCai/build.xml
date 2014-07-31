@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LotteryApp" default="release-all">
+
+    <!-- The local.properties file is created and updated by the 'android' tool.
+         It contains the path to the SDK. It should *NOT* be checked into
+         Version Control Systems. -->
+    <property file="local.properties" />
+
+    <!-- The ant.properties file can be created by you. It is only edited by the
+         'android' tool to add properties to it.
+         This is the place to change some Ant specific build properties.
+         Here are some properties you may want to change/update:
+
+         source.dir
+             The name of the source directory. Default is 'src'.
+         out.dir
+             The name of the output directory. Default is 'bin'.
+
+         For other overridable properties, look at the beginning of the rules
+         files in the SDK, at tools/ant/build.xml
+
+         Properties related to the SDK location or the project target should
+         be updated using the 'android' tool with the 'update' action.
+
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems.
+
+         -->
+    <property file="ant.properties" />
+
+    <!-- if sdk.dir was not set from one of the property file, then
+         get it from the ANDROID_HOME env var.
+         This must be done before we load project.properties since
+         the proguard config can use sdk.dir -->
+    <property environment="env" />
+    <condition property="sdk.dir" value="${env.ANDROID_HOME}">
+        <isset property="env.ANDROID_HOME" />
+    </condition>
+
+    <!-- The project.properties file is created and updated by the 'android'
+         tool, as well as ADT.
+
+         This contains project specific properties such as project target, and library
+         dependencies. Lower level build properties are stored in ant.properties
+         (or in .classpath for Eclipse projects).
+
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems. -->
+    <loadproperties srcFile="project.properties" />
+
+    <!-- quick check on sdk.dir -->
+    <fail
+            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through the ANDROID_HOME environment variable."
+            unless="sdk.dir"
+    />
+
+    <!--
+        Import per project custom build rules if present at the root of the project.
+        This is the place to put custom intermediary targets such as:
+            -pre-build
+            -pre-compile
+            -post-compile (This is typically used for code obfuscation.
+                           Compiled code location: ${out.classes.absolute.dir}
+                           If this is not done in place, override ${out.dex.input.absolute.dir})
+            -post-package
+            -post-build
+            -pre-clean
+    -->
+    <import file="custom_rules.xml" optional="true" />
+
+    <!-- Import the actual build file.
+
+         To customize existing targets, there are two options:
+         - Customize only one target:
+             - copy/paste the target into this file, *before* the
+               <import> task.
+             - customize it to your needs.
+         - Customize the whole content of build.xml
+             - copy/paste the content of the rules files (minus the top node)
+               into this file, replacing the <import> task.
+             - customize to your needs.
+
+         ***********************
+         ****** IMPORTANT ******
+         ***********************
+         In all cases you must update the value of version-tag below to read 'custom' instead of an integer,
+         in order to avoid having your file be overridden by tools such as "android update project"
+    -->
+	<property name="out.dir" value="build" />
+ 	<property name="versions.file.name" value="versions.xml"/>
+	<property name="tmp.folder" location="bin/tmp"/>
+	<property name="android.manifest.file.name" value="AndroidManifest.xml"/>
+	<property name="android.manifest.file" location="${android.manifest.file.name}"/>
+	<property name="android.manifest.file.bak" location="${tmp.folder}/AndroidManifest.xml.antbak"/>
+	<property name="packages.folder" value="../packages"/>
+	<property name="packages.debug.folder" value="${packages.folder}/debug"/>
+	<property name="packages.release.folder" value="${packages.folder}/release"/>
+	<!--
+	<property name="key.store" value="zhangzhongcai.keystore"/>
+	<property name="key.store.password" value="bukeinfo1039"/>
+	<property name="key.alias" value="zhangzhongcai"/>
+	<property name="key.alias.password" value="bukeinfo1039"/>
+	-->
+	
+	<target name="init_package">
+	    <mkdir dir="${tmp.folder}"/>
+	    
+	    <antcall target="init_package_main"/>
+	    <antcall target="init_package_release"/>
+	</target>
+	
+	<available file="${packages.folder}" type="dir" property="has_package" />
+	<target name="init_package_main" unless="has_package">
+	    <mkdir dir="${packages.folder}"/>
+	</target>
+	
+	<available file="${packages.release.folder}" type="dir" property="has_package_release" />
+	<target name="init_package_release" unless="has_package_release">
+	    <mkdir dir="${packages.debug.folder}"/>
+	    <mkdir dir="${packages.release.folder}"/>
+	</target>
+	
+	<xmlproperty file="AndroidManifest.xml" prefix="bukemobile" collapseAttributes="true"/>
+	<taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask" classpath="antlibs/xmltask.jar"></taskdef>
+	
+	<target name="-custom-backup-manifest">
+		<echo>Creating backup of AndroidManifest.xml</echo>
+		<copy file="${android.manifest.file}" tofile="${android.manifest.file.bak}" preservelastmodified="true" />
+	</target>
+	
+	<target name="-post-build">
+		<antcall target="-custom-restore-manifest"/>
+		<basename property="out.final.file.name" file="${out.final.file}"/>
+		<copy file="${out.final.file}" tofile="${dest.folder}/${out.final.file.name}" verbose="true"/>
+	</target>
+	
+	<target name="-custom-restore-manifest">
+		<echo>Restoring backup of AndroidManifest.xml</echo>
+		<copy file="${tmp.folder}/AndroidManifest.xml.antbak" tofile="AndroidManifest.xml" preservelastmodified="true" overwrite="true" />
+	</target>
+	
+	<target name="update-manifest" depends="-custom-backup-manifest">
+		<echo>Update ${android.manifest.file.name} for ${build.inf} with below info:</echo>
+		<echo>umkey: ${build.umengkey}</echo>
+		<echo>pid: ${build.pid}</echo>
+		<echo>key: ${build.key}</echo>
+		<echo>version: ${build.version}</echo>
+		<echo>flurry: ${build.flurry}</echo>
+		<echo>channel: ${build.channel}</echo>
+		<echo>tdid: ${build.tdid}</echo>
+		<echo>tdchannel: ${build.tdchannel}</echo>
+		
+		<replace encoding="utf-8" file="${android.manifest.file}">
+		    <replacefilter token="!build.umengkey!" value="${build.umengkey}"/>
+		    <replacefilter token="!build.pid!" value="${build.pid}"/>
+		    <replacefilter token="!build.key!" value="${build.key}"/>
+		    <replacefilter token="!build.version!" value="${build.version}"/>
+		    <replacefilter token="!build.flurry!" value="${build.flurry}"/>
+			<replacefilter token="!build.channel!" value="${build.channel}"/>
+			<replacefilter token="!build.tdid!" value="${build.tdid}"/>
+			<replacefilter token="!build.tdchannel!" value="${build.tdchannel}"/>
+		</replace>
+	</target>
+	
+	<target name="update-version">
+		<tempfile property="tmp.file" destDir="${tmp.folder}" prefix="tmp"/>
+		<property name="version.file.name" value="version.properties" />
+		<property name="version.file.tmp" location="${tmp.folder}/${version.file.name}" />
+	    <property name="version.file" location="${asset.dir}/${version.file.name}" />
+		<property name="version.template" location="version.template"/>
+		<property name="version.template.tmp" location="${tmp.folder}/version.template"/>
+		
+		<echo>Update ${version.file} for ${build.inf} with below info:</echo>
+		<echo>pid: ${build.pid}</echo>
+		<echo>key: ${build.key}</echo>
+		<echo>version: ${build.version}</echo>
+		<echo>flurry: ${build.flurry}</echo>
+		<echo>name: ${build.name}</echo>
+		<echo>inf: ${build.inf}</echo>
+		<echo>download: ${build.download}</echo>
+		<echo>td: ${build.tdid}</echo>
+		<echo>tdchannel: ${build.tdchannel}</echo>
+		
+		<copy file="${version.template}" tofile="${version.file.tmp}"/>
+		
+		<replace encoding="utf-8" file="${version.file.tmp}">
+		    <replacefilter token="@build.pid@" value="${build.pid}"/>
+		    <replacefilter token="@build.key@" value="${build.key}"/>
+		    <replacefilter token="@build.version@" value="${build.version}"/>
+		    <replacefilter token="@build.flurry@" value="${build.flurry}"/>
+		    <replacefilter token="@build.name@" value="${build.name}"/>
+		    <replacefilter token="@build.inf@" value="${build.inf}"/>
+		    <replacefilter token="@build.download@" value="${build.download}"/>
+		    <replacefilter token="@build.tdid@" value="${build.tdid}"/>
+		    <replacefilter token="@build.tdchannel@" value="${build.tdchannel}"/>
+		</replace>
+		<native2ascii encoding="utf-8" src="${tmp.folder}" dest="${asset.dir}" includes="${version.file.name}"/>
+		<delete file="${version.file.tmp}"/>
+		<!-- only for debug purpose
+		<native2ascii reverse="true" encoding="utf-8" src="${asset.dir}" dest="${tmp.folder}" includes="${version.file.name}"/>
+		-->
+	</target>
+		
+	<target name="-debug-each" depends="clean">
+		<property name="dest.folder" value="${packages.debug.folder}"/>
+		<property name="app.name" value="${build.version}"/>
+		<property name="out.debug.unaligned.package"
+		                  location="${out.absolute.dir}/${app.name}-${bukemobile.manifest.android:versionName}-debug-unaligned.apk" />
+	    <property name="out.debug.package"
+	                  location="${out.absolute.dir}/${app.name}-${bukemobile.manifest.android:versionName}-debug.apk" />
+		<property name="out.packaged.file" location="${out.debug.unaligned.package}" />
+		<property name="out.final.file" location="${out.debug.package}" />
+		<!--
+		-->
+		<antcall target="update-manifest" />
+		<antcall target="debug" />
+	</target>
+		
+	<target name="custom-clean">
+		<delete dir="${packages.folder}" verbose="true" />
+		<delete dir="${out.dir}" verbose="true" />
+	</target>
+	
+	<target name="custom-debug-clean">
+		<delete dir="${packages.debug.folder}" verbose="true" />
+		<delete dir="${out.dir}" verbose="true" />
+	</target>
+	
+	<target name="custom-release-clean">
+		<delete dir="${packages.release.folder}" verbose="true" />
+		<delete dir="${out.dir}" verbose="true" />
+	</target>
+	
+	<target name="debug-all" depends="custom-debug-clean">
+	    <xmltask source="${versions.file.name}"> 
+      		<call path="/app/brand" target="-debug-each" buffer="brand-buffer"> 
+         		<param name="build.pid" path="//@pid"/>
+      			<param name="build.key" path="key/text()"/>
+      			<param name="build.version" path="version/text()"/>
+      			<param name="build.flurry" path="flurry/text()"/>
+      			<param name="build.name" path="name/text()"/>
+      			<param name="build.inf" path="inf/text()"/>
+      			<param name="build.download" path="download/text()"/>
+      			<param name="build.channel" path="channel/text()"/>
+      		</call> 
+   		</xmltask>
+	</target>
+	
+	<target name="release-each" depends="clean">
+		<property name="dest.folder" value="${packages.release.folder}"/>
+		<property name="app.name" value="${build.version}"/>
+	    <property name="out.packaged.file"
+	                  location="${out.absolute.dir}/${app.name}-${bukemobile.manifest.android:versionName}-release-unsigned.apk" />
+	    <property name="out.unaligned.file"
+	                  location="${out.absolute.dir}/${app.name}-${bukemobile.manifest.android:versionName}-release-unaligned.apk" />
+	    <property name="out.final.file"
+	                  location="${out.absolute.dir}/${app.name}${bukemobile.manifest.android:versionName}.apk" />
+		<!--
+		-->
+		<antcall target="update-manifest" />
+		<antcall target="release" />
+	</target>
+	
+	<target name="release-all" depends="init_package">
+	    <xmltask source="versions.xml"> 
+      		<call path="/app/brand" target="release-each" buffer="brand-buffer"> 
+      		    <param name="build.umengkey" path="umengkey/text()"/>
+         		<param name="build.pid" path="pid/text()"/>
+      			<param name="build.key" path="key/text()"/>
+      			<param name="build.version" path="version/text()"/>
+      			<param name="build.flurry" path="flurry/text()"/>
+      			<param name="build.name" path="name/text()"/>
+      			<param name="build.inf" path="inf/text()"/>
+      			<param name="build.download" path="download/text()"/>
+      			<param name="build.channel" path="channel/text()"/>
+      			<param name="build.tdid" path="tdid/text()"/>
+      			<param name="build.tdchannel" path="tdchannel/text()"/>
+      		</call> 
+   		</xmltask>
+	</target>
+	<!--
+	<target name="-set-debug-files" depends="-set-mode-check">
+	    <property name="out.packaged.file" location="${out.debug.unaligned.package}" />
+	    <property name="out.final.file" location="${out.debug.package}" />
+	    <property name="build.is.mode.set" value="true" />
+	</target>
+	-->
+	 <!-- version-tag: custom -->
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+
+</project>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:text="号码统计设置" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/title_layout"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_hot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/module_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="10dip"
+                        android:text="冷热门号码"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/basic_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/first_item"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/toggle_button"
+                            android:text="20期，无需积分"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/basic_text_size" />
+
+                        <Button
+                            android:id="@+id/second_item"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/toggle_button"
+                            android:text="30期，扣3分"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/basic_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/third_item"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/toggle_button"
+                            android:text="50期，扣5分"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/basic_text_size" />
+
+                        <Button
+                            android:id="@+id/forth_item"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/toggle_button"
+                            android:text="100期，扣10分"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/basic_text_size" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_show_hot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dip"
+                        android:padding="5dip" >
+
+                        <ImageView
+                            android:id="@+id/select_show_hot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:background="@drawable/choosing_select" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/select_show_hot"
+                            android:text="选球号码下显示近期开出次数（扣3分）"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_text_size" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_omit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/module_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="10dip"
+                        android:text="号码遗漏"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/basic_text_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_show_omit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dip"
+                        android:padding="5dip" >
+
+                        <ImageView
+                            android:id="@+id/select_omit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:background="@drawable/choosing_select" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/select_omit"
+                            android:text="选球号码下显示遗漏期数（扣3分）"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_text_size" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombg" >
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/icon_margin"
+            android:background="@drawable/custom_button"
+            android:text="   取 消   "
+            android:textColor="@color/custom_button"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <Button
+            android:id="@+id/make_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/icon_margin"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="  确 定  "
+            android:textColor="@color/custom_button"
+            android:textSize="@dimen/basic_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

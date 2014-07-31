@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_transpond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <ImageView
+            android:id="@+id/transpond_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/choosing_select" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/transpond_select"
+            android:text="@string/bet_info_share_to_caiyuan"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/share_more_inf_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:padding="10dip"
+        android:src="@drawable/arrow_down"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/share_more_inf_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="5dip"
+        android:drawableRight="@drawable/arrow_right"
+        android:gravity="center_vertical"
+        android:padding="5dip"
+        android:text="详情请点击"
+        android:textColor="@color/dark_purple"
+        android:textSize="@dimen/small_text_size" />
+
+    <LinearLayout
+        android:id="@+id/layout_share_to_garden"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_transpond"
+        android:background="@drawable/jczq_list_item_sub_bg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/bet_transpont_tips_second"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+
+        <EditText
+            android:id="@+id/edit_share_content"
+            style="@style/my_EditText_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="15dip"
+            android:hint="1~60字"
+            android:maxLength="60"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="10dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="30dip"
+            android:paddingTop="5dip"
+            android:text="@string/bet_transpont_tips"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/small_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

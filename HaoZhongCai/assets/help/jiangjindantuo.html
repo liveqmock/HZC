@@ -1,0 +1,247 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/tools.css" type="text/css" rel="Stylesheet">
+<link href="css/open.css" type="text/css" rel="Stylesheet">
+<script type="text/javascript" src="js/tools_ssq_fs.js"></script>
+<title>无标题页</title>
+</head>
+<body>
+<div>
+  <ul class="tags_tools">
+    <li><a href="../help/ssq_calculator/ssql+calculator.html"> 复式奖金计算</a></li>
+    <li class="active">胆拖奖金计算</li>
+  </ul>
+    <div id="content" style="margin-bottom:0;overflow:hidden; float:left;">
+        <div class="tools_main_left" style="padding:0;">
+          <div class="tools_xuandan" style="margin-right:6px;height:158px;">
+            <h6>投注选单</h6>
+            <ul class="ssq_dt">
+              <li>购买红胆数：
+                <select id="selRedDan" style="width:53px;height:20px;" onChange="calZhushudt();">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </li>
+              <li>购买红托数：
+                <select id="selRedTuo" style="width:53px;height:20px;" onChange="calZhushudt();">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                </select>
+              </li>
+              <li>购买篮号数：
+                <select id="selBlueBuy" style="width:53px;height:20px;" onChange="calZhushudt();">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                </select>
+              </li>
+              <li style="margin-top:16px;"><span id="touzhu">1注,￥2.00元</span></li>
+            </ul>
+          </div>
+          <div class="tools_xuandan" style="height:158px;">
+            <h6>奖金计算</h6>
+            <ul class="ssq_dt">
+              <li>命中红胆数：
+                <select id="selLotterydan" style="width:53px;height:20px;">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </li>
+              <li>命中红托数：
+                <select id="selLotterytuo" style="width:53px;height:20px;">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </li>
+              <li>命中篮号数：
+                <select id="selLotteryBlue" style="width:53px;height:20px;">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                </select>
+              </li>
+              <li style="margin-top:5px;float:left;cursor:pointer;"><img src="image/calculate.png" onClick="calResultdt();"></li>
+            </ul>
+          </div>
+          <div class="tools_table">
+            <h6 >奖金计算结果</h6>
+            <table id="tableR">
+              <tbody>
+                <tr>
+                  <th>奖级</th>
+                  <th>中奖条件</th>
+                  <th>中奖注数</th>
+                  <th>单注奖金</th>
+                  <th>预测奖金</th>
+                </tr>
+                <tr>
+                  <td>一等奖</td>
+                  <td>6红+1蓝</td>
+                  <td>0注</td>
+                  <td>￥7,574,662.00元</td>
+                  <td>￥0.00元</td>
+                </tr>
+                <tr class="tr_color1">
+                  <td>二等奖</td>
+                  <td>6红</td>
+                  <td>0注</td>
+                  <td>￥223,663.00元</td>
+                  <td>￥0.00元</td>
+                </tr>
+                <tr>
+                  <td>三等奖</td>
+                  <td>5红+1蓝</td>
+                  <td>0注</td>
+                  <td>￥3000.00元</td>
+                  <td>￥0.00元</td>
+                </tr>
+                <tr class="tr_color1" style="height:45px">
+                  <td>四等奖</td>
+                  <td>4红+1蓝<br>
+                    5红</td>
+                  <td>0注</td>
+                  <td>￥200.00元</td>
+                  <td>￥0.00元</td>
+                </tr>
+                <tr style="height:45px">
+                  <td>五等奖</td>
+                  <td>3红+1蓝<br>
+                    4红</td>
+                  <td>0注</td>
+                  <td>￥10.00元</td>
+                  <td>￥0.00元</td>
+                </tr>
+                <tr class="tr_color1" style="height:64px;">
+                  <td>六等奖</td>
+                  <td>1蓝<br>
+                    1红+1蓝<br>
+                    2红+1蓝</td>
+                  <td>0注</td>
+                  <td>￥5.00元</td>
+                  <td>￥0.00元</td>
+                </tr>
+                <tr>
+                  <td colspan="4" align="right" style="color:#c71102;font:bold 14px 宋体;">预测总奖金：</td>
+                  <td style="background-color:#f4ead5"></td>
+                </tr>
+              </tbody>
+            </table>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function hideaddiv(){document.getElementById('adfloadd').style.display='none'}
+    selSty();
+    function selSty(){
+        var sel = document.getElementById("ctl00_iptemp");
+        switch (sel.value){
+       case "10" : 
+          document.getElementById("xwpd").style.color="#005aae";
+          document.getElementById("xwpd").className="visted2";
+          break;
+       case "1" : 
+       document.getElementById("shouy").style.color="#005aae";
+          document.getElementById("shouy").className="visted2";
+          break;
+       case "2" : 
+       document.getElementById("sjfe").style.color="#005aae";
+          document.getElementById("sjfe").className="visted2";
+          break;
+       case "3" : 
+       document.getElementById("mngc").style.color="#005aae";
+          document.getElementById("mngc").className="visted2";
+          break;
+       case "4" : 
+       document.getElementById("cpgj").style.color="#005aae";
+          document.getElementById("cpgj").className="visted2";
+          break;
+       case "5" : 
+       document.getElementById("slpx").style.color="#005aae";
+          document.getElementById("slpx").className="visted2";
+          break;
+       case "6" : 
+       document.getElementById("yctj").style.color="#005aae";
+          document.getElementById("yctj").className="visted2";
+          break;
+       case "7" : 
+       document.getElementById("tzjq").style.color="#005aae";
+          document.getElementById("tzjq").className="visted2";
+          break;
+      case "8" : 
+      document.getElementById("wfgz").style.color="#005aae";
+          document.getElementById("wfgz").className="visted2";
+          break;
+      case "9" : 
+      document.getElementById("cpbz").style.color="#005aae";
+          document.getElementById("cpbz").className="visted2";
+          break;
+        }
+    }
+    
+    
+    function scrollx(p){
+    var d = document,dd = d.documentElement,db = d.body,w = window,o = d.getElementById(p.id),ie6 = /msie 6/i.test(navigator.userAgent),style,timer;
+    if(o){
+    o.style.cssText +=";position:"+(p.f&&!ie6?'fixed':'absolute')+";"+(p.l==undefined?'right:0;':'left:'+p.l+'px;')+(p.t!=undefined?'top:'+p.t+'px':'bottom:0');
+    if(p.f&&ie6){
+    o.style.cssText +=';left:expression(documentElement.scrollLeft + '+(p.l==undefined?dd.clientWidth-o.offsetWidth:p.l)+' + "px");top:expression(documentElement.scrollTop +'+
+
+    (p.t==undefined?dd.clientHeight-o.offsetHeight:p.t)+'+ "px" );';
+    dd.style.cssText +=';background-image: url(about:blank);background-attachment:fixed;';
+    }else{
+    if(!p.f){
+    w.onresize = w.onscroll = function(){
+    clearInterval(timer);
+    timer = setInterval(function(){
+    var st = (dd.scrollTop||db.scrollTop),c;
+    c = st - o.offsetTop + (p.t!=undefined?p.t:(w.innerHeight||dd.clientHeight)-o.offsetHeight);
+    if(c!=0){
+    o.style.top = o.offsetTop + Math.ceil(Math.abs(c)/10)*(c<0?-1:1) + 'px';
+    }else{clearInterval(timer);}},10)}}}}}scrollx({id:'adfloadd',t:200,f:1})
+    </script>
+</body>
+</html>

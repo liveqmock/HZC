@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weibohallLy"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg"
+    android:tag="itemview" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <LinearLayout
+            android:id="@+id/bet_unite_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_title"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/bet_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/questionmark" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dip"
+            android:layout_toRightOf="@+id/bet_unite_help"
+            android:src="@drawable/vertical_line" />
+
+        <RelativeLayout
+            android:id="@+id/bet_top_term_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/re_titleright"
+            android:layout_toRightOf="@+id/bet_unite_help"
+            android:background="@drawable/btn_title"
+            android:paddingLeft="@dimen/icon_margin"
+            android:paddingRight="@dimen/icon_margin" >
+
+            <TextView
+                android:id="@+id/unite_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size" />
+
+            <ImageView
+                android:id="@+id/arrow_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/searchbar_padding"
+                android:layout_toRightOf="@+id/unite_title"
+                android:src="@drawable/arrow_down_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_titleright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/vertical_line" />
+
+            <Button
+                android:id="@+id/title_btinit_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_title"
+                android:text=" 发起合买 "
+                android:textColor="@color/white"
+                android:textSize="@dimen/basic_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:background="@drawable/top_tab_bg" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:id="@+id/tab1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="进度"
+                        android:textColor="@color/red_text"
+                        android:textSize="@dimen/basic_text_size" />
+
+                    <ImageView
+                        android:id="@+id/img01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/icon_down" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/cursor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/tab_shine" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/tab_divide_line" />
+
+            <RelativeLayout
+                android:id="@+id/tab2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="总额"
+                        android:textColor="@color/light_purple"
+                        android:textSize="@dimen/basic_text_size" />
+
+                    <ImageView
+                        android:id="@+id/img02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/icon_down" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/cursor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/tab_shine" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/select_item" />
+
+</RelativeLayout>

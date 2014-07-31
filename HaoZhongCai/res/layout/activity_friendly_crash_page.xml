@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/general_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:text="出错提示" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/no_data_icon" />
+
+        <TextView
+            android:id="@+id/friendly_crash_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:gravity="center"
+            android:textColor="@color/yellow_text"
+            android:textSize="@dimen/large_text_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:orientation="horizontal"
+            android:padding="@dimen/icon_margin" >
+
+            <Button
+                android:id="@+id/restart"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_highlight"
+                android:singleLine="true"
+                android:text="重启客户端"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size" />
+
+            <Button
+                android:id="@+id/feedback"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:singleLine="true"
+                android:text="反  馈"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/large_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

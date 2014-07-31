@@ -1,0 +1,7 @@
+pid=@build.pid@
+key=@build.key@
+version=@build.version@
+flurry=@build.flurry@
+name=@build.name@
+inf=@build.inf@
+download=@build.download@

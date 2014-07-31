@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/layout_bet_order"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_toLeftOf="@+id/bet_remove"
+        android:background="@drawable/custom_button" >
+
+        <TextView
+            android:id="@+id/bet_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/arrow"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/basic_text_size" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/bet_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/custom_button"
+        android:src="@drawable/icon_delete"
+        android:textSize="@dimen/basic_text_size" />
+
+</RelativeLayout>

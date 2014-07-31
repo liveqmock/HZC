@@ -1,0 +1,29 @@
+body, ul, ol, li, form, p, h1, h2, h3, input{ margin: 0; padding: 0;}
+body{ font-size: 14px;}
+select,input,img{vertical-align:middle;} img{border:0} a{color:#1f376d; text-decoration:none;}
+:outline{border:0} table{border-collapse:collapse; border-spacing:0; table-layout:fixed}
+body{line-height:1.5;} ul{list-style:none}
+
+.ct_top, .ct_mod{ padding-bottom:5px;}
+.ct_top a, .ct_mod a{ padding:0 5px;}
+.ct_mod .st a{ padding:0}
+.mod_list .t a{ color:#f00;}
+
+.bot{padding:0 0 0 5px; background:#377dc8; line-height:25px;}
+.bot a{margin:0 5px 0 0; color:#fff;}
+
+.content_title{ text-align:center; padding-bottom:5px;}
+.content_title h1 {font-size:17px;}
+.review{ background:#F1F5FF; border:1px solid #DCE4FB; border-width:1px 0; padding:5px; margin-bottom:10px; }
+
+.content_text{ padding:10px 10px; color:#292929; }
+.content_text_img{ text-align:center; padding-bottom:5px}
+.content_text_img h2{ text-align:center; color:#292929; line-height:25px;font-size:16px;}
+
+.list p a{
+	*display: block;
+	
+    *line-height: 35px;
+	*border-bottom: 1px solid #E3E1E1;
+}
+

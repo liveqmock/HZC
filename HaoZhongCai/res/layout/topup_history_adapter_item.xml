@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/list_left_layout"
+        android:layout_width="60dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/list_left_bg_with_line"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/topup_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow_text"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/topup_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow_text"
+            android:textSize="@dimen/larger_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bg"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/topup_way"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_toLeftOf="@+id/topup_money"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/basic_text_size" />
+
+        <TextView
+            android:id="@+id/topup_money"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/larger_text_size" />
+
+        <TextView
+            android:id="@+id/topup_inf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topup_way"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_toLeftOf="@+id/topup_money"
+            android:textColor="@color/light_purple"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>
